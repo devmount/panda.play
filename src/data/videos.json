@@ -1,3 +1,48 @@
 {
-  "test": "test"
+  "fireboy-and-watergirl-forest": {
+    "title": "Fireboy & Watergirl",
+    "subtitle": "In the Forest Temple",
+    "description": "Ein lustiges kleines Two-Player Coop-Game in welchem tödliche Fallen und schier unlösbare Rätsel verhindern wollen, dass wir Edelsteine sammeln und aus dem Tempel entkommen!",
+    "episodes": {
+      "1": {
+        "title": "",
+        "youtube": "YaW0-suFhOU"
+      },
+      "2": {
+        "title": "",
+        "youtube": "EOhUMO5c0M4"
+      },
+      "3": {
+        "title": "",
+        "youtube": "KZd2mgrzw9Y"
+      },
+      "4": {
+        "title": "",
+        "youtube": "pY5QA3DKNP0"
+      }
+    }
+  },
+  "return-of-the-tentacle": {
+    "title": "Return of the Tentacle",
+    "subtitle": "Prologue",
+    "description": "Ein Fanadventure und inoffizieller Nachfolger des Kultspiels \"Day of the Tentacle\". Purpur Tentakel ist zurück und versucht erneut die Welt zu erobern, um die Menschheit zu versklaven. Die Freunde Bernard, Laverne und Hoagie machen sich auf den Weg zum verrückten Erfinder Dr. Fred - eine Zeitreise soll helfen die Welt zu retten.",
+    "episodes": {
+      "1": {
+        "title": "",
+        "youtube": "XfIiRcq5nQg"
+      },
+      "2": {
+        "title": "",
+        "youtube": "8kfADz0qpMg"
+      },
+      "3": {
+        "title": "",
+        "youtube": "ujm2dQAPtSA"
+      },
+      "4": {
+        "title": "",
+        "youtube": "NNjbYgAALoo"
+      }
+    }
+  }
 }

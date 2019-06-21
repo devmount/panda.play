@@ -5,6 +5,9 @@ div#app
     |&nbsp;|&nbsp;
     router-link(to='/about') About
   router-view.
+  div link: https://youtu.be/ID
+  div large thumb: http://i3.ytimg.com/vi/ID/maxresdefault.jpg
+  div small thumb: http://i3.ytimg.com/vi/ID/hqdefault.jpg
 </template>
 
 <style lang="stylus">

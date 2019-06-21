@@ -2,7 +2,10 @@
 div.home
   img(alt='Vue logo' src='../assets/logo.png')
   HelloWorld(msg='Welcome to Your Vue.js App').
-  | {{ test }}
+  div(v-for='series in test' :key='series.title')
+    | {{series.title}}
+    div(v-for='episode in series.episodes' :key='episode.youtube')
+      img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/hqdefault.jpg'")
 </template>
 
 <script>
@@ -17,7 +20,7 @@ export default {
   },
   data () {
     return {
-      test: Videos.test
+      test: Videos
     }
   }
 }
