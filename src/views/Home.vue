@@ -3,9 +3,8 @@ div.home
   img(alt='Vue logo' src='../assets/logo.png')
   HelloWorld(msg='Welcome to Your Vue.js App').
   div(v-for='series in test' :key='series.title')
-    | {{series.title}}
-    div(v-for='episode in series.episodes' :key='episode.youtube')
-      img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/hqdefault.jpg'")
+    h2 {{series.title}}
+    img(v-for='episode in series.episodes' :key='episode.youtube' :src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'")
 </template>
 
 <script>
