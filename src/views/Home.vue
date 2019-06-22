@@ -1,25 +1,50 @@
 <template lang="pug">
 div.home
-  img(alt='Vue logo' src='../assets/logo.png')
-  HelloWorld(msg='Welcome to Your Vue.js App').
-  div(v-for='series in test' :key='series.title')
-    h2 {{series.title}}
-    img(v-for='episode in series.episodes' :key='episode.youtube' :src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'")
+  //- show selection
+  div.feature
+    img(v-if='active.episode !== false' :src="'http://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'")
+  //- show list of all series
+  h2 Series ({{ Object.keys(database).length }})
+  hooper(:settings='sliderSettings' ref='series')
+    slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
+      img(:src="'http://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1')
+    hooper-navigation(slot='hooper-addons')
+  //- show episode list of current series
+  h2 Episodes
+  hooper(v-if='active.series == s' v-for='(series, s) in database' :key='s' :settings='sliderSettings' :ref='s')
+    slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
+      img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e')
+    hooper-navigation(slot='hooper-addons')
 </template>
 
 <script>
-// @ is an alias to /src
+// get data
+import Data from '@/data/data.json'
+// internal components
 import HelloWorld from '@/components/HelloWorld.vue'
-import Videos from '@/data/videos.json'
+// slider component
+import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
+import 'hooper/dist/hooper.css'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    HelloWorld,
+    Hooper,
+    Slide,
+    HooperNavigation
   },
   data () {
     return {
-      test: Videos
+      database: Data,
+      sliderSettings: {
+        itemsToShow: 5.2,
+        itemsToSlide: 5
+      },
+      active: {
+        series: false,
+        episode: false
+      }
     }
   }
 }
