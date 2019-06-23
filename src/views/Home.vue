@@ -3,14 +3,15 @@ div.home
   //- show selection
   div.feature
     img(v-if='active.episode !== false' :src="'http://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'")
+    span(v-else) Wähle eine Serie!
   //- show list of all series
-  h2 Series ({{ Object.keys(database).length }})
+  h2 Serien ({{ Object.keys(database).length }})
   hooper(:settings='sliderSettings' ref='series')
     slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
       img(:src="'http://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1')
     hooper-navigation(slot='hooper-addons')
   //- show episode list of current series
-  h2 Episodes
+  h2(v-if='active.series !== false') Episoden ({{ Object.keys(database[active.series].episodes).length }})
   hooper(v-if='active.series == s' v-for='(series, s) in database' :key='s' :settings='sliderSettings' :ref='s')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
       img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e')
