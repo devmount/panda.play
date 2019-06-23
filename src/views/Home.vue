@@ -11,7 +11,7 @@ div.home
   h2 {{ Object.keys(database).length }} Titel
   hooper(:settings='sliderSettings.series' ref='series' class='series')
     slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
-      img(:src="'http://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1')
+      img(:src="'http://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1; active.play = false')
     hooper-navigation(slot='hooper-addons')
   //- show episode list of current series
   h2(v-if='active.series !== false && Object.keys(database[active.series].episodes).length > 1')
@@ -19,7 +19,7 @@ div.home
     span(class='text-unimportant ml-1') {{ database[active.series].subtitle }}
   hooper(v-if='active.series == s && Object.keys(series.episodes).length > 1' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s' class='episodes')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
-      img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e')
+      img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e; active.play = false')
     hooper-navigation(slot='hooper-addons')
 </template>
 
@@ -55,7 +55,8 @@ export default {
       },
       active: {
         series: false,
-        episode: false
+        episode: false,
+        play: false
       }
     }
   }
