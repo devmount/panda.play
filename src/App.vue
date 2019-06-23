@@ -77,7 +77,9 @@ h1, h2, h3
     margin-top 15px
     text-align center
     height 360px
-    background #000
+    background-size cover
+    background-position center
+    background-color rgba(0,0,0,.5)
 
     &>div
       height 360px
