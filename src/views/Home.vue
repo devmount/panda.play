@@ -1,7 +1,7 @@
 <template lang="pug">
 div.home
   //- show selection
-  div.feature(v-if='active.episode !== false' :style='"background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(http://i3.ytimg.com/vi/" + database[active.series].episodes[active.episode].youtube + "/maxresdefault.jpg)"')
+  div.feature(v-if='active.episode !== false' :style='"background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(http://i3.ytimg.com/vi/" + database[active.series].episodes[active.episode].youtube + "/maxresdefault.jpg)"')
     div(v-if='!active.play')
       img(:src="'http://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'" @click='active.play = true')
       div.description(v-show='database[active.series].episodes[active.episode].title != ""') {{ database[active.series].episodes[active.episode].title }}
