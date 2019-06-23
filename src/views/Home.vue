@@ -1,9 +1,13 @@
 <template lang="pug">
 div.home
   //- show selection
-  div.feature
-    img(v-if='active.episode !== false' :src="'http://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'")
-    span(v-else)
+  div.feature(v-if='active.episode !== false')
+    div(v-if='!active.play')
+      img(:src="'http://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'" @click='active.play = true')
+      div.description(v-show='database[active.series].episodes[active.episode].title != ""') {{ database[active.series].episodes[active.episode].title }}
+    iframe(v-else width='640' height='360' :src="'https://www.youtube.com/embed/' + database[active.series].episodes[active.episode].youtube" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen).
+  div.feature(v-else)
+    span
       i(class='icon ion-md-film')
       | Wähle einen Titel
       i(class='icon ion-md-arrow-down ml-1')
@@ -21,6 +25,10 @@ div.home
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
       img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e; active.play = false')
     hooper-navigation(slot='hooper-addons')
+  div(v-if='active.series !== false' class='text-unimportant text-small mt-2')
+    span(v-for='line in database[active.series].description.split("\\n")')
+      | {{ line }}
+      br.
 </template>
 
 <script>

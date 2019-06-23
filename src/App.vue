@@ -33,14 +33,21 @@ html, body
 // positions and margin
 .ml-1
   margin-left .5em
+.mt-1
+  margin-top .5em
+.mt-2
+  margin-top 1em
 
 // headings
 h1, h2, h3
   font-weight normal
+  letter-spacing 1px
 
 // text
 .text-unimportant
   color #777
+.text-small
+  font-size .85em
 
 #nav
   background #020202
@@ -70,14 +77,31 @@ h1, h2, h3
     margin-top 15px
     text-align center
     height 360px
+    background #000
 
-    img
-      height inherit
+    &>div
+      height 360px
+      width 640px
+      margin 0 auto
+      cursor pointer
+      position relative
+
+      img
+        height inherit
+      .description
+        position absolute
+        bottom 0
+        width inherit
+        padding .5em 0
+        background rgba(0,0,0,.7)
+        font-size 1.2em
+        letter-spacing 1px
 
     span
       display inline-block
       font-size 2.5em
       font-weight bold
+      letter-spacing 2px
       margin-top 50px
       color #555
       .icon:first-child
