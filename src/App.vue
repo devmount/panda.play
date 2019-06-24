@@ -4,7 +4,7 @@ div#app
     router-link(to='/')
       img(class='logo' alt='PandaPlay logo' src='@/assets/logo.png')
     router-link(to='/') Let's Plays
-    router-link(to='/about') Info
+    router-link(to='/info') Info
   router-view.
   //- div link: https://youtu.be/ID
   //- div large thumb: http://i3.ytimg.com/vi/ID/maxresdefault.jpg
@@ -84,7 +84,7 @@ h1, h2, h3
     .logo
       height 30px
 
-.home
+.container
   @media (max-width 960px)
     width 640px
   @media (min-width 961px) and (max-width 1280px)

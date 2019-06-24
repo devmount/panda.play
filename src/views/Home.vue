@@ -1,5 +1,5 @@
 <template lang="pug">
-div.home
+div.container.home
   //- show selection
   div.feature(v-if='active.episode !== false' :style='"background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(http://i3.ytimg.com/vi/" + database[active.series].episodes[active.episode].youtube + "/maxresdefault.jpg)"')
     div.thumb(v-if='!active.play')
