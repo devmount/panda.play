@@ -114,9 +114,9 @@ h1, h2, h3
       margin 0 auto
 
     .description
-      height 45px
+      height 1.4em
       padding .5em 0
-      background rgba(0,0,0,.3)
+      background #000
       font-size 1.2em
       letter-spacing 2px
       text-transform uppercase
@@ -158,20 +158,35 @@ h1, h2, h3
         cursor pointer
         border 5px solid transparent
         box-sizing border-box
-        transition .08s border linear
+        transition .15s border ease-in-out
 
       &.active img
         border 5px solid #fff
       img:hover
         border 5px solid #999
 
+    .hooper-navigation button
+      opacity 0
+      background rgba(0,0,0,.5)
+      transition .15s background ease-in-out, .15s opacity ease-in-out
+      svg path:nth-child(3)
+        fill: #fff
+      &:hover
+        background rgba(0,0,0,.8)
+    &:hover .hooper-navigation button
+      opacity 1
+
     &.series
       height 135px
       .hooper-slide img
         width 230px
+      .hooper-navigation button
+        height 125px
     &.episodes
       height 100px
       .hooper-slide img
         width 170px
+      .hooper-navigation button
+        height 90px
 
 </style>

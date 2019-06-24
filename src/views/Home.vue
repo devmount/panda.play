@@ -36,6 +36,7 @@ div.home
   hooper(:settings='sliderSettings.series' ref='series' class='series')
     slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
       img(:src="'http://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1; active.play = false')
+    hooper-navigation(slot='hooper-addons')
   //- show episode list of current series
   h2(v-if='active.series !== false && Object.keys(database[active.series].episodes).length > 1')
     | {{ Object.keys(database[active.series].episodes).length }} Episoden in {{ database[active.series].title }}
@@ -43,6 +44,7 @@ div.home
   hooper(v-if='active.series == s && Object.keys(series.episodes).length > 1' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s' class='episodes')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
       img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e; active.play = false')
+    hooper-navigation(slot='hooper-addons')
   //- div(v-if='active.series !== false' class='text-unimportant text-small mt-2')
   //-   span(v-for='line in database[active.series].description.split("\\n")')
   //-     | {{ line }}
@@ -55,7 +57,7 @@ import Data from '@/data/data.json'
 // internal components
 import HelloWorld from '@/components/HelloWorld.vue'
 // slider component
-import { Hooper, Slide } from 'hooper'
+import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
 import 'hooper/dist/hooper.css'
 
 export default {
@@ -63,7 +65,8 @@ export default {
   components: {
     HelloWorld,
     Hooper,
-    Slide
+    Slide,
+    HooperNavigation
   },
   data () {
     return {
