@@ -41,7 +41,8 @@ html, body
 // headings
 h1, h2, h3
   font-weight normal
-  letter-spacing 1px
+  letter-spacing 2px
+  text-transform uppercase
 
 // text
 .text-unimportant
@@ -49,8 +50,22 @@ h1, h2, h3
 .text-small
   font-size .85em
 
+// animations
+@keyframes hover
+  0%
+    transform translateY(0)
+  100%
+    transform translateY(-15px)
+@keyframes wink
+  48%
+    opacity 1
+  50%
+    opacity 0
+  52%
+    opacity 1
+
 #nav
-  background #020202
+  background #000
   padding 15px
   text-align center
 
@@ -70,59 +85,85 @@ h1, h2, h3
       height 30px
 
 .home
-  width 70vw
+  @media (max-width 960px)
+    width 640px
+  @media (min-width 961px) and (max-width 1280px)
+    width 960px
+  @media (min-width 1281px)
+    width 1280px
   margin 0 auto
 
   .feature
     margin-top 15px
     text-align center
-    height 360px
+    height 405px
     background-size cover
     background-position center
-    background-color rgba(0,0,0,.5)
 
-    &>div
+    .thumb
       height 360px
       width 640px
       margin 0 auto
       cursor pointer
-      position relative
 
       img
         height inherit
-      .description
-        position absolute
-        bottom 0
-        width inherit
-        padding .5em 0
-        background rgba(0,0,0,.7)
-        font-size 1.2em
-        letter-spacing 1px
+
+    iframe
+      display block
+      margin 0 auto
+
+    .description
+      height 45px
+      padding .5em 0
+      background rgba(0,0,0,.3)
+      font-size 1.2em
+      letter-spacing 2px
+      text-transform uppercase
 
     span
       display inline-block
-      font-size 2.5em
+      text-transform uppercase
+      font-size 2.3em
       font-weight bold
-      letter-spacing 2px
-      margin-top 50px
+      letter-spacing 5px
+      margin-top 30px
       color #555
-      .icon:first-child
-        color #333
-        display block
-        font-size 3em
-        margin-bottom 10px
+
+      .feature-logo
+        width 240px
+        display: block
+        margin 0 auto 10px auto
+        .st1, .st2
+          transition .5s fill ease-in-out
+        .st1
+          fill #1a1a1a
+        .st2
+          fill #555
+
+  &:hover span .feature-logo
+    .st1
+      fill #008BA3
+    .st2
+      fill #fff
+    .heart
+      animation: hover .75s infinite alternate
+    .eye
+      animation: wink 4s infinite
 
   .hooper
     .hooper-slide
       img
         display block
-        margin 0 auto
         cursor pointer
         border 5px solid transparent
         box-sizing border-box
+        transition .08s border linear
 
-      &.active img, img:hover
-        border 5px solid rgb(0, 139, 163)
+      &.active img
+        border 5px solid #fff
+      img:hover
+        border 5px solid #999
 
     &.series
       height 135px
