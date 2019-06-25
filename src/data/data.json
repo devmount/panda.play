@@ -116,16 +116,19 @@
         "youtube": "MGLP5ADKhrY"
       },
       "26": {
-        "title": "Es war Ihre Entscheidung [ENDE 1]",
-        "youtube": "lAmRgC618N4"
+        "title": "Es war Ihre Entscheidung",
+        "youtube": "lAmRgC618N4",
+        "tags": ["ende 1"]
       },
       "27": {
-        "title": "Ein untrennbares Band [ENDE 2]",
-        "youtube": "c9f54Wl7rmY"
+        "title": "Ein untrennbares Band",
+        "youtube": "c9f54Wl7rmY",
+        "tags": ["ende 2"]
       },
       "28": {
-        "title": "Letzte Schals, geheime Räume und 100% [SPEZIAL]",
-        "youtube": "k501fZfcjT8"
+        "title": "Letzte Schals, geheime Räume und 100%",
+        "youtube": "k501fZfcjT8",
+        "tags": ["spezial"]
       }
     }
   },
@@ -203,8 +206,9 @@
         "youtube": "VP-LkTBe990"
       },
       "18": {
-        "title": "Der Traum, der Niemals Stirbt [ENDE]",
-        "youtube": "up00yQLT1JY"
+        "title": "Der Traum, der Niemals Stirbt",
+        "youtube": "up00yQLT1JY",
+        "tags": ["ende"]
       }
     }
   },
@@ -227,7 +231,8 @@
       },
       "4": {
         "title": "",
-        "youtube": "eM4sXXkB9Y0"
+        "youtube": "eM4sXXkB9Y0",
+        "tags": ["ende"]
       }
     }
   },
@@ -254,7 +259,8 @@
       },
       "5": {
         "title": "",
-        "youtube": "E2n_c61ZMcQ"
+        "youtube": "E2n_c61ZMcQ",
+        "tags": ["ende"]
       }
     }
   },
@@ -281,7 +287,8 @@
       },
       "5": {
         "title": "",
-        "youtube": "-plohSI-iNk"
+        "youtube": "-plohSI-iNk",
+        "tags": ["ende"]
       }
     }
   },
@@ -304,7 +311,8 @@
       },
       "4": {
         "title": "",
-        "youtube": "pY5QA3DKNP0"
+        "youtube": "pY5QA3DKNP0",
+        "tags": ["ende"]
       }
     }
   },
@@ -327,7 +335,8 @@
       },
       "4": {
         "title": "",
-        "youtube": "NNjbYgAALoo"
+        "youtube": "NNjbYgAALoo",
+        "tags": ["ende"]
       }
     }
   }

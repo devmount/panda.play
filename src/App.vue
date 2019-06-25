@@ -14,6 +14,7 @@ div#app
 <style lang="scss">
 // import font
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 
 // import ionicons
 $ionicons-font-path: "~ionicons/dist/fonts";
@@ -31,12 +32,22 @@ html, body
   padding 0
 
 // positions and margin
-.ml-1
-  margin-left .5em
 .mt-1
   margin-top .5em
+.ml-1
+  margin-left .5em
+.mb-1
+  margin-bottom .5em
+.mr-1
+  margin-right .5em
 .mt-2
   margin-top 1em
+.ml-2
+  margin-left 1em
+.mb-2
+  margin-bottom 1em
+.mr-2
+  margin-right 1em
 
 // headings
 h1, h2, h3
@@ -64,6 +75,15 @@ h1, h2, h3
   52%
     opacity 1
 
+// tags
+.tag
+  background #222
+  font-size .8em
+  font-family 'Fira Mono', 'monospace'
+  padding .15em .3em
+  border-radius .3em
+
+// navigation menu
 #nav
   background #000
   padding 15px
@@ -121,7 +141,7 @@ h1, h2, h3
       letter-spacing 2px
       text-transform uppercase
 
-    span
+    &>span
       display inline-block
       text-transform uppercase
       font-size 2.3em
