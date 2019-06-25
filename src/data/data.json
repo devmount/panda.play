@@ -323,19 +323,23 @@
     "episodes": {
       "1": {
         "title": "",
-        "youtube": "XfIiRcq5nQg"
+        "youtube": "XfIiRcq5nQg",
+        "release": "1533916800"
       },
       "2": {
         "title": "",
-        "youtube": "8kfADz0qpMg"
+        "youtube": "8kfADz0qpMg",
+        "release": "1533916800"
       },
       "3": {
         "title": "",
-        "youtube": "ujm2dQAPtSA"
+        "youtube": "ujm2dQAPtSA",
+        "release": "1533916800"
       },
       "4": {
         "title": "",
         "youtube": "NNjbYgAALoo",
+        "release": "1533916800",
         "tags": ["ende"]
       }
     }
