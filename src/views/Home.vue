@@ -1,13 +1,15 @@
 <template lang="pug">
 div.container.home
   //- show selection
-  div.feature(v-if='active.episode !== false' :style='"background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(http://i3.ytimg.com/vi/" + database[active.series].episodes[active.episode].youtube + "/maxresdefault.jpg)"')
+  div.feature(v-if='active.episode !== false' :style='seriesReleased(active.series) ? "background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(http://i3.ytimg.com/vi/" + database[active.series].episodes[active.episode].youtube + "/maxresdefault.jpg)" : "background: transparent"')
     div.thumb(v-if='!active.play')
-      img(:src="'http://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'" @click='active.play = true')
+      img(v-if='seriesReleased(active.series)' :src="'http://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'" @click='active.play = true')
+      img(v-else src="@/assets/coming-soon-640x360.png")
     iframe(v-else width='640' height='360' :src="'https://www.youtube.com/embed/' + database[active.series].episodes[active.episode].youtube" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen).
     div.description
-      | {{ database[active.series].episodes[active.episode].title }}
-      span.tag.ml-2(v-if='database[active.series].episodes[active.episode].hasOwnProperty("tags")' v-for='(tag, t) in database[active.series].episodes[active.episode].tags' :key='t')
+      span(v-if='seriesReleased(active.series)') {{ database[active.series].episodes[active.episode].title }}
+      span(v-else) Neuer Titel verfügbar am {{ tstampToDate(database[active.series].episodes[1].release) }}
+      span.tag.ml-2(v-if='seriesReleased(active.series) && database[active.series].episodes[active.episode].hasOwnProperty("tags")' v-for='(tag, t) in database[active.series].episodes[active.episode].tags' :key='t')
         | {{ tag }}
   //- show default feature
   div.feature(v-else)
@@ -20,13 +22,14 @@ div.container.home
   h2 {{ Object.keys(database).length }} Titel
   hooper.series(:settings='sliderSettings.series' ref='series')
     slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
-      img(:src="'http://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1; active.play = false')
+      img(v-if='seriesReleased(s)' :src="'http://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1; active.play = false')
+      img(v-else src="@/assets/unknown-320x180.jpg" @click='active.series = s; active.episode = 1; active.play = false')
     hooper-navigation(slot='hooper-addons')
   //- show episode list of current series
-  h2(v-if='active.series !== false && Object.keys(database[active.series].episodes).length > 1')
+  h2(v-if='active.series !== false && Object.keys(database[active.series].episodes).length > 1 && seriesReleased(active.series)')
     | {{ Object.keys(database[active.series].episodes).length }} Episoden in {{ database[active.series].title }}
     span.text-unimportant.ml-1 {{ database[active.series].subtitle }}
-  hooper.episodes(v-if='active.series == s && Object.keys(series.episodes).length > 1' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
+  hooper.episodes(v-if='active.series == s && Object.keys(series.episodes).length > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
       img(:src="'http://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e; active.play = false')
     hooper-navigation(slot='hooper-addons')
@@ -55,6 +58,7 @@ export default {
   },
   data () {
     return {
+      now: Math.floor(new Date().getTime() / 1000),
       database: Data,
       sliderSettings: {
         series: {
@@ -93,6 +97,16 @@ export default {
         episode: false,
         play: false
       }
+    }
+  },
+  methods: {
+    seriesReleased (skey) {
+      return Number(this.now) > Number(this.database[skey].episodes[1].release)
+    },
+    tstampToDate (t) {
+      var event = new Date(Number(t + '000'))
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+      return event.toLocaleDateString('de-DE', options) + ' um ' + event.toLocaleTimeString('de-DE').slice(0, 5) + ' Uhr'
     }
   }
 }

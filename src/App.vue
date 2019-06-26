@@ -190,7 +190,7 @@ h1, h2, h3
       background rgba(0,0,0,.5)
       transition .15s background ease-in-out, .15s opacity ease-in-out
       padding 1em 0
-      svg 
+      svg
         width 50px
         height 50px
         path:nth-child(3)
