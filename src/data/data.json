@@ -1,4 +1,41 @@
 {
+  "indiana-jones-fate-atlantis": {
+    "title": "Indiana Jones",
+    "subtitle": "And the Fate of Atlantis",
+    "description": "Retro Point and Click Adventure von LucasArts (1992)\n\nDer Mann mit dem Hut ist zurück und wagt sich gemeinsam mit uns in ein mysteriöses Abenteuer!\n1939 - Vorabend des Zweiten Weltkriegs. Nazi-Agenten sind dabei, eine Waffe in die Finger zu bekommen, die gefährlicher ist als die Atombombe... Können wir sie aufhalten, bevor sie das tödliche Geheimnis lüften, das Atlantis versenkt hat? ... Bestimmt! Aber bestimmt nicht beim 1. Versuch :D",
+    "episodes": {
+      "1": {
+        "title": "Klaus rastet aus!",
+        "youtube": "PtLhPrvO2pI",
+        "release": "1561989600"
+      },
+      "2": {
+        "title": "Mysteriöse Kupferperlen",
+        "youtube": "7FJb0G9ukVM",
+        "release": "1562076000"
+      },
+      "3": {
+        "title": "Das ist ein seeeehr biegsamer Baum!",
+        "youtube": "5fVm3ZUVqIY",
+        "release": "1562162400"
+      },
+      "4": {
+        "title": "Tier ohne Nase in der Tempel-Oase",
+        "youtube": "OIl8nk1Ahf0",
+        "release": "1562248800"
+      },
+      "5": {
+        "title": "Ist er... TOT?",
+        "youtube": "_rZsSCjc4OU",
+        "release": "1562335200"
+      },
+      "6": {
+        "title": "Alt und ENDLICH zufrieden!",
+        "youtube": "D6ESPqWdlNQ",
+        "release": "1562421600"
+      }
+    }
+  },
   "blobby-volley": {
     "title": "Blobby Volley",
     "subtitle": "Blobby Volley 1 & 2",
@@ -6,7 +43,8 @@
     "episodes": {
       "1": {
         "title": "Duell der Gummiwesen",
-        "youtube": "y8Ma_oMdmLU"
+        "youtube": "y8Ma_oMdmLU",
+        "release": "1560520800"
       }
     }
   },
@@ -17,117 +55,145 @@
     "episodes": {
       "1": {
         "title": "Reise ins Ungewisse",
-        "youtube": "RuTnwOwae_w"
+        "youtube": "RuTnwOwae_w",
+        "release": "1553526000"
       },
       "2": {
         "title": "Bis ins Kleinste genau geplant",
-        "youtube": "gIoNRcIRIDg"
+        "youtube": "gIoNRcIRIDg",
+        "release": "1553612400"
       },
       "3": {
         "title": "Ein Tanz zwischen Ihnen",
-        "youtube": "eBRKwIqu7rQ"
+        "youtube": "eBRKwIqu7rQ",
+        "release": "1553698800"
       },
       "4": {
         "title": "Gefühl der Euphorie",
-        "youtube": "f2_RNiOvmps"
+        "youtube": "f2_RNiOvmps",
+        "release": "1553785200"
       },
       "5": {
         "title": "Geformt rund um Hitze und Eis",
-        "youtube": "I-YbUzdAGGA"
+        "youtube": "I-YbUzdAGGA",
+        "release": "1553871600"
       },
       "6": {
         "title": "Gefühl von Endgültigkeit",
-        "youtube": "O88AylBTcwI"
+        "youtube": "O88AylBTcwI",
+        "release": "1553958000"
       },
       "7": {
         "title": "Die mit Sternen geschmückte Tür",
-        "youtube": "SbSF1S-8b0w"
+        "youtube": "SbSF1S-8b0w",
+        "release": "1554040800"
       },
       "8": {
         "title": "Zwei Stäbe",
-        "youtube": "OMqEVT7AlFs"
+        "youtube": "OMqEVT7AlFs",
+        "release": "1554127200"
       },
       "9": {
         "title": "Alles schien möglich",
-        "youtube": "iE21JRYuN6M"
+        "youtube": "iE21JRYuN6M",
+        "release": "1554213600"
       },
       "10": {
         "title": "Auf primitive Weise",
-        "youtube": "HTPqNw-6uic"
+        "youtube": "HTPqNw-6uic",
+        "release": "1554300000"
       },
       "11": {
         "title": "Keine Spur mehr",
-        "youtube": "4uyxxJDlmr0"
+        "youtube": "4uyxxJDlmr0",
+        "release": "1554386400"
       },
       "12": {
         "title": "Die Augen der Bestie",
-        "youtube": "K-2skVy-scg"
+        "youtube": "K-2skVy-scg",
+        "release": "1554472800"
       },
       "13": {
         "title": "Ein Großer Käfig",
-        "youtube": "P604Rqe-sNE"
+        "youtube": "P604Rqe-sNE",
+        "release": "1554559200"
       },
       "14": {
         "title": "Wunderschön, aber Gedämpft",
-        "youtube": "dxCe_nC13QQ"
+        "youtube": "dxCe_nC13QQ",
+        "release": "1554645600"
       },
       "15": {
         "title": "Luft und Wasser",
-        "youtube": "8zeEolqXh2I"
+        "youtube": "8zeEolqXh2I",
+        "release": "1554732000"
       },
       "16": {
         "title": "Die Schleusen des Damms",
-        "youtube": "1nR8nz4AmYc"
+        "youtube": "1nR8nz4AmYc",
+        "release": "1554818400"
       },
       "17": {
         "title": "Licht der Wahrheit",
-        "youtube": "xYrCKQjRnIo"
+        "youtube": "xYrCKQjRnIo",
+        "release": "1554904800"
       },
       "18": {
         "title": "Für Immer Voneinander Getrennt",
-        "youtube": "hzR7Texxoxw"
+        "youtube": "hzR7Texxoxw",
+        "release": "1554991200"
       },
       "19": {
         "title": "Von der Dunkelheit verschluckt",
-        "youtube": "iQ1LaO70HH0"
+        "youtube": "iQ1LaO70HH0",
+        "release": "1555077600"
       },
       "20": {
         "title": "Der Drache und der König",
-        "youtube": "dL8Mfc3n59w"
+        "youtube": "dL8Mfc3n59w",
+        "release": "1555164000"
       },
       "21": {
         "title": "Himmel in Flammen",
-        "youtube": "9VO6edtAIow"
+        "youtube": "9VO6edtAIow",
+        "release": "1555250400"
       },
       "22": {
         "title": "Feuer und Krieg",
-        "youtube": "byNCssEASCE"
+        "youtube": "byNCssEASCE",
+        "release": "1555336800"
       },
       "23": {
         "title": "Nur ein Einziger",
-        "youtube": "3w5TWjEoWV0"
+        "youtube": "3w5TWjEoWV0",
+        "release": "1555423200"
       },
       "24": {
         "title": "Nur verschiedene Versionen",
-        "youtube": "2_FN-FJv8E8"
+        "youtube": "2_FN-FJv8E8",
+        "release": "1556028000"
       },
       "25": {
         "title": "Die Stille zwischen Ihnen",
-        "youtube": "MGLP5ADKhrY"
+        "youtube": "MGLP5ADKhrY",
+        "release": "1556114400"
       },
       "26": {
         "title": "Es war Ihre Entscheidung",
         "youtube": "lAmRgC618N4",
+        "release": "1556200800",
         "tags": ["ende 1"]
       },
       "27": {
         "title": "Ein untrennbares Band",
         "youtube": "c9f54Wl7rmY",
+        "release": "1556287200",
         "tags": ["ende 2"]
       },
       "28": {
         "title": "Letzte Schals, geheime Räume und 100%",
         "youtube": "k501fZfcjT8",
+        "release": "1556373600",
         "tags": ["spezial"]
       }
     }
@@ -139,99 +205,121 @@
     "episodes": {
       "1": {
         "title": "Frei und Pleite",
-        "youtube": "HLRNbuOdqhM"
+        "youtube": "HLRNbuOdqhM",
+        "release": "1548082800"
       },
       "2": {
         "title": "Zweirad... Einrad... Kein Rad!",
-        "youtube": "rtlQFMOAW1A"
+        "youtube": "rtlQFMOAW1A",
+        "release": "1548169200"
       },
       "3": {
         "title": "Maximal Unauffällig...",
-        "youtube": "7LWQtkDthBQ"
+        "youtube": "7LWQtkDthBQ",
+        "release": "1548255600"
       },
       "4": {
         "title": "Die hat geklemmt, wirklich!",
-        "youtube": "y3AWKMNMDq8"
+        "youtube": "y3AWKMNMDq8",
+        "release": "1548342000"
       },
       "5": {
         "title": "Kein Köder für den Köter",
-        "youtube": "CrTZM9judhw"
+        "youtube": "CrTZM9judhw",
+        "release": "1548428400"
       },
       "6": {
         "title": "Tüchtig Türen Treten",
-        "youtube": "ouqe8Pj8Z7w"
+        "youtube": "ouqe8Pj8Z7w",
+        "release": "1548514800"
       },
       "7": {
         "title": "Blutrache",
-        "youtube": "ndo15Km-57E"
+        "youtube": "ndo15Km-57E",
+        "release": "1548601200"
       },
       "8": {
         "title": "Mo rastet aus!",
-        "youtube": "ZKqfsulovxg"
+        "youtube": "ZKqfsulovxg",
+        "release": "1548687600"
       },
       "9": {
         "title": "Auf Kaperfahrt zur Brillenjagd",
-        "youtube": "hFW0PC9rkCA"
+        "youtube": "hFW0PC9rkCA",
+        "release": "1549465200"
       },
       "10": {
         "title": "Die Festung der Höhlenfische",
-        "youtube": "LZQwURya5m0"
+        "youtube": "LZQwURya5m0",
+        "release": "1549551600"
       },
       "11": {
         "title": "Rampensau",
-        "youtube": "WuVcQTWJINY"
+        "youtube": "WuVcQTWJINY",
+        "release": "1549638000"
       },
       "12": {
         "title": "Hasenfuß",
-        "youtube": "GNFgvZkL1pM"
+        "youtube": "GNFgvZkL1pM",
+        "release": "1549724400"
       },
       "13": {
         "title": "Erst Dehnen, dann Demolieren Gehen",
-        "youtube": "TqKjixyHgHw"
+        "youtube": "TqKjixyHgHw",
+        "release": "1549810800"
       },
       "14": {
         "title": "KLEINBUSSE",
-        "youtube": "VC0YEzZTRKU"
+        "youtube": "VC0YEzZTRKU",
+        "release": "1549897200"
       },
       "15": {
         "title": "Hinter der Kulisse",
-        "youtube": "pj6RyPjyHhM"
+        "youtube": "pj6RyPjyHhM",
+        "release": "1549983600"
       },
       "16": {
         "title": "Entlarvt und Entkommen",
-        "youtube": "i4xUMQgXmPQ"
+        "youtube": "i4xUMQgXmPQ",
+        "release": "1550070000"
       },
       "17": {
         "title": "Wir hätten Stuntman werden sollen",
-        "youtube": "VP-LkTBe990"
+        "youtube": "VP-LkTBe990",
+        "release": "1550156400"
       },
       "18": {
         "title": "Der Traum, der Niemals Stirbt",
         "youtube": "up00yQLT1JY",
+        "release": "1550242800",
         "tags": ["ende"]
       }
     }
   },
-  "fireboy-and-crystal-ice": {
+  "fireboy-and-watergirl-crystal": {
     "title": "Fireboy & Watergirl",
     "subtitle": "In the Crystal Temple",
     "description": "Das vierte und vorerst letzte Mal wagen wir uns als Watergirl und Fireboy in ein Tempel-Labyrinth - diesmal des Kristalltempels!",
     "episodes": {
       "1": {
         "title": "",
-        "youtube": "ctZRNpVccgY"
+        "youtube": "ctZRNpVccgY",
+        "release": "1545577200"
       },
       "2": {
         "title": "",
-        "youtube": "PIGOIG_6zCE"
+        "youtube": "PIGOIG_6zCE",
+        "release": "1545663600"
       },
       "3": {
         "title": "",
-        "youtube": "OKYeWPplGkg"
+        "youtube": "OKYeWPplGkg",
+        "release": "1545750000"
       },
       "4": {
         "title": "",
         "youtube": "eM4sXXkB9Y0",
+        "release": "1545836400",
         "tags": ["ende"]
       }
     }
@@ -243,23 +331,28 @@
     "episodes": {
       "1": {
         "title": "",
-        "youtube": "EUGt2iWdKaA"
+        "youtube": "EUGt2iWdKaA",
+        "release": "1541516400"
       },
       "2": {
         "title": "",
-        "youtube": "arCN0ltfvHo"
+        "youtube": "arCN0ltfvHo",
+        "release": "1541602800"
       },
       "3": {
         "title": "",
-        "youtube": "N8tUp-wBn6s"
+        "youtube": "N8tUp-wBn6s",
+        "release": "1541689200"
       },
       "4": {
         "title": "",
-        "youtube": "EPLrJt1fVxc"
+        "youtube": "EPLrJt1fVxc",
+        "release": "1541775600"
       },
       "5": {
         "title": "",
         "youtube": "E2n_c61ZMcQ",
+        "release": "1541862000",
         "tags": ["ende"]
       }
     }
@@ -271,23 +364,28 @@
     "episodes": {
       "1": {
         "title": "",
-        "youtube": "A1337thjaxU"
+        "youtube": "A1337thjaxU",
+        "release": "1538748000"
       },
       "2": {
         "title": "",
-        "youtube": "dK76JsZy0x4"
+        "youtube": "dK76JsZy0x4",
+        "release": "1538748000"
       },
       "3": {
         "title": "",
-        "youtube": "TNOjGjLFdZc"
+        "youtube": "TNOjGjLFdZc",
+        "release": "1538748000"
       },
       "4": {
         "title": "",
-        "youtube": "rkLQtylUWVM"
+        "youtube": "rkLQtylUWVM",
+        "release": "1538748000"
       },
       "5": {
         "title": "",
         "youtube": "-plohSI-iNk",
+        "release": "1538748000",
         "tags": ["ende"]
       }
     }
@@ -299,24 +397,28 @@
     "episodes": {
       "1": {
         "title": "",
-        "youtube": "YaW0-suFhOU"
+        "youtube": "YaW0-suFhOU",
+        "release": "1536933600"
       },
       "2": {
         "title": "",
-        "youtube": "EOhUMO5c0M4"
+        "youtube": "EOhUMO5c0M4",
+        "release": "1536933600"
       },
       "3": {
         "title": "",
-        "youtube": "KZd2mgrzw9Y"
+        "youtube": "KZd2mgrzw9Y",
+        "release": "1536933600"
       },
       "4": {
         "title": "",
         "youtube": "pY5QA3DKNP0",
+        "release": "1536933600",
         "tags": ["ende"]
       }
     }
   },
-  "return-of-the-tentacle": {
+  "return-of-the-tentacle-prologue": {
     "title": "Return of the Tentacle",
     "subtitle": "Prologue",
     "description": "Ein Fanadventure und inoffizieller Nachfolger des Kultspiels \"Day of the Tentacle\". Purpur Tentakel ist zurück und versucht erneut die Welt zu erobern, um die Menschheit zu versklaven. Die Freunde Bernard, Laverne und Hoagie machen sich auf den Weg zum verrückten Erfinder Dr. Fred - eine Zeitreise soll helfen die Welt zu retten.",
