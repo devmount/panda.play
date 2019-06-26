@@ -189,8 +189,12 @@ h1, h2, h3
       opacity 0
       background rgba(0,0,0,.5)
       transition .15s background ease-in-out, .15s opacity ease-in-out
-      svg path:nth-child(3)
-        fill: #fff
+      padding 1em 0
+      svg 
+        width 50px
+        height 50px
+        path:nth-child(3)
+          fill: #fff
       &:hover
         background rgba(0,0,0,.8)
     &:hover .hooper-navigation button
