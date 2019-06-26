@@ -61,6 +61,10 @@ h1, h2, h3
 .text-small
   font-size .85em
 
+// cursor
+.c-hand
+  cursor pointer
+
 // animations
 @keyframes hover
   0%
@@ -124,7 +128,6 @@ h1, h2, h3
       height 360px
       width 640px
       margin 0 auto
-      cursor pointer
 
       img
         height inherit
