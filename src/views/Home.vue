@@ -9,8 +9,8 @@ div.container.home
     div.description
       span(v-if='seriesReleased(active.series)')
         span(v-if='episodeReleased(active.series, active.episode)') {{ database[active.series].episodes[active.episode].title }}
-        span(v-else) Episode verfügbar am {{ tstampToDate(database[active.series].episodes[active.episode].release) }}
-      span(v-else) Neuer Titel verfügbar am {{ tstampToDate(database[active.series].episodes[active.episode].release) }}
+        span(v-else) Episode verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
+      span(v-else) Neuer Titel verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
       span.tag.ml-2(v-if='seriesReleased(active.series) && database[active.series].episodes[active.episode].hasOwnProperty("tags")' v-for='(tag, t) in database[active.series].episodes[active.episode].tags' :key='t')
         | {{ tag }}
   //- show default feature
@@ -61,7 +61,7 @@ export default {
   },
   data () {
     return {
-      now: Math.floor(new Date().getTime() / 1000),
+      now: new Date(),
       database: Data,
       sliderSettings: {
         series: {
@@ -107,10 +107,10 @@ export default {
       return this.episodeReleased(skey, 1)
     },
     episodeReleased (skey, ekey) {
-      return Number(this.now) > Number(this.database[skey].episodes[ekey].release)
+      return this.now > new Date(this.database[skey].episodes[ekey].release)
     },
-    tstampToDate (t) {
-      var event = new Date(Number(t + '000'))
+    humanDate (t) {
+      var event = new Date(t)
       var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
       return event.toLocaleDateString('de-DE', options) + ' um ' + event.toLocaleTimeString('de-DE').slice(0, 5) + ' Uhr'
     }
@@ -123,7 +123,7 @@ export default {
       return Object.keys(this.database[this.active.series].episodes).length
     },
     releasedEpisodeCount () {
-      return Object.keys(Object.filter(this.database[this.active.series].episodes, e => Number(this.now) > Number(e.release))).length
+      return Object.keys(Object.filter(this.database[this.active.series].episodes, e => this.now > new Date(e.release))).length
     }
   }
 }

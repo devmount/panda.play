@@ -6,9 +6,6 @@ div#app
     router-link(to='/') Let's Plays
     router-link(to='/info') Info
   router-view.
-  //- div link: https://youtu.be/ID
-  //- div large thumb: http://i3.ytimg.com/vi/ID/maxresdefault.jpg
-  //- div small thumb: http://i3.ytimg.com/vi/ID/hqdefault.jpg
 </template>
 
 <style lang="scss">
