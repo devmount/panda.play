@@ -28,6 +28,12 @@ html, body
   margin 0
   padding 0
 
+body
+  min-height 100vh
+  background-image linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('assets/background.jpg')
+  background-position center bottom
+  background-repeat no-repeat
+
 // positions and margin
 .mt-1
   margin-top .5em
