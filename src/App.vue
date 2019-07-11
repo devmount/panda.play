@@ -28,10 +28,11 @@ html, body
   margin 0
   padding 0
 
-body
+#app
   min-height 100vh
-  background-image linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('assets/background.jpg')
+  background-image url('assets/background.png')
   background-position center bottom
+  background-size contain
   background-repeat no-repeat
 
 // positions and margin
