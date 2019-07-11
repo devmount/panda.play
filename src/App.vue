@@ -58,6 +58,9 @@ h1, h2, h3
   font-weight normal
   letter-spacing 2px
   text-transform uppercase
+h1
+  margin-top 1em
+  text-align center
 
 // text
 .text-unimportant
@@ -113,13 +116,22 @@ h1, h2, h3
       height 30px
 
 .container
-  @media (max-width 960px)
+  margin 0 auto
+
+  @media (max-width 640px)
+    width 100%
+  @media (min-width 641px) and (max-width 960px)
     width 640px
   @media (min-width 961px) and (max-width 1280px)
     width 960px
   @media (min-width 1281px)
     width 1280px
-  margin 0 auto
+
+  &.container-sm
+    @media (max-width 640px)
+      width 100%
+    @media (min-width 641px)
+      width 640px
 
   .feature
     margin-top 15px
