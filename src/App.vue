@@ -29,7 +29,9 @@ html, body
   padding 0
 
 #app
+  display inline-block
   min-height 100vh
+  width 100vw
   background-image url('assets/background.png')
   background-position center bottom
   background-size contain
