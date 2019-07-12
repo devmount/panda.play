@@ -16,6 +16,11 @@ export default new Router({
       path: '/info',
       name: 'info',
       component: () => import('./views/Info.vue')
+    },
+    {
+      path: '/impressum',
+      name: 'impressum',
+      component: () => import('./views/Impressum.vue')
     }
   ]
 })

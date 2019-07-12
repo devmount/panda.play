@@ -5,7 +5,7 @@ div.container.home
     div.thumb(v-if='!active.play')
       img.c-hand(v-if='episodeReleased(active.series, active.episode)' :src="'https://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'" @click='active.play = true')
       img(v-else src="@/assets/coming-soon-640x360.png")
-    iframe(v-else width='640' height='360' :src="'https://www.youtube.com/embed/' + database[active.series].episodes[active.episode].youtube" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen).
+    iframe(v-else width='640' height='360' :src="'https://www.youtube-nocookie.com/embed/' + database[active.series].episodes[active.episode].youtube" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen).
     div.description
       span(v-if='seriesReleased(active.series)')
         span(v-if='episodeReleased(active.series, active.episode)') {{ database[active.series].episodes[active.episode].title }}

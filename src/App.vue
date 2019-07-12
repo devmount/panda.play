@@ -5,6 +5,7 @@ div#app
       img(class='logo' alt='PandaPlay logo' src='@/assets/logo.png')
     router-link(to='/') Let's Plays
     router-link(to='/info') Info
+    router-link(to='/impressum') Impressum
   router-view.
 </template>
 
