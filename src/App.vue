@@ -139,21 +139,36 @@ h1
   .feature
     margin-top 15px
     text-align center
-    height 405px
     background-size cover
     background-position center
+    @media (max-width 640px)
+      height auto
+    @media (min-width 641px)
+      height 405px
 
     .thumb
-      height 360px
-      width 640px
       margin 0 auto
 
+      @media (max-width 640px)
+        width 100vw
+      @media (min-width 641px)
+        height 360px
+        width 640px
+
       img
+        width inherit
         height inherit
 
     iframe
       display block
       margin 0 auto
+
+      @media (max-width 640px)
+        width 100vw
+        height 56.25vw
+      @media (min-width 641px)
+        height 360px
+        width 640px
 
     .description
       height 1.4em
