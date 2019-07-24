@@ -3,8 +3,8 @@ div.container.home
   //- show selection
   div.feature(v-if='active.episode !== false' :style='episodeReleased(active.series, active.episode) ? "background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(https://i3.ytimg.com/vi/" + database[active.series].episodes[active.episode].youtube + "/maxresdefault.jpg)" : "background: transparent"')
     div.thumb(v-if='!active.play')
-      img.c-hand(v-if='episodeReleased(active.series, active.episode)' :src="'https://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'" @click='active.play = true')
-      img(v-else src="@/assets/coming-soon-640x360.png")
+      img.c-hand(v-if='episodeReleased(active.series, active.episode)' :src="'https://i3.ytimg.com/vi/' + database[active.series].episodes[active.episode].youtube + '/maxresdefault.jpg'" :alt="database[active.series].episodes[active.episode].title" @click='active.play = true')
+      img(v-else src="@/assets/coming-soon-640x360.png" alt="Coming Soon...")
     iframe(v-else :src="'https://www.youtube-nocookie.com/embed/' + database[active.series].episodes[active.episode].youtube" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen).
     div.description
       span(v-if='seriesReleased(active.series)')
@@ -24,8 +24,8 @@ div.container.home
   h2 {{ seriesCount }} Titel
   hooper.series(:settings='sliderSettings.series' ref='series')
     slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
-      img(v-if='seriesReleased(s)' :src="'https://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" @click='active.series = s; active.episode = 1; active.play = false')
-      img(v-else src="@/assets/unknown-320x180.jpg" @click='active.series = s; active.episode = 1; active.play = false')
+      img(v-if='seriesReleased(s)' :src="'https://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" :alt="series.episodes[1].title" @click='active.series = s; active.episode = 1; active.play = false')
+      img(v-else src="@/assets/unknown-320x180.jpg" alt="Currently not available" @click='active.series = s; active.episode = 1; active.play = false')
     hooper-navigation(slot='hooper-addons')
   //- show episode list of current series
   h2(v-if='active.series !== false && seriesReleased(active.series)')
@@ -33,8 +33,8 @@ div.container.home
     span.text-unimportant.ml-1 {{ database[active.series].subtitle }}
   hooper.episodes(v-if='active.series == s && episodeCount > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
-      img(v-if='episodeReleased(s, e)' :src="'https://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" @click='active.episode = e; active.play = false')
-      img(v-else src="@/assets/unknown-320x180.jpg" @click='active.series = s; active.episode = e; active.play = false')
+      img(v-if='episodeReleased(s, e)' :src="'https://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" :alt="episode.title" @click='active.episode = e; active.play = false')
+      img(v-else src="@/assets/unknown-320x180.jpg" alt="Currently not available" @click='active.series = s; active.episode = e; active.play = false')
     hooper-navigation(slot='hooper-addons')
   //- div(v-if='active.series !== false' class='text-unimportant text-small mt-2')
   //-   span(v-for='line in database[active.series].description.split("\\n")')
