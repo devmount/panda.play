@@ -53,6 +53,9 @@ import 'hooper/dist/hooper.css'
 
 export default {
   name: 'home',
+  metaInfo: {
+    title: 'Let\'s Plays'
+  },
   components: {
     Logo,
     Hooper,

@@ -21,3 +21,12 @@ div.container.container-sm.impressum
   p Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
   p Diese Seite bindet Videos der Videoplattform Youtube ein. Dabei wird das Video erst durch Klick auf das jeweilige Vorschaubild geladen. Zum Laden der Videos wird Youtubes erweiterter Datenschutzmodus ohne Cookies verwendet. Die Vorschaubilder der einzelnen Videos werden direkt von Youtube geladen.
 </template>
+
+<script>
+export default {
+  name: 'impressum',
+  metaInfo: {
+    title: 'Impressum'
+  }
+}
+</script>
