@@ -151,7 +151,7 @@ h1
     line-height 30px
     font-weight bold
     text-decoration none
-    color #364244
+    color #666666
     &.router-link-exact-active
       color #008ba3
 
