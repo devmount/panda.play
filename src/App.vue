@@ -22,7 +22,6 @@ export default {
     titleTemplate: '%s - ' + subtitle + ' - ' + title,
     meta: [
       // general
-      { 'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'description', content: description },
       { rel: 'canonical', href: 'https://panda-play.de' },
