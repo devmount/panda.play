@@ -31,19 +31,19 @@ export default {
       { property: 'og:site_name', content: title },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://panda-play.de' },
-      // { property: 'og:image', content: 'https://panda-play.de/panda-play.png' },
+      { property: 'og:image', content: 'https://panda-play.de/img/preview.png' },
       { property: 'og:description', content: description },
       // Twitter card
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: 'https://panda-play.de' },
       { name: 'twitter:title', content: title + ' - ' + subtitle },
       { name: 'twitter:description', content: description },
-      // { name: 'twitter:creator', content: '@alligatorio' },
-      { name: 'twitter:image:src', content: 'https://panda-play.de/panda-play.png' },
+      // { name: 'twitter:creator', content: '@pandaplay' },
+      { name: 'twitter:image:src', content: 'https://panda-play.de/img/preview.png' },
       // Google / Schema.org
       { itemprop: 'name', content: title + ' - ' + subtitle },
-      { itemprop: 'description', content: description }
-      // { itemprop: 'image', content: 'https://panda-play.de/panda-play.png' }
+      { itemprop: 'description', content: description },
+      { itemprop: 'image', content: 'https://panda-play.de/img/preview.png' }
     ]
   }
 }
