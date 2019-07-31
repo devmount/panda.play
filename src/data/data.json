@@ -200,9 +200,10 @@
         "release": "2019-08-10T16:00:00"
       },
       "40": {
-        "title": "Da ist Atlan... oh, doch nicht. [ENDE]",
+        "title": "Da ist Atlan... oh, doch nicht.",
         "youtube": "6ODAg5hfMl4",
-        "release": "2019-08-11T16:00:00"
+        "release": "2019-08-11T16:00:00",
+        "tags": ["ende"]
       }
     }
   },
