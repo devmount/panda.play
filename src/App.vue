@@ -296,6 +296,10 @@ h1
           fill: #fff
       &:hover
         background rgba(0,0,0,.8)
+      &.is-disabled
+        display none
+      @media (max-width 640px)
+        opacity 1
     &:hover .hooper-navigation button
       opacity 1
 

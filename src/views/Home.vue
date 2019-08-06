@@ -70,7 +70,7 @@ export default {
       sliderSettings: {
         series: {
           trimWhiteSpace: true,
-          itemsToShow: 1.5,
+          itemsToShow: 1.8,
           itemsToSlide: 1,
           centerMode: true,
           breakpoints: {
