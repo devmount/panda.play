@@ -18,19 +18,20 @@ div.container.home
     span
       //- logo svg
       Logo
-      | Wähle einen Titel
-      i.icon.ion-md-arrow-down.ml-1
+      span.hide-sm
+        | Wähle einen Titel
+        i.icon.ion-md-arrow-down.ml-1
   //- show list of all series
-  h2 {{ seriesCount }} Titel
+  h2.center-sm {{ seriesCount }} Titel
   hooper.series(:settings='sliderSettings.series' ref='series')
     slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
       img(v-if='seriesReleased(s)' :src="'https://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" :alt="series.episodes[1].title" @click='active.series = s; active.episode = 1; active.play = false')
       img(v-else src="@/assets/unknown-320x180.jpg" alt="Currently not available" @click='active.series = s; active.episode = 1; active.play = false')
     hooper-navigation(slot='hooper-addons')
   //- show episode list of current series
-  h2(v-if='active.series !== false && seriesReleased(active.series)')
+  h2.center-sm(v-if='active.series !== false && seriesReleased(active.series)')
     span {{ releasedEpisodeCount }} Episode{{ releasedEpisodeCount == 1 ? '' : 'n' }} in {{ database[active.series].title }}
-    span.text-unimportant.ml-1 {{ database[active.series].subtitle }}
+    span.block-sm.text-unimportant.ml-1 {{ database[active.series].subtitle }}
   hooper.episodes(v-if='active.series == s && episodeCount > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
       img(v-if='episodeReleased(s, e)' :src="'https://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" :alt="episode.title" @click='active.episode = e; active.play = false')

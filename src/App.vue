@@ -95,6 +95,17 @@ html, body
 .mr-2
   margin-right 1em
 
+// display
+.hide-sm
+  @media (max-width 640px)
+    display none
+.center-sm
+  @media (max-width 640px)
+    text-align center
+.block-sm
+  @media (max-width 640px)
+    display block
+
 // headings
 h1, h2, h3
   font-weight normal
@@ -160,12 +171,17 @@ h1
 .container
   margin 0 auto
 
+  // sm
   @media (max-width 640px)
-    width 100%
+    width calc(100%-20px)
+    padding 0 10px
+  // md
   @media (min-width 641px) and (max-width 960px)
     width 640px
+  // lg
   @media (min-width 961px) and (max-width 1280px)
     width 960px
+  // xl
   @media (min-width 1281px)
     width 1280px
 
@@ -190,11 +206,13 @@ h1
 
       @media (max-width 640px)
         width 100vw
+        margin-left -10px
       @media (min-width 641px)
         height 360px
         width 640px
 
       img
+        display block
         width inherit
         height inherit
 
@@ -205,6 +223,7 @@ h1
       @media (max-width 640px)
         width 100vw
         height 56.25vw
+        margin-left -10px
       @media (min-width 641px)
         height 360px
         width 640px
@@ -216,6 +235,10 @@ h1
       font-size 1.2em
       letter-spacing 2px
       text-transform uppercase
+
+      @media (max-width 640px)
+        width 100vw
+        margin-left -10px
 
     &>span
       display inline-block
