@@ -192,7 +192,6 @@ h1
       width 640px
 
   .feature
-    margin-top 15px
     text-align center
     background-size cover
     background-position center

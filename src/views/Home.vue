@@ -32,6 +32,8 @@ div.container.home
   h2.center-sm(v-if='active.series !== false && seriesReleased(active.series)')
     span {{ releasedEpisodeCount }} Episode{{ releasedEpisodeCount == 1 ? '' : 'n' }} in {{ database[active.series].title }}
     span.block-sm.text-unimportant.ml-1 {{ database[active.series].subtitle }}
+    span.c-hand(v-if='episodeCount > 1' @click='slideToLastEpisode()' title='Zur letzten Folge springen')
+      i.icon.ion-md-fastforward.ml-1
   hooper.episodes(v-if='active.series == s && episodeCount > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
       img(v-if='episodeReleased(s, e)' :src="'https://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" :alt="episode.title" @click='active.episode = e; active.play = false')
@@ -123,16 +125,25 @@ export default {
     }
   },
   methods: {
+    // return wether a series first episode is released or not
     seriesReleased (skey) {
       return this.episodeReleased(skey, 1)
     },
+    // return wether an episode of a given series is released or not
     episodeReleased (skey, ekey) {
       return this.now > new Date(this.database[skey].episodes[ekey].release)
     },
+    // return human readable date in German
     humanDate (t) {
       var event = new Date(t)
       var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
       return event.toLocaleDateString('de-DE', options) + ' um ' + event.toLocaleTimeString('de-DE').slice(0, 5) + ' Uhr'
+    },
+    // slide the active series to the last published episode
+    slideToLastEpisode () {
+      if (this.$refs[this.active.series]) {
+        this.$refs[this.active.series][0].slideTo(this.releasedEpisodeCount - 1)
+      }
     }
   },
   computed: {
