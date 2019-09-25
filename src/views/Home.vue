@@ -28,17 +28,17 @@ div.container.home
   //- show list of all series
   h2.center-sm {{ seriesCount }} Titel
   hooper.series(:settings='sliderSettings.series' ref='series')
-    slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }')
+    slide(v-for='(series, s, i) in database' :key='s' :index='i' :class='{ active: active.series == s }' :data-duration="seriesReleased(s) ? seriesDuration(s) : '?'")
       img(v-if='seriesReleased(s)' :src="'https://i3.ytimg.com/vi/' + series.episodes[1].youtube + '/mqdefault.jpg'" :alt="series.episodes[1].title" @click='active.series = s; active.episode = 1; active.play = false')
       img(v-else src="@/assets/unknown-320x180.jpg" alt="Currently not available" @click='active.series = s; active.episode = 1; active.play = false')
     hooper-navigation(slot='hooper-addons')
   //- show episode list of current series
   h2.center-sm(v-if='active.series !== false && seriesReleased(active.series)')
-    span {{ releasedEpisodeCount }} Episode{{ releasedEpisodeCount == 1 ? '' : 'n' }} in {{ database[active.series].title }}
+    span {{ releasedEpisodesCount }} Episode{{ releasedEpisodesCount == 1 ? '' : 'n' }} in {{ database[active.series].title }}
     span.block-sm.text-unimportant.ml-1 {{ database[active.series].subtitle }}
-    span.c-hand(v-if='episodeCount > 1' @click='slideToLastEpisode()' title='Zur letzten Folge springen')
+    span.c-hand(v-if='episodesCount > 1' @click='slideToLastEpisode()' title='Zur letzten Folge springen')
       i.icon.ion-md-fastforward.ml-1
-  hooper.episodes(v-if='active.series == s && episodeCount > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
+  hooper.episodes(v-if='active.series == s && episodesCount > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }' :data-duration="episodeReleased(s, e) ? episode.duration : '?'")
       img(v-if='episodeReleased(s, e)' :src="'https://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" :alt="episode.title" @click='active.episode = e; active.play = false')
       img(v-else src="@/assets/unknown-320x180.jpg" alt="Currently not available" @click='active.series = s; active.episode = e; active.play = false')
@@ -137,6 +137,18 @@ export default {
     episodeReleased (skey, ekey) {
       return this.now > new Date(this.database[skey].episodes[ekey].release)
     },
+    // return total duration of released episodes in the given series and format as HH:MM:SS
+    seriesDuration (skey) {
+      let seconds = Object.values(this.database[skey].episodes).reduce(function (t, c) {
+        let [m, s] = c.duration.split(':')
+        return t + (60 * Number(m)) + Number(s)
+      }, 0)
+      let hours = Math.floor(seconds / 3600)
+      seconds %= 3600
+      let minutes = Math.floor(seconds / 60)
+      seconds = seconds % 60
+      return hours + ':' + minutes + ':' + seconds
+    },
     // return human readable date in German
     humanDate (t) {
       var event = new Date(t)
@@ -146,18 +158,21 @@ export default {
     // slide the active series to the last published episode
     slideToLastEpisode () {
       if (this.$refs[this.active.series]) {
-        this.$refs[this.active.series][0].slideTo(this.releasedEpisodeCount - 1)
+        this.$refs[this.active.series][0].slideTo(this.releasedEpisodesCount - 1)
       }
     }
   },
   computed: {
+    // calculate number of series
     seriesCount () {
       return Object.keys(this.database).length
     },
-    episodeCount () {
+    // calculate number of episodes in the active series
+    episodesCount () {
       return Object.keys(this.database[this.active.series].episodes).length
     },
-    releasedEpisodeCount () {
+    // calculate number of released episodes in the active series
+    releasedEpisodesCount () {
       return Object.keys(Object.filter(this.database[this.active.series].episodes, e => this.now > new Date(e.release))).length
     }
   }

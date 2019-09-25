@@ -276,6 +276,8 @@ h1
 
   .hooper
     .hooper-slide
+      position: relative;
+
       img
         display block
         cursor pointer
@@ -285,7 +287,7 @@ h1
 
       &.active img
         border 5px solid #fff
-      img:hover
+      &:not(.active) img:hover
         border 5px solid #999
 
     .hooper-navigation button
@@ -308,27 +310,26 @@ h1
       opacity 1
 
     &.series
-      height 135px
+      height 134px
       .hooper-slide img
         width 230px
       .hooper-navigation button
-        height 125px
+        height 124px
     &.episodes
       height 100px
-      .hooper-slide
-        position: relative;
-        img
-          width 170px
-        &[data-duration]::after
-          content attr(data-duration)
-          background rgba(0,0,0,.6)
-          color white
-          position absolute
-          bottom 6px
-          right 6px
-          font-family font-mono
-          font-size font-small
-          padding 1px 3px
+      .hooper-slide img
+        width 170px
+
+    [data-duration]::after
+      content attr(data-duration)
+      background rgba(0,0,0,.6)
+      color white
+      position absolute
+      bottom 6px
+      right 6px
+      font-family font-mono
+      font-size font-small
+      padding 1px 3px
 
       .hooper-navigation button
         height 90px
