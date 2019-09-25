@@ -59,10 +59,13 @@ $ionicons-font-path: "~ionicons/dist/fonts";
 </style>
 
 <style lang="stylus">
+font-sans = 'Fira Sans', 'Avenir', Helvetica, Arial, sans-serif
+font-mono = 'Fira Mono', 'Courier New', Courier, monospace
+font-small = .85em
 html, body
   background #0a0a0a
   color #ddd
-  font-family 'Fira Sans', 'Avenir', Helvetica, Arial, sans-serif
+  font-family font-sans
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   margin 0
@@ -119,7 +122,9 @@ h1
 .text-unimportant
   color #777
 .text-small
-  font-size .85em
+  font-size font-small
+.text-mono
+  font-family font-mono
 
 // cursor
 .c-hand
@@ -310,8 +315,21 @@ h1
         height 125px
     &.episodes
       height 100px
-      .hooper-slide img
-        width 170px
+      .hooper-slide
+        position: relative;
+        img
+          width 170px
+        &[data-duration]::after
+          content attr(data-duration)
+          background rgba(0,0,0,.6)
+          color white
+          position absolute
+          bottom 6px
+          right 6px
+          font-family font-mono
+          font-size font-small
+          padding 1px 3px
+
       .hooper-navigation button
         height 90px
 

@@ -39,7 +39,7 @@ div.container.home
     span.c-hand(v-if='episodeCount > 1' @click='slideToLastEpisode()' title='Zur letzten Folge springen')
       i.icon.ion-md-fastforward.ml-1
   hooper.episodes(v-if='active.series == s && episodeCount > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
-    slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }')
+    slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }' :data-duration="episodeReleased(s, e) ? episode.duration : '?'")
       img(v-if='episodeReleased(s, e)' :src="'https://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" :alt="episode.title" @click='active.episode = e; active.play = false')
       img(v-else src="@/assets/unknown-320x180.jpg" alt="Currently not available" @click='active.series = s; active.episode = e; active.play = false')
     hooper-navigation(slot='hooper-addons')
