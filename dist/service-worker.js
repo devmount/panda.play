@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9e541671c263e3913bacb3c9ad252e89.js"
+  "/precache-manifest.5bbc397c6c65ef320dbc1e6598967b09.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "panda.play"});
