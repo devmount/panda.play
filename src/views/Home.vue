@@ -8,7 +8,11 @@ div.container.home
     iframe(v-else :src="'https://www.youtube-nocookie.com/embed/' + database[active.series].episodes[active.episode].youtube" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen).
     div.description
       span(v-if='seriesReleased(active.series)')
-        span(v-if='episodeReleased(active.series, active.episode)') {{ database[active.series].episodes[active.episode].title }}
+        span(v-if='episodeReleased(active.series, active.episode)')
+          span.title {{ database[active.series].episodes[active.episode].title }}
+          span.duration.text-unimportant.ml-1
+            i.icon.ion-md-stopwatch
+            |  {{ database[active.series].episodes[active.episode].duration }}
         span(v-else) Episode verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
       span(v-else) Neuer Titel verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
       span.tag.ml-2(v-if='seriesReleased(active.series) && database[active.series].episodes[active.episode].hasOwnProperty("tags")' v-for='(tag, t) in database[active.series].episodes[active.episode].tags' :key='t')
