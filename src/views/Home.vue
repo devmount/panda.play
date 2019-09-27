@@ -137,7 +137,7 @@ export default {
     episodeReleased (skey, ekey) {
       return this.now > new Date(this.database[skey].episodes[ekey].release)
     },
-    // return total duration of released episodes in the given series and format as HH:MM:SS
+    // return total duration of released episodes in the given series and format as H:MM:SS
     seriesDuration (skey) {
       let seconds = Object.values(this.database[skey].episodes).reduce(function (t, c) {
         let [m, s] = c.duration.split(':')
@@ -147,7 +147,7 @@ export default {
       seconds %= 3600
       let minutes = Math.floor(seconds / 60)
       seconds = seconds % 60
-      return hours + ':' + minutes + ':' + seconds
+      return hours + ':' + String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0')
     },
     // return human readable date in German
     humanDate (t) {
