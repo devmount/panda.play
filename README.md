@@ -1,29 +1,27 @@
-# panda.play
+# [panda.play](https://panda-play.de)
+
+Codebase for the website of PandaPlay
 
 ## Project setup
-```
-yarn install
+
+```bash
+git clone https://github.com/devmount/panda.play
+cd panda.play
+yarn
 ```
 
 ### Compiles and hot-reloads for development
-```
-yarn run serve
+
+```bash
+yarn serve
 ```
 
 ### Compiles and minifies for production
-```
-yarn run build
-```
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
+```bash
+yarn build
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
