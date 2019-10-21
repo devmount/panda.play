@@ -1,4 +1,71 @@
 {
+  "day-of-the-tentacle": {
+    "title": "Day of the Tentacle",
+    "subtitle": "",
+    "description": "Remastered Point and Click Adventure von LucasArts (1992) / Double Fine (2016)\n\nEin verrücktes, mutiertes Tentakel übernimmt die Welt und wir versuchen, durch Zeitreisen die Menschheit zu retten. Doch dabei fängt der Wahnsinn erst an...",
+    "episodes": {
+      "1": {
+        "title": "Zurück zum Tollhaus!",
+        "youtube": "MuvrA-oxWJo",
+        "duration": "20:50",
+        "release": "2019-10-22T16:00:00"
+      },
+      "2": {
+        "title": "Hoch-Explosive Havanna-Babies",
+        "youtube": "e9gQaeCLxT0",
+        "duration": "20:29",
+        "release": "2019-10-23T16:00:00"
+      },
+      "3": {
+        "title": "Der Fliegen-Inhalator",
+        "youtube": "oWJ5XOhuXcI",
+        "duration": "19:09",
+        "release": "2019-10-24T16:00:00"
+      },
+      "4": {
+        "title": "Staubsauger in bester Verfassung",
+        "youtube": "MAcpUX4NzG0",
+        "duration": "20:59",
+        "release": "2019-10-25T16:00:00"
+      },
+      "5": {
+        "title": "Die Thermodynamik des Fluxkompensators",
+        "youtube": "I-X8vWzNEikZY",
+        "duration": "19:07",
+        "release": "2019-10-26T16:00:00"
+      },
+      "6": {
+        "title": "Dieb und Verräter der Gründerväter",
+        "youtube": "_2bVh-1HSvw",
+        "duration": "19:21",
+        "release": "2019-10-27T16:00:00"
+      },
+      "7": {
+        "title": "Garen, Auftauen und Mutieren",
+        "youtube": "yWl2JZPQgMk",
+        "duration": "20:36",
+        "release": "2019-10-28T16:00:00"
+      },
+      "8": {
+        "title": "Haare glätten, Mumie betten, Doktor retten",
+        "youtube": "TLd0KsG7YF0",
+        "duration": "19:11",
+        "release": "2019-10-29T16:00:00"
+      },
+      "9": {
+        "title": "Mit Nudelschweiß zum Ersten Preis",
+        "youtube": "jlpMr53U2Tg",
+        "duration": "20:01",
+        "release": "2019-10-30T16:00:00"
+      },
+      "10": {
+        "title": "Meister im Tentakel-Bowling [ENDE]",
+        "youtube": "4XgbsbtIglI",
+        "duration": "21:34",
+        "release": "2019-10-31T16:00:00"
+      }
+    }
+  },
   "indiana-jones-fate-atlantis": {
     "title": "Indiana Jones",
     "subtitle": "And the Fate of Atlantis",
