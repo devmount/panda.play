@@ -2,6 +2,7 @@
   <img alt="PandaPlay Logo" src="/public/favicon.png" width="200px" />
   <h1>PandaPlay</h1>
   <strong>Codebase for the website of PandaPlay</strong>
+  <br />
 </div>
 
 ## Project setup
