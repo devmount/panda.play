@@ -1,4 +1,83 @@
 {
+  "child-of-light": {
+    "title": "Child of Light",
+    "subtitle": "",
+    "description": "☀ Child of Light selbst spielen https://store.steampowered.com/app/256290/Child_of_Light/ \n🎞 Playlist https://www.youtube.com/playlist?list=PL-Ds8QNqSk7cuqNFOExnnLWPtKFJUQe-k \n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de \n\nAurora, ein junges Mädchen aus Österreich von 1895, erwacht auf dem verlorenen Kontinent Lemuria. Um nach Hause zurückzukehren, muss sie gegen die dunklen Kreaturen der Königin der Nacht kämpfen, die die Sonne, den Mond und die Sterne gestohlen haben. Es geht nicht nur um Lemuria, sondern um das wahre Schicksal von Aurora.\n\nTitel: Child of Light\nRelease: 30. April 2014\nDeveloper: Ubisoft Montréal\nPublisher: Ubisoft",
+    "episodes": {
+      "1": {
+        "title": "Alles beginnt mit des Lichtes Kind",
+        "youtube": "cF0S3uKdVJA",
+        "duration": "21:07",
+        "release": "2020-01-01T16:00:00"
+      },
+      "2": {
+        "title": "Geblendet erlahme die Geister-Dame",
+        "youtube": "uM-zJDZ134o",
+        "duration": "20:02",
+        "release": "2020-01-02T16:00:00"
+      },
+      "3": {
+        "title": "Hälst in der Hand du deine Ohren, hast du im Kampfe schon verloren",
+        "youtube": "4Ncj5BS87oo",
+        "duration": "21:15",
+        "release": "2020-01-03T16:00:00"
+      },
+      "4": {
+        "title": "Nach dem Killen erstmal skillen",
+        "youtube": "cZ7JF-ZsF1U",
+        "duration": "19:35",
+        "release": "2020-01-04T16:00:00"
+      },
+      "5": {
+        "title": "Diamant und Rubin bringt Spinnen Ruin",
+        "youtube": "6KpF7u2AqZ0",
+        "duration": "20:23",
+        "release": "2020-01-05T16:00:00"
+      },
+      "6": {
+        "title": "Schicke Friese Wächter-Riese",
+        "youtube": "DvHBkqShbKw",
+        "duration": "20:41",
+        "release": "2020-01-06T16:00:00"
+      },
+      "7": {
+        "title": "Auch das Mutter-Flattervieh hat nicht endlos Energie",
+        "youtube": "ei2KbeG4xgY",
+        "duration": "20:47",
+        "release": "2020-01-07T16:00:00"
+      },
+      "8": {
+        "title": "Dit musste sehen: Een Dorf voll Krähen!",
+        "youtube": "lMpwcj-_A4c",
+        "duration": "20:03",
+        "release": "2020-01-08T16:00:00"
+      },
+      "9": {
+        "title": "Vom Türen aufkriegen und Kreaturen besiegen",
+        "youtube": "0VceY_ljcOk",
+        "duration": "20:25",
+        "release": "2020-01-09T16:00:00"
+      },
+      "10": {
+        "title": "13 Jahre und behaart, wie ein alter Mann mit Bart",
+        "youtube": "e2aWdv2G3xM",
+        "duration": "20:25",
+        "release": "2020-01-10T16:00:00"
+      },
+      "11": {
+        "title": "Opas Zeh tut mächtig weh",
+        "youtube": "W9tiB3DqX7Y",
+        "duration": "24:26",
+        "release": "2020-01-11T16:00:00"
+      },
+      "12": {
+        "title": "Vor Freude geweint und wiedervereint",
+        "youtube": "z03Sc5vKP6Q",
+        "duration": "24:22",
+        "release": "2020-01-12T16:00:00"
+      }
+    }
+  },
   "day-of-the-tentacle": {
     "title": "Day of the Tentacle",
     "subtitle": "",
