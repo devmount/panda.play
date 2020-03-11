@@ -11,8 +11,7 @@ div.container.home
         span(v-if='episodeReleased(active.series, active.episode)')
           span.title {{ database[active.series].episodes[active.episode].title }}
           span.duration.text-unimportant.ml-1
-            i.icon.ion-md-stopwatch
-            |  {{ database[active.series].episodes[active.episode].duration }}
+            | ⏲ {{ database[active.series].episodes[active.episode].duration }}
         span(v-else) Episode verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
       span(v-else) Neuer Titel verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
       span.tag.ml-2(v-if='seriesReleased(active.series) && database[active.series].episodes[active.episode].hasOwnProperty("tags")' v-for='(tag, t) in database[active.series].episodes[active.episode].tags' :key='t')
@@ -23,8 +22,7 @@ div.container.home
       //- logo svg
       Logo
       span.hide-sm
-        | Wähle einen Titel
-        i.icon.ion-md-arrow-down.ml-1
+        | Wähle einen Titel ⬇
   //- show list of all series
   h2.center-sm {{ seriesCount }} Titel
   hooper.series(:settings='sliderSettings.series' ref='series')
@@ -36,8 +34,7 @@ div.container.home
   h2.center-sm(v-if='active.series !== false && seriesReleased(active.series)')
     span {{ releasedEpisodesCount }} Episode{{ releasedEpisodesCount == 1 ? '' : 'n' }} in {{ database[active.series].title }}
     span.block-sm.text-unimportant.ml-1 {{ database[active.series].subtitle }}
-    span.c-hand(v-if='episodesCount > 1' @click='slideToLastEpisode()' title='Zur letzten Folge springen')
-      i.icon.ion-md-fastforward.ml-1
+    span.c-hand(v-if='episodesCount > 1' @click='slideToLastEpisode()' title='Zur letzten Folge springen') ⏭
   hooper.episodes(v-if='active.series == s && episodesCount > 1 && seriesReleased(active.series)' v-for='(series, s) in database' :key='s' :settings='sliderSettings.episodes' :ref='s')
     slide(v-for='(episode, e, i) in series.episodes' :key='i' :index='i' :class='{ active: active.episode == e }' :data-duration="episodeReleased(s, e) ? episode.duration : '?'")
       img(v-if='episodeReleased(s, e)' :src="'https://i3.ytimg.com/vi/' + episode.youtube + '/mqdefault.jpg'" :alt="episode.title" @click='active.episode = e; active.play = false')

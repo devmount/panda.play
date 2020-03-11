@@ -2,7 +2,7 @@
 div#app
   div#nav
     router-link(to='/')
-      img(class='logo' alt='PandaPlay logo' src='@/assets/logo.png')
+      img.logo(alt='PandaPlay logo' src='@/assets/logo.png')
     router-link(to='/') Let's Plays
     router-link(to='/info') Info
     router-link(to='/impressum') Impressum
@@ -52,10 +52,6 @@ export default {
 // import font
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
-
-// import ionicons
-$ionicons-font-path: "~ionicons/dist/fonts";
-@import "~ionicons/dist/scss/ionicons";
 </style>
 
 <style lang="stylus">
@@ -70,12 +66,13 @@ html, body
   -moz-osx-font-smoothing grayscale
   margin 0
   padding 0
+  overflow-x hidden
 
 #app
   display inline-block
   min-height 100vh
   width 100vw
-  background-image url('assets/background.png')
+  background-image url('assets/background.jpg')
   background-position center bottom
   background-size contain
   background-repeat no-repeat
@@ -155,7 +152,7 @@ h1
 // navigation menu
 #nav
   background #000
-  padding 15px
+  padding 15px 0
   text-align center
 
   a
@@ -175,6 +172,7 @@ h1
 
 .container
   margin 0 auto
+  padding-bottom 22vw
 
   // sm
   @media (max-width 640px)
