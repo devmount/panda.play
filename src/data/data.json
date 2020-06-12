@@ -2,7 +2,7 @@
   "child-of-light": {
     "title": "Child of Light",
     "subtitle": "",
-    "description": "☀ Child of Light selbst spielen https://store.steampowered.com/app/256290/Child_of_Light/ \n🎞 Playlist https://www.youtube.com/playlist?list=PL-Ds8QNqSk7cuqNFOExnnLWPtKFJUQe-k \n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de \n\nAurora, ein junges Mädchen aus Österreich von 1895, erwacht auf dem verlorenen Kontinent Lemuria. Um nach Hause zurückzukehren, muss sie gegen die dunklen Kreaturen der Königin der Nacht kämpfen, die die Sonne, den Mond und die Sterne gestohlen haben. Es geht nicht nur um Lemuria, sondern um das wahre Schicksal von Aurora.\n\nTitel: Child of Light\nRelease: 30. April 2014\nDeveloper: Ubisoft Montréal\nPublisher: Ubisoft",
+    "description": "🌞 Child of Light selbst spielen: https://store.steampowered.com/app/256290/Child_of_Light/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7cuqNFOExnnLWPtKFJUQe-k\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nAurora, ein junges Mädchen aus Österreich von 1895, erwacht auf dem verlorenen Kontinent Lemuria. Um nach Hause zurückzukehren, muss sie gegen die dunklen Kreaturen der Königin der Nacht kämpfen, die die Sonne, den Mond und die Sterne gestohlen haben. Es geht nicht nur um Lemuria, sondern um das wahre Schicksal von Aurora.\n\nTitel: Child of Light\nRelease: 30. April 2014\nDeveloper: Ubisoft Montréal\nPublisher: Ubisoft",
     "episodes": {
       "1": {
         "title": "Alles beginnt mit des Lichtes Kind",
@@ -159,6 +159,78 @@
         "youtube": "jyKrDHDXmI8",
         "duration": "24:09",
         "release": "2020-03-17T16:00:00"
+      },
+      "27": {
+        "title": "Ohne Glühwurms hellen Schein tiefer in den Kerker rein",
+        "youtube": "CG96u1rMwXs",
+        "duration": "20:00",
+        "release": "2020-06-13T16:00:00"
+      },
+      "28": {
+        "title": "Ein Gruß vom Getriebe, Aurora setzt Hiebe",
+        "youtube": "66F7-GUb5gM",
+        "duration": "18:53",
+        "release": "2020-06-14T16:00:00"
+      },
+      "29": {
+        "title": "Da gibt's gleich mal Schelte beim Plündern der Zelte",
+        "youtube": "Ki2I3OSnH6s",
+        "duration": "17:57",
+        "release": "2020-06-15T16:00:00"
+      },
+      "30": {
+        "title": "Befreit aus Gewalt der Kriegsruf erschallt",
+        "youtube": "57aq_MnNKVA",
+        "duration": "15:38",
+        "release": "2020-06-16T16:00:00"
+      },
+      "31": {
+        "title": "Wer den Mondeskampf ergreift, auf die Folgenlänge pfeift",
+        "youtube": "H9zwwGU4J4A",
+        "duration": "36:24",
+        "release": "2020-06-17T16:00:00"
+      },
+      "32": {
+        "title": "Die Karte zur Hand im gefluteten Land",
+        "youtube": "abpZRRlPyOI",
+        "duration": "20:14",
+        "release": "2020-06-18T16:00:00"
+      },
+      "33": {
+        "title": "Ganz ohne Gewissen Familien zerrissen",
+        "youtube": "3Ay0VvilVGA",
+        "duration": "19:08",
+        "release": "2020-06-19T16:00:00"
+      },
+      "34": {
+        "title": "Tränenschauer, Trost und Trauer",
+        "youtube": "t-Q_44a-9T0",
+        "duration": "20:55",
+        "release": "2020-06-20T16:00:00"
+      },
+      "35": {
+        "title": "Alten Lichtes Element, Steine craften ungehemmt",
+        "youtube": "2rewMRhkaJ8",
+        "duration": "20:45",
+        "release": "2020-06-21T16:00:00"
+      },
+      "36": {
+        "title": "Egal ob Schilde, Rüstung oder Messer: Oculi macht alles besser!",
+        "youtube": "X7720X3vCxA",
+        "duration": "23:30",
+        "release": "2020-06-22T16:00:00"
+      },
+      "37": {
+        "title": "Unerwartet eingestiegen: Diese Faust ist übertrieben",
+        "youtube": "0E1N0uWscyI",
+        "duration": "20:02",
+        "release": "2020-06-23T16:00:00"
+      },
+      "38": {
+        "title": "Letzter Truhen goldner Lohn, das Sonnentor das wartet schon",
+        "youtube": "egL0EoH-0Hw",
+        "duration": "18:06",
+        "release": "2020-06-24T16:00:00"
       }
     }
   },
