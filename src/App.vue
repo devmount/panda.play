@@ -55,5 +55,5 @@ export default {
 </style>
 
 <style lang="stylus">
-import "assets/global"
+@import "assets/global"
 </style>
