@@ -6,7 +6,11 @@ import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
 
+// set local config
 Vue.config.productionTip = false
+
+// set global properties
+Vue.prototype.$version = process.env.VUE_APP_VERSION
 
 Vue.use(Meta)
 
