@@ -123,6 +123,12 @@ h1
 .text-mono
   font-family font-mono
 
+// links
+a, a:active, a:visited
+  color inherit
+a:hover, a:focus
+  color: #008ba3
+
 // cursor
 .c-hand
   cursor pointer
