@@ -8,22 +8,21 @@
   },
   "dependencies": {
     "core-js": "^3.14.0",
-    "hooper": "^0.2.3",
-    "register-service-worker": "^1.6.2",
-    "vue": "^2.6.10",
-    "vue-meta": "^2.2.2",
-    "vue-router": "^3.1.3"
+    "hooper": "^0.3.4",
+    "register-service-worker": "^1.7.2",
+    "vue": "^2.6.14",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-plugin-pwa": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
     "pug": "^3.0.1",
-    "pug-plain-loader": "^1.0.0",
-    "stylus": "^0.54.5",
+    "pug-plain-loader": "^1.1.0",
+    "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.40.2"
+    "vue-template-compiler": "^2.6.14"
   },
   "postcss": {
     "plugins": {
