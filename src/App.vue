@@ -48,12 +48,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="stylus">
 // import font
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
-</style>
 
-<style lang="stylus">
+// import app styles
 @import "assets/global"
 </style>
