@@ -1,4 +1,41 @@
 {
+  "builders-journey": {
+    "title": "LEGO® Builder's Journey",
+    "subtitle": "",
+    "description": "🧱 LEGO® Builder's Journey selbst spielen: https://store.steampowered.com/app/1544360/LEGO_Builders_Journey/\n📜 Playlist: https://youtube.com/playlist?list=PL-Ds8QNqSk7ciR8cv6vL8LoYMMSMHC3Op\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nLEGO® Builder’s Journey ist ein Geometrie-Puzzlespiel mit toller Atmosphäre, in dem wir manchmal Regeln befolgen … und manchmal Regeln brechen müssen.\n\nTitel: LEGO® Builder’s Journey\nRelease: 22. Juni 2021\nDeveloper: Light Brick Studio\nLEGO® Games",
+    "episodes": {
+      "1": {
+        "title": "Losgehen und Lernen",
+        "youtube": "-HV0_16EGko",
+        "duration": "23:28",
+        "release": "2021-07-19T16:00:00"
+      },
+      "2": {
+        "title": "Loslassen und Erfinden",
+        "youtube": "wJcTXSqXdP0",
+        "duration": "27:24",
+        "release": "2021-07-20T16:00:00"
+      },
+      "3": {
+        "title": "Abstürzen und Replizieren",
+        "youtube": "eyYFL0FwNlo",
+        "duration": "25:54",
+        "release": "2021-07-21T16:00:00"
+      },
+      "4": {
+        "title": "Kooperieren und Überwinden",
+        "youtube": "LfmcdHkIkSE",
+        "duration": "27:24",
+        "release": "2021-07-22T16:00:00"
+      },
+      "5": {
+        "title": "Entkommen und Abheben",
+        "youtube": "CJ7wtvoKe6E",
+        "duration": "25:51",
+        "release": "2021-07-23T16:00:00"
+      }
+    }
+  },
   "delores": {
     "title": "Delores",
     "subtitle": "A Thimbleweed Park Mini-Adventure",
