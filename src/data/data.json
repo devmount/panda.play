@@ -1,4 +1,134 @@
 {
+  "unravel-two": {
+    "title": "Unravel Two",
+    "subtitle": "",
+    "description": "🧶 Unravel Two selbst spielen: https://store.steampowered.com/app/1225570/Unravel_Two/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7dE3PzgqHpzEpB1zhtkz8IJ\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nWer sich von der Vergangenheit löst, kann neue Bindungen knüpfen und dem Funken des Abenteuers folgen.\n\nTitel: Unravel Two\nRelease: 9. Juni 2018\nDeveloper: Coldwood Interactive\nPublisher: Electronic Arts",
+    "episodes": {
+      "1": {
+        "title": "Zwei Wollwesen auf dem Weg ins Ungewisse",
+        "youtube": "6z0MVAWUjeE",
+        "duration": "27:23",
+        "release": "2021-08-02T16:00:00"
+      },
+      "2": {
+        "title": "Der Leuchtturm und die Schattenmenschen",
+        "youtube": "ufy96fOFVmc",
+        "duration": "29:14",
+        "release": "2021-08-03T16:00:00"
+      },
+      "3": {
+        "title": "Flatterfaden auf der Halfpipe",
+        "youtube": "yPk8AM6civ4",
+        "duration": "27:15",
+        "release": "2021-08-04T16:00:00"
+      },
+      "4": {
+        "title": "Seilbahn und Ventilkanonen",
+        "youtube": "Vq2dvT1RDAc",
+        "duration": "25:44",
+        "release": "2021-08-05T16:00:00"
+      },
+      "5": {
+        "title": "Wir befreien unsere Wollfreunde!",
+        "youtube": "SWYS4gKksS8",
+        "duration": "34:48",
+        "release": "2021-08-06T16:00:00"
+      },
+      "6": {
+        "title": "Dieser Truthahn ist seeehr motiviert",
+        "youtube": "xjkrkZPmUtU",
+        "duration": "22:34",
+        "release": "2021-08-07T16:00:00"
+      },
+      "7": {
+        "title": "Zertifizierter Wolltaucher",
+        "youtube": "a-Glw_aFIJ4",
+        "duration": "27:41",
+        "release": "2021-08-08T16:00:00"
+      },
+      "8": {
+        "title": "Schuss in den Ofen",
+        "youtube": "xgzK6B4DT6Y",
+        "duration": "32:54",
+        "release": "2021-08-09T16:00:00"
+      },
+      "9": {
+        "title": "Die Grillsaison ist eröffnet!",
+        "youtube": "Rtt3QK2KAaE",
+        "duration": "27:40",
+        "release": "2021-08-10T16:00:00"
+      },
+      "10": {
+        "title": "Staplerfahrer Klaus",
+        "youtube": "G8FHS9p9X4s",
+        "duration": "34:41",
+        "release": "2021-08-11T16:00:00"
+      },
+      "11": {
+        "title": "Doppelknoten im Gehirn",
+        "youtube": "VZXqCqPT1D0",
+        "duration": "33:17",
+        "release": "2021-08-12T16:00:00"
+      },
+      "12": {
+        "title": "Elektrozaun umgehaun",
+        "youtube": "47ziiALI-T8",
+        "duration": "33:51",
+        "release": "2021-08-13T16:00:00"
+      },
+      "13": {
+        "title": "Flammenflucht",
+        "youtube": "o5iXEoen2hI",
+        "duration": "26:56",
+        "release": "2021-08-14T16:00:00"
+      },
+      "14": {
+        "title": "Die Luft wird knapp",
+        "youtube": "wBnIn7ug0Ns",
+        "duration": "42:52",
+        "release": "2021-08-15T16:00:00"
+      },
+      "15": {
+        "title": "Live on Stage",
+        "youtube": "3wP8IJ2qvgQ",
+        "duration": "38:18",
+        "release": "2021-08-16T16:00:00"
+      },
+      "16": {
+        "title": "Bonuslevel-Rush",
+        "youtube": "EIzTAsGXeeU",
+        "duration": "28:17",
+        "release": "2021-08-17T16:00:00"
+      },
+      "17": {
+        "title": "Schwingen und Springen",
+        "youtube": "Yksei5_FzBM",
+        "duration": "33:12",
+        "release": "2021-08-18T16:00:00"
+      },
+      "18": {
+        "title": "Dunkelheit wird Licht",
+        "youtube": "gPkFdvuhxrk",
+        "duration": "24:15",
+        "release": "2021-08-19T16:00:00",
+        "tags": ["ende"]
+      },
+      "19": {
+        "title": "Unsere Superkraft: Auf dem Schlauch stehen",
+        "youtube": "V00LTsybAsI",
+        "duration": "44:30",
+        "release": "2021-08-20T16:00:00",
+        "tags": ["spezial"]
+      },
+      "20": {
+        "title": "Wie der Blitz: Schleudersitz",
+        "youtube": "3u2asvPDiYU",
+        "duration": "48:39",
+        "release": "2021-08-21T16:00:00",
+        "tags": ["spezial", "ende"]
+      }
+    }
+  },
   "builders-journey": {
     "title": "LEGO® Builder's Journey",
     "subtitle": "",
@@ -32,7 +162,8 @@
         "title": "Entkommen und Abheben",
         "youtube": "CJ7wtvoKe6E",
         "duration": "25:51",
-        "release": "2021-07-23T16:00:00"
+        "release": "2021-07-23T16:00:00",
+        "tags": ["ende"]
       }
     }
   },
@@ -90,7 +221,7 @@
         "release": "2021-06-16T16:00:00"
       },
       "9": {
-        "title": "Den Fehler beheben [ENDE]",
+        "title": "Den Fehler beheben",
         "youtube": "4gWmQe5moVg",
         "duration": "35:18",
         "release": "2021-06-17T16:00:00",
