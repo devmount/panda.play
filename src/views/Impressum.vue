@@ -19,7 +19,7 @@ div.container.container-sm.impressum
   p Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
   p Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
   p Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
-  p Diese Seite bindet Videos der Videoplattform Youtube ein. Dabei wird das Video erst durch Klick auf das jeweilige Vorschaubild geladen. Zum Laden der Videos wird Youtubes erweiterter Datenschutzmodus ohne Cookies verwendet. Die Vorschaubilder der einzelnen Videos werden direkt von Youtube geladen.
+  p Diese Seite bindet Videos der Videoplattform Youtube ein. Dabei wird das Video erst durch Klick auf das jeweilige Vorschaubild geladen. Zum Laden der Videos wird Youtubes erweiterter Datenschutzmodus ohne Cookies verwendet. Die Vorschaubilder der einzelnen Videos sind selbst gehostet und werden nicht von Youtube geladen.
 </template>
 
 <script>
