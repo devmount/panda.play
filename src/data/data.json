@@ -1,4 +1,126 @@
 {
+  "secret-of-mokey-island": {
+    "title": "The Secret of Monkey Island",
+    "subtitle": "Special Edition",
+    "description": "🐵 The Secret of Monkey Island: Special Edition selbst spielen: https://store.steampowered.com/app/32360/The_Secret_of_Monkey_Island_Special_Edition/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7fyPdWlF6_r2DqGG5Fy7Tzd\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nAls Piraten-Anfänger machen wir uns auf die unglaubliche Suche nach dem sagenhaften Geheimnis von Monkey Island. Geschichten von Piratenschätzen führen uns zum Hafen von Mêlée Island, ohne Geld, aber ausgerüstet mit großen Hoffnungen und unersättlicher Neugier. Sind wir clever genug, die Piraten von Mêlée Island auf unsere Seite zu bringen und uns von den Winden des Schicksal zu Monkey Island tragen zu lassen? Ein Abenteuer, das das Blut in den Adern eines jeden blutrünstigen Piratens gefrieren lässt.\n\nTitel: The Secret of Monkey Island: Special Edition\nRelease: 15. Juli 2009\nDeveloper: LucasArts\nPublisher: LucasArts, Lucasfilm, Disney",
+    "episodes": {
+      "1": {
+        "title": "Hochmotiviert in die Piratenschule",
+        "youtube": "nPHuqtF1t5s",
+        "duration": "20:26",
+        "release": "2022-02-14T15:00:00"
+      },
+      "2": {
+        "title": "Ja, ich LIEBE Ratten!",
+        "youtube": "vp-LmXtW4l0",
+        "duration": "20:16",
+        "release": "2022-02-15T15:00:00"
+      },
+      "3": {
+        "title": "Piranha-Pudel essen keinen Fisch",
+        "youtube": "P__k3-pYSds",
+        "duration": "22:22",
+        "release": "2022-02-16T15:00:00"
+      },
+      "4": {
+        "title": "Say: Hello, Roger!",
+        "youtube": "qwtwwhZKtCI",
+        "duration": "25:11",
+        "release": "2022-02-17T15:00:00"
+      },
+      "5": {
+        "title": "Wir kämpfen gegen... DIE MASCHINE!",
+        "youtube": "5oPhF9itR3w",
+        "duration": "26:36",
+        "release": "2022-02-18T15:00:00"
+      },
+      "6": {
+        "title": "Klingenscharfe Sprüche klopfen",
+        "youtube": "T5JhJBgvmdA",
+        "duration": "21:14",
+        "release": "2022-02-19T15:00:00"
+      },
+      "7": {
+        "title": "Übung macht den (Schwert-)Meister",
+        "youtube": "7U-bvdNS2v8",
+        "duration": "29:47",
+        "release": "2022-02-20T15:00:00"
+      },
+      "8": {
+        "title": "Zurück im Spiel und wissen nicht mehr viel",
+        "youtube": "M5GAnBg6EiQ",
+        "duration": "28:45",
+        "release": "2022-02-21T15:00:00"
+      },
+      "9": {
+        "title": "Beziehungskiller #1: Die ENTF-Taste!",
+        "youtube": "y0vjeemkaYc",
+        "duration": "20:48",
+        "release": "2022-02-22T15:00:00"
+      },
+      "10": {
+        "title": "Haben wir einen Termin?",
+        "youtube": "eSGLFQpY4Ck",
+        "duration": "25:13",
+        "release": "2022-02-23T15:00:00"
+      },
+      "11": {
+        "title": "DAS BIEST berührt!",
+        "youtube": "SEEcTgX0SOU",
+        "duration": "22:45",
+        "release": "2022-02-24T15:00:00"
+      },
+      "12": {
+        "title": "STAN und unser unschlagbares Handelsgeschick",
+        "youtube": "KaYPQEpZB-0",
+        "duration": "24:37",
+        "release": "2022-02-25T15:00:00"
+      },
+      "13": {
+        "title": "Wer hat das Rezept... versteckt?",
+        "youtube": "kadiuy5IDgs",
+        "duration": "22:33",
+        "release": "2022-02-26T15:00:00"
+      },
+      "14": {
+        "title": "Kanonen-Stunt. Zweiter Versuch!",
+        "youtube": "HSceHIYEMeU",
+        "duration": "24:49",
+        "release": "2022-02-27T15:00:00"
+      },
+      "15": {
+        "title": "Kannitarier",
+        "youtube": "RVcX1QvLzII",
+        "duration": "27:45",
+        "release": "2022-02-28T15:00:00"
+      },
+      "16": {
+        "title": "Astreine Wirbelleiter",
+        "youtube": "8As_j8L_MG0",
+        "duration": "23:46",
+        "release": "2022-03-01T15:00:00"
+      },
+      "17": {
+        "title": "Der Fluch des Navigators",
+        "youtube": "8qU1bD0woAI",
+        "duration": "21:13",
+        "release": "2022-03-02T15:00:00"
+      },
+      "18": {
+        "title": "Vom Ghost-Chicken-Hindurchblicken",
+        "youtube": "gQG7J2Bpr1I",
+        "duration": "23:47",
+        "release": "2022-03-03T15:00:00"
+      },
+      "19": {
+        "title": "Zahl nie mehr als 50 Mark für ein Computerspiel!",
+        "youtube": "B0jVH5NS-N4",
+        "duration": "30:25",
+        "release": "2022-03-04T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "unravel-two": {
     "title": "Unravel Two",
     "subtitle": "",
