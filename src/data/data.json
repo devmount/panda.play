@@ -1,5 +1,133 @@
 {
-  "secret-of-mokey-island": {
+  "monkey-island-2": {
+    "title": "Monkey Island 2 Special Edition: LeChuck's Revenge",
+    "subtitle": "Special Edition",
+    "description": "🏴‍☠️ Monkey Island 2 Special Edition: LeChuck's Revenge selbst spielen: https://store.steampowered.com/app/32460/Monkey_Island_2_Special_Edition_LeChucks_Revenge/\n📜 Playlist: https://youtube.com/playlist?list=PL-Ds8QNqSk7f48XVek_qocxwhKUMREgbN\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nNachdem der bösartige Geisterpirat LeChuck in seinem ersten Abenteuer besiegt wurde, eifert Guybrush Threepwood nun nach dem legendären Schatz von Big Whoop. Aber halt, LeChuck ist nun in Form eines Zombies zurück und will sich rächen...\n\nTitel: Monkey Island™ 2 Special Edition: LeChuck's Revenge™\nRelease: 7. Juli 2010\nDeveloper: LucasArts\nPublisher: LucasArts, Lucasfilm, Disney",
+    "episodes": {
+      "1": {
+        "title": "Zurück im Herzen der Karibik",
+        "youtube": "X8OLBrSQIL4",
+        "duration": "20:26",
+        "release": "2022-05-16T15:00:00"
+      },
+      "2": {
+        "title": "Das Largo Embargo und Marco Ausgrabo",
+        "youtube": "2V392IPnwU8",
+        "duration": "20:16",
+        "release": "2022-05-17T15:00:00"
+      },
+      "3": {
+        "title": "Hungrig, blind und allein",
+        "youtube": "0gd7tyI9TwU",
+        "duration": "22:22",
+        "release": "2022-05-18T15:00:00"
+      },
+      "4": {
+        "title": "Der Koch der aus dem Fenster stieg und verschwand",
+        "youtube": "WczA85TOJLM",
+        "duration": "25:11",
+        "release": "2022-05-19T15:00:00"
+      },
+      "5": {
+        "title": "Do you have your claim ticket, sonny?",
+        "youtube": "v1SruXEXkXA",
+        "duration": "26:36",
+        "release": "2022-05-20T15:00:00"
+      },
+      "6": {
+        "title": "In der Bibliothek... BITTE FLÜSTERN!!1!11!",
+        "youtube": "XwgPyREOfPA",
+        "duration": "21:14",
+        "release": "2022-05-21T15:00:00"
+      },
+      "7": {
+        "title": "Hinter dir, ein dreiköpfiger Affe!",
+        "youtube": "9MKbY3gUBso",
+        "duration": "29:47",
+        "release": "2022-05-22T15:00:00"
+      },
+      "8": {
+        "title": "Rotz geschwind mit dem Wind",
+        "youtube": "4uC7h_eBOB4",
+        "duration": "28:45",
+        "release": "2022-05-23T15:00:00"
+      },
+      "9": {
+        "title": "Was ein Glück: ein Kartenstück!",
+        "youtube": "1jbYnNfHP84",
+        "duration": "20:48",
+        "release": "2022-05-24T15:00:00"
+      },
+      "10": {
+        "title": "Die Schatz-Taucher-Versicherungsklausel",
+        "youtube": "8ZLJGP1swto",
+        "duration": "25:13",
+        "release": "2022-05-25T15:00:00"
+      },
+      "11": {
+        "title": "Der elliptische Hyperbolid aka verbotene Orte Nr. 1523",
+        "youtube": "0uZX34LtJHE",
+        "duration": "22:45",
+        "release": "2022-05-26T15:00:00"
+      },
+      "12": {
+        "title": "Wir sind soo liebevolle Eltern...",
+        "youtube": "-qbIdENG-Xw",
+        "duration": "24:37",
+        "release": "2022-05-27T15:00:00"
+      },
+      "13": {
+        "title": "Von Fischgeschichten und Baumdörfern",
+        "youtube": "xz43TLATLv8",
+        "duration": "22:33",
+        "release": "2022-05-28T15:00:00"
+      },
+      "14": {
+        "title": "Ja nee is klar: Ein Zoo im Inventar!",
+        "youtube": "dWKJxUOl220",
+        "duration": "24:49",
+        "release": "2022-05-29T15:00:00"
+      },
+      "15": {
+        "title": "Geschüttelt, nicht gerührt",
+        "youtube": "JRmjLjIlTHg",
+        "duration": "27:45",
+        "release": "2022-05-30T15:00:00"
+      },
+      "16": {
+        "title": "Nice try, Guybrush",
+        "youtube": "b1fYIGs5FB0",
+        "duration": "23:46",
+        "release": "2022-05-31T15:00:00"
+      },
+      "17": {
+        "title": "Zufällig kurz das Labyrinth gelöst!?",
+        "youtube": "w70WzA9WrsY",
+        "duration": "21:13",
+        "release": "2022-06-01T15:00:00"
+      },
+      "18": {
+        "title": "Feuersbrunst und Dschungelkunst",
+        "youtube": "p-7RJbCEKZw",
+        "duration": "23:47",
+        "release": "2022-06-02T15:00:00"
+      },
+      "19": {
+        "title": "Gejagd",
+        "youtube": "mvtdrxAZCHw",
+        "duration": "30:25",
+        "release": "2022-06-03T15:00:00"
+      },
+      "20": {
+        "title": "Sieg! ... oder?",
+        "youtube": "OxIO9TQxjns",
+        "duration": "30:25",
+        "release": "2022-06-04T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
+  "secret-of-monkey-island": {
     "title": "The Secret of Monkey Island",
     "subtitle": "Special Edition",
     "description": "🐵 The Secret of Monkey Island: Special Edition selbst spielen: https://store.steampowered.com/app/32360/The_Secret_of_Monkey_Island_Special_Edition/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7fyPdWlF6_r2DqGG5Fy7Tzd\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nAls Piraten-Anfänger machen wir uns auf die unglaubliche Suche nach dem sagenhaften Geheimnis von Monkey Island. Geschichten von Piratenschätzen führen uns zum Hafen von Mêlée Island, ohne Geld, aber ausgerüstet mit großen Hoffnungen und unersättlicher Neugier. Sind wir clever genug, die Piraten von Mêlée Island auf unsere Seite zu bringen und uns von den Winden des Schicksal zu Monkey Island tragen zu lassen? Ein Abenteuer, das das Blut in den Adern eines jeden blutrünstigen Piratens gefrieren lässt.\n\nTitel: The Secret of Monkey Island: Special Edition\nRelease: 15. Juli 2009\nDeveloper: LucasArts\nPublisher: LucasArts, Lucasfilm, Disney",
@@ -254,7 +382,7 @@
   "builders-journey": {
     "title": "LEGO® Builder's Journey",
     "subtitle": "",
-    "description": "🧱 LEGO® Builder's Journey selbst spielen: https://store.steampowered.com/app/1544360/LEGO_Builders_Journey/\n📜 Playlist: https://youtube.com/playlist?list=PL-Ds8QNqSk7ciR8cv6vL8LoYMMSMHC3Op\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nLEGO® Builder’s Journey ist ein Geometrie-Puzzlespiel mit toller Atmosphäre, in dem wir manchmal Regeln befolgen … und manchmal Regeln brechen müssen.\n\nTitel: LEGO® Builder’s Journey\nRelease: 22. Juni 2021\nDeveloper: Light Brick Studio\nLEGO® Games",
+    "description": "🧱 LEGO® Builder's Journey selbst spielen: https://store.steampowered.com/app/1544360/LEGO_Builders_Journey/\n📜 Playlist: https://youtube.com/playlist?list=PL-Ds8QNqSk7ciR8cv6vL8LoYMMSMHC3Op\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nLEGO® Builder's Journey ist ein Geometrie-Puzzlespiel mit toller Atmosphäre, in dem wir manchmal Regeln befolgen … und manchmal Regeln brechen müssen.\n\nTitel: LEGO® Builder's Journey\nRelease: 22. Juni 2021\nDeveloper: Light Brick Studio\nLEGO® Games",
     "episodes": {
       "1": {
         "title": "Losgehen und Lernen",
@@ -867,7 +995,7 @@
         "release": "2019-07-20T16:00:00"
       },
       "21": {
-        "title": "Ohne Leiter geht’s nicht weiter",
+        "title": "Ohne Leiter geht's nicht weiter",
         "youtube": "OsE9DXeKpiM",
         "duration": "20:08",
         "release": "2019-07-21T16:00:00"
