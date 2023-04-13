@@ -125,12 +125,12 @@
 
 <script>
 // get data
-import Data from '@/data/data.json'
+import Data from '@/data/data.json';
 // internal components
-import Logo from '@/components/Logo.vue'
+import Logo from '@/components/Logo.vue';
 // slider component
-import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
-import 'hooper/dist/hooper.css'
+import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper-vue3';
+import 'hooper-vue3/dist/hooper.css';
 
 export default {
 	name: 'home',
