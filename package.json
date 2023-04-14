@@ -1,41 +1,25 @@
 {
-  "name": "panda.play",
-  "version": "0.2.17",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
-  "dependencies": {
-    "core-js": "^3.14.0",
-    "hooper": "^0.3.4",
-    "register-service-worker": "^1.7.2",
-    "vue": "^2.6.14",
-    "vue-meta": "^2.4.0",
-    "vue-router": "^3.5.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.0-beta.3",
-    "@vue/cli-plugin-pwa": "^5.0.0-beta.3",
-    "@vue/cli-service": "^5.0.0-beta.3",
-    "pug": "^3.0.1",
-    "pug-plain-loader": "^1.1.0",
-    "stylus": "^0.56.0",
-    "stylus-loader": "^6.2.0",
-    "vue-template-compiler": "^2.6.14"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "babel": {
-    "presets": [
-      "@vue/app"
-    ]
-  }
+	"name": "panda.play",
+	"version": "0.2.17",
+	"private": true,
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"dependencies": {
+		"vue": "^3.2.47",
+		"vue-meta": "^3.0.0-alpha.10",
+		"vue-router": "^4.1.6"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^4.1.0",
+		"stylus": "^0.59.0",
+		"stylus-loader": "^7.1.0",
+		"vite": "^4.2.1"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	]
 }

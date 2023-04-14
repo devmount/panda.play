@@ -10,21 +10,17 @@
 ```bash
 git clone https://github.com/devmount/panda.play
 cd panda.play
-yarn
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```bash
-yarn serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
 
 ```bash
-yarn build
+npm run build
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).

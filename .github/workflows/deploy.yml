@@ -20,9 +20,8 @@ jobs:
         node-version: 17.x
     - name: Build app using Yarn
       run: |
-        npm install -g yarn
-        yarn install
-        yarn build
+        npm install
+        npm run build
     - name: Push Build files to production
       uses: kostya-ten/ssh-server-deploy@v4
       with:
