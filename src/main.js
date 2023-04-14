@@ -1,26 +1,25 @@
-/* eslint-disable */
+// init app
+import { createApp } from 'vue';
+import { createMetaManager } from 'vue-meta';
+import App from '@/App.vue';
+const app = createApp(App);
 
-import Vue from 'vue'
-import Meta from 'vue-meta'
-import App from './App.vue'
-import router from './router'
-import './registerServiceWorker'
+// init router
+import router from '@/router.js';
+app.use(router);
 
-// set local config
-Vue.config.productionTip = false
+// init meta data
+const metaManager = createMetaManager();
+app.use(metaManager);
 
 // set global properties
-Vue.prototype.$version = APP_VERSION
-
-Vue.use(Meta)
+app.provide('version', APP_VERSION);
 
 // extend Object for filtering
 Object.filter = (obj, predicate) =>
 	Object.keys(obj)
 		.filter(key => predicate(obj[key]))
-		.reduce((res, key) => (res[key] = obj[key], res), {})
+		.reduce((res, key) => (res[key] = obj[key], res), {});
 
-new Vue({
-	router,
-	render: h => h(App)
-}).$mount('#app')
+// ready? let's go!
+app.mount('#app');

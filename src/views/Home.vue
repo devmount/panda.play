@@ -91,32 +91,30 @@
 		<span class="block-sm text-unimportant ml-1">{{ database[active.series].subtitle }}</span>
 		<span class="c-hand" v-if="episodesCount > 1" @click="slideToLastEpisode()" title="Zur letzten Folge springen">⏭</span>
 	</h2>
-	<template v-if="active.series == s && episodesCount > 1 && seriesReleased(active.series)">
+	<template v-if="database[active.series] && episodesCount > 1 && seriesReleased(active.series)">
 		<hooper
-			v-for="(series, s) in database"
 			class="episodes"
-			:key="s"
 			:settings="sliderSettings.episodes"
-			:ref="s"
+			:ref="active.series"
 		>
 			<slide
-				v-for="(episode, e, i) in series.episodes"
+				v-for="(episode, e, i) in database[active.series].episodes"
 				:key="i"
 				:index="i"
 				:class="{ active: active.episode == e }"
-				:data-duration="episodeReleased(s, e) ? episode.duration : '?'"
+				:data-duration="episodeReleased(active.series, e) ? episode.duration : '?'"
 			>
 				<img
-					v-if="episodeReleased(s, e)" :src="'/img/thumbs/' + s + '_' + String(e).padStart(2, '0') + '.jpg'"
+					v-if="episodeReleased(active.series, e)" :src="'/img/thumbs/' + active.series + '_' + String(e).padStart(2, '0') + '.jpg'"
 					:alt="episode.title"
 					@click="active.episode = e; active.play = false"
 				/>
 				<img v-else
 					src="@/assets/unknown-320x180.jpg"
 					alt="Currently not available"
-					@click="active.series = s; active.episode = e; active.play = false"
-					/>
-				</slide>
+					@click="active.episode = e; active.play = false"
+				/>
+			</slide>
 			<hooper-navigation slot="hooper-addons"></hooper-navigation>
 		</hooper>
 	</template>

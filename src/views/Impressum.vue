@@ -56,11 +56,10 @@
 </div>
 </template>
 
-<script>
-export default {
-	name: 'impressum',
-	metaInfo: {
-		title: 'Impressum'
-	}
-}
+<script setup>
+import { useMeta } from 'vue-meta';
+
+useMeta({
+	title: 'Impressum',
+});
 </script>

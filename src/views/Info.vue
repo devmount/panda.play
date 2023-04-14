@@ -18,17 +18,19 @@
 	<h1>Coole Website!</h1>
 	<p>
 		Danke. Diese Website ist ein Open Source Projekt.
-		Du siehst sie aktuell in Version {{ $version }}
-		und findest sie <a href="https://github.com/devmount/panda.play" target="_blanke">auf Github</a>.
+		Du siehst sie aktuell in Version {{ version }}
+		und findest sie <a href="https://github.com/devmount/panda.play" target="_blank">auf Github</a>.
 	</p>
 </div>
 </template>
 
-<script>
-export default {
-	name: 'info',
-	metaInfo: {
-		title: 'Information'
-	}
-}
+<script setup>
+import { inject } from 'vue';
+import { useMeta } from 'vue-meta';
+
+useMeta({
+	title: 'Information',
+});
+
+const version = inject('version');
 </script>
