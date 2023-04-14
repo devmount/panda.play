@@ -126,7 +126,7 @@ import Logo from '@/components/Logo.vue';
 
 // set page meta data
 useMeta({
-	title: 'Impressum',
+	title: 'Übersicht',
 });
 
 const now = new Date();

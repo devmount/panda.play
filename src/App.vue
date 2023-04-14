@@ -1,5 +1,8 @@
 <template>
 <div id="app">
+	<metainfo>
+		<template v-slot:title="{ content }">{{ content }} - {{ subtitle }} - {{ title }}</template>
+	</metainfo>
 	<div id="nav">
 		<router-link to="/">
 			<img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
@@ -22,7 +25,6 @@ const subtitle = 'Point and Click, Retro und Coop Let\'s Plays'
 
 useMeta({
 	title: 'PandaPlay',
-	titleTemplate: '%s - ' + subtitle + ' - ' + title,
 	meta: [
 		// general
 		{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
