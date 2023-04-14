@@ -1,6 +1,6 @@
 {
 	"name": "panda.play",
-	"version": "0.2.17",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite",
