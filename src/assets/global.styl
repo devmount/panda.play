@@ -222,53 +222,30 @@ a:hover, a:focus
     .eye
       animation: wink 4s infinite
 
-  .hooper
-    .hooper-slide
-      position: relative;
+  .list
+    display: flex;
+    justify-content: start
+    flex-wrap: nowrap
+    align-items: center
+    gap: 5px;
+    overflow-x: scroll
 
-      img
-        display block
-        cursor pointer
-        border 5px solid transparent
-        box-sizing border-box
-        transition .15s border ease-in-out
+  .element
+    position: relative
+    
+    img
+      display block
+      cursor pointer
+      border 5px solid transparent
+      box-sizing border-box
+      transition .15s border ease-in-out
 
-      &.active img
-        border 5px solid #fff
-      &:not(.active) img:hover
-        border 5px solid #999
-
-    .hooper-navigation button
-      opacity 0
-      background rgba(0,0,0,.5)
-      transition .15s background ease-in-out, .15s opacity ease-in-out
-      padding 1em 0
-      svg
-        width 50px
-        height 50px
-        path:nth-child(3)
-          fill: #fff
-      &:hover
-        background rgba(0,0,0,.8)
-      &.is-disabled
-        display none
-      @media (max-width 640px)
-        opacity 1
-    &:hover .hooper-navigation button
-      opacity 1
-
-    &.series
-      height 134px
-      .hooper-slide img
-        width 230px
-      .hooper-navigation button
-        height 124px
-    &.episodes
-      height 100px
-      .hooper-slide img
-        width 170px
-
-    [data-duration]::after
+    &.active img
+      border 5px solid #fff
+    &:not(.active) img:hover
+      border 5px solid #999
+    
+    &[data-duration]::after
       content attr(data-duration)
       background rgba(0,0,0,.6)
       color white
@@ -278,6 +255,8 @@ a:hover, a:focus
       font-family font-mono
       font-size font-small
       padding 1px 3px
-
-      .hooper-navigation button
-        height 90px
+  
+  .series .element img
+    width 230px
+  .episodes .element img
+    width 170px

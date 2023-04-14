@@ -62,12 +62,14 @@
 			<span class="hide-sm">Wähle einen Titel ⬇</span>
 		</span>
 	</div>
+	<!-- list all series -->
 	<h2 class="center-sm">{{ seriesCount }} Titel</h2>
-	<hooper class="series" :settings="sliderSettings.series" ref="series">
-		<slide
+	<div class="list series">
+		<div
 			v-for="(series, s, i) in database"
 			:key="s"
 			:index="i"
+			class="element"
 			:class="{ active: active.series == s }"
 			:data-duration="seriesReleased(s) ? seriesDuration(s) : '?'"
 		>
@@ -83,24 +85,20 @@
 				alt="Currently not available"
 				@click="active.series = s; active.episode = 1; active.play = false"
 			/>
-		</slide>
-		<hooper-navigation slot="hooper-addons"></hooper-navigation>
-	</hooper>
+		</div>
+	</div>
+	<!-- list all episodes of selected series -->
 	<h2 class="center-sm" v-if="active.series !== false && seriesReleased(active.series)">
 		<span>{{ releasedEpisodesCount }} Episode{{ releasedEpisodesCount == 1 ? '' : 'n' }} in {{ database[active.series].title }}</span>
 		<span class="block-sm text-unimportant ml-1">{{ database[active.series].subtitle }}</span>
-		<span class="c-hand" v-if="episodesCount > 1" @click="slideToLastEpisode()" title="Zur letzten Folge springen">⏭</span>
 	</h2>
 	<template v-if="database[active.series] && episodesCount > 1 && seriesReleased(active.series)">
-		<hooper
-			class="episodes"
-			:settings="sliderSettings.episodes"
-			:ref="active.series"
-		>
-			<slide
+		<div class="list episodes">
+			<div
 				v-for="(episode, e, i) in database[active.series].episodes"
 				:key="i"
 				:index="i"
+				class="element"
 				:class="{ active: active.episode == e }"
 				:data-duration="episodeReleased(active.series, e) ? episode.duration : '?'"
 			>
@@ -114,139 +112,65 @@
 					alt="Currently not available"
 					@click="active.episode = e; active.play = false"
 				/>
-			</slide>
-			<hooper-navigation slot="hooper-addons"></hooper-navigation>
-		</hooper>
+			</div>
+		</div>
 	</template>
 </div>
 </template>
 
-<script>
-// get data
-import Data from '@/data/data.json';
-// internal components
+<script setup>
+import { useMeta } from 'vue-meta';
+import { reactive, computed } from 'vue';
+import database from '@/data/data.json';
 import Logo from '@/components/Logo.vue';
-// slider component
-import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper-vue3';
-import 'hooper-vue3/dist/hooper.css';
 
-export default {
-	name: 'home',
-	metaInfo: {
-		title: 'Let\'s Plays'
-	},
-	components: {
-		Logo,
-		Hooper,
-		Slide,
-		HooperNavigation
-	},
-	data () {
-		return {
-			now: new Date(),
-			database: Data,
-			sliderSettings: {
-				series: {
-					trimWhiteSpace: true,
-					itemsToShow: 1.8,
-					itemsToSlide: 1,
-					centerMode: true,
-					breakpoints: {
-						640: {
-							itemsToShow: 2.78,
-							itemsToSlide: 2,
-							centerMode: false
-						},
-						960: {
-							itemsToShow: 4.18,
-							itemsToSlide: 4,
-							centerMode: false
-						},
-						1280: {
-							itemsToShow: 5.57,
-							itemsToSlide: 5,
-							centerMode: false
-						}
-					}
-				},
-				episodes: {
-					trimWhiteSpace: true,
-					itemsToShow: 2.5,
-					itemsToSlide: 2,
-					centerMode: true,
-					breakpoints: {
-						640: {
-							itemsToShow: 3.76,
-							itemsToSlide: 3,
-							centerMode: false
-						},
-						960: {
-							itemsToShow: 5.64,
-							itemsToSlide: 5,
-							centerMode: false
-						},
-						1280: {
-							itemsToShow: 7.53,
-							itemsToSlide: 7,
-							centerMode: false
-						}
-					}
-				}
-			},
-			active: {
-				series: false,
-				episode: false,
-				play: false
-			}
-		}
-	},
-	methods: {
-		// return wether a series first episode is released or not
-		seriesReleased (skey) {
-			return this.episodeReleased(skey, 1)
-		},
-		// return wether an episode of a given series is released or not
-		episodeReleased (skey, ekey) {
-			return this.now > new Date(this.database[skey].episodes[ekey].release)
-		},
-		// return total duration of released episodes in the given series and format as H:MM:SS
-		seriesDuration (skey) {
-			let seconds = Object.values(this.database[skey].episodes).reduce(function (t, c) {
-				let [m, s] = c.duration.split(':')
-				return t + (60 * Number(m)) + Number(s)
-			}, 0)
-			let hours = Math.floor(seconds / 3600)
-			seconds %= 3600
-			let minutes = Math.floor(seconds / 60)
-			seconds = seconds % 60
-			return hours + ':' + String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0')
-		},
-		// return human readable date in German
-		humanDate (t) {
-			var event = new Date(t)
-			var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
-			return event.toLocaleDateString('de-DE', options) + ' um ' + event.toLocaleTimeString('de-DE').slice(0, 5) + ' Uhr'
-		},
-		// slide the active series to the last published episode
-		slideToLastEpisode () {
-			if (this.$refs[this.active.series]) {
-				this.$refs[this.active.series][0].slideTo(this.releasedEpisodesCount - 1)
-			}
-		}
-	},
-	computed: {
-		// calculate number of series
-		seriesCount () {
-			return Object.keys(this.database).length
-		},
-		// calculate number of episodes in the active series
-		episodesCount () {
-			return Object.keys(this.database[this.active.series].episodes).length
-		},
-		// calculate number of released episodes in the active series
-		releasedEpisodesCount () {
-			return Object.keys(Object.filter(this.database[this.active.series].episodes, e => this.now > new Date(e.release))).length
-		}
-	}
-}
+// set page meta data
+useMeta({
+	title: 'Impressum',
+});
+
+const now = new Date();
+const active = reactive({
+	series: false,
+	episode: false,
+	play: false
+});
+
+// return wether a series first episode is released or not
+const seriesReleased = (skey) => episodeReleased(skey, 1);
+// return wether an episode of a given series is released or not
+const episodeReleased = (skey, ekey) => {
+	return now > new Date(database[skey].episodes[ekey].release);
+};
+// return total duration of released episodes in the given series and format as H:MM:SS
+const seriesDuration = (skey) => {
+	let seconds = Object.values(database[skey].episodes).reduce(function (t, c) {
+		let [m, s] = c.duration.split(':');
+		return t + (60 * Number(m)) + Number(s);
+	}, 0);
+	const hours = Math.floor(seconds / 3600);
+	seconds %= 3600;
+	const minutes = Math.floor(seconds / 60);
+	seconds = seconds % 60;
+	return hours + ':' + String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0')
+};
+// return human readable date in German
+const humanDate = (t) => {
+	var event = new Date(t);
+	var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+	return event.toLocaleDateString('de-DE', options) + ' um ' + event.toLocaleTimeString('de-DE').slice(0, 5) + ' Uhr';
+};
+
+// calculate number of series
+const seriesCount = computed(() => {
+	return Object.keys(database).length;
+});
+// calculate number of episodes in the active series
+const episodesCount = computed(() => {
+	return Object.keys(database[active.series].episodes).length;
+});
+// calculate number of released episodes in the active series
+const releasedEpisodesCount = computed(() => {
+	return Object.keys(Object.filter(database[active.series].episodes, e => now > new Date(e.release))).length;
+});
 </script>
