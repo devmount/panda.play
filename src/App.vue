@@ -16,39 +16,29 @@
 </template>
 
 <script setup>
-import { useMeta } from 'vue-meta';
+import { useHead, useSeoMeta } from 'unhead';
 
 // general meta data
 const description = 'Games. Am liebsten Retro, Point & Click oder Coop - aber auf jeden Fall gemeinsam. Let\'s play together!'
-const title = 'PandaPlay'
+const brand = 'PandaPlay'
 const subtitle = 'Point and Click, Retro und Coop Let\'s Plays'
+const base = window.location.origin;
 
-useMeta({
-	title: 'PandaPlay',
-	meta: [
-		// general
-		{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-		{ name: 'description', content: description },
-		{ rel: 'canonical', href: 'https://panda-play.de' },
-		// OpenGraph data
-		{ property: 'og:title', content: title + ' - ' + subtitle },
-		{ property: 'og:site_name', content: title },
-		{ property: 'og:type', content: 'website' },
-		{ property: 'og:url', content: 'https://panda-play.de' },
-		{ property: 'og:image', content: 'https://panda-play.de/img/preview.png' },
-		{ property: 'og:description', content: description },
-		// Twitter card
-		{ name: 'twitter:card', content: 'summary' },
-		{ name: 'twitter:site', content: 'https://panda-play.de' },
-		{ name: 'twitter:title', content: title + ' - ' + subtitle },
-		{ name: 'twitter:description', content: description },
-		// { name: 'twitter:creator', content: '@pandaplay' },
-		{ name: 'twitter:image:src', content: 'https://panda-play.de/img/preview.png' },
-		// Google / Schema.org
-		{ itemprop: 'name', content: title + ' - ' + subtitle },
-		{ itemprop: 'description', content: description },
-		{ itemprop: 'image', content: 'https://panda-play.de/img/preview.png' }
-	]
+useHead({
+	titleTemplate: (title) => !title ? brand : `${title} - ${brand}`,
+});
+useSeoMeta({
+	ogSiteName: brand,
+	ogType: 'website',
+	ogUrl: base,
+	ogImage: `${base}/img/preview.png`,
+	ogDescription: description,
+	twitterCard: 'summary',
+	twitterSite: base,
+	twitterTitle: `${brand} - ${subtitle}`,
+	twitterDescription: description,
+	twitterCreator: '@devmount',
+	twitterImage: `${base}/img/preview.png`,
 });
 </script>
 

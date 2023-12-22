@@ -1,6 +1,5 @@
 // init app
 import { createApp } from 'vue';
-import { createMetaManager } from 'vue-meta';
 import App from '@/App.vue';
 const app = createApp(App);
 
@@ -9,8 +8,8 @@ import router from '@/router.js';
 app.use(router);
 
 // init meta data
-const metaManager = createMetaManager();
-app.use(metaManager);
+import { createHead } from 'unhead';
+createHead();
 
 // set global properties
 app.provide('version', APP_VERSION);

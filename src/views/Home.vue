@@ -93,7 +93,7 @@
 		<span class="block-sm text-unimportant ml-1">{{ database[active.series].subtitle }}</span>
 	</h2>
 	<template v-if="database[active.series] && episodesCount > 1 && seriesReleased(active.series)">
-		<div class="list episodes">
+		<div class="grid episodes">
 			<div
 				v-for="(episode, e, i) in database[active.series].episodes"
 				:key="i"
@@ -119,13 +119,13 @@
 </template>
 
 <script setup>
-import { useMeta } from 'vue-meta';
 import { reactive, computed } from 'vue';
+import { useSeoMeta } from 'unhead';
 import database from '@/data/data.json';
 import Logo from '@/components/Logo.vue';
 
 // set page meta data
-useMeta({
+useSeoMeta({
 	title: 'Übersicht',
 });
 
