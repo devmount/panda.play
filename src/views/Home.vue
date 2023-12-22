@@ -119,13 +119,13 @@
 </template>
 
 <script setup>
-import { useMeta } from 'vue-meta';
 import { reactive, computed } from 'vue';
+import { useSeoMeta } from 'unhead';
 import database from '@/data/data.json';
 import Logo from '@/components/Logo.vue';
 
 // set page meta data
-useMeta({
+useSeoMeta({
 	title: 'Übersicht',
 });
 

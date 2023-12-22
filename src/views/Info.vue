@@ -26,11 +26,12 @@
 
 <script setup>
 import { inject } from 'vue';
-import { useMeta } from 'vue-meta';
+import { useSeoMeta } from 'unhead';
 
-useMeta({
+useSeoMeta({
 	title: 'Information',
 });
+
 
 const version = inject('version');
 </script>
