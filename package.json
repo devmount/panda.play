@@ -16,7 +16,7 @@
 		"@vitejs/plugin-vue": "^4.1.0",
 		"stylus": "^0.62.0",
 		"stylus-loader": "^7.1.0",
-		"vite": "^5.0.10"
+		"vite": "^5.0.12"
 	},
 	"browserslist": [
 		"> 1%",
