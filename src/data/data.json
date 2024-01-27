@@ -1,4 +1,43 @@
 {
+  "fireboy-and-watergirl-elements": {
+    "title": "Fireboy & Watergirl",
+    "subtitle": "Elements",
+    "description": "🔥💧 Fireboy & Watergirl Elements selbst spielen: https://fireboyandwatergirl.site\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7eq2uB3jP49EfLr9I1C8xc7\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nNach mehr als 5 Jahren sind wir zurück mit dem 5. Teil der Firebox & Watergirl Saga! Diesmal geht es wild durch alle Elemente. Wird Watergirl im Feuertempel einen kühlen Kopf bewahren und Fireboy den Wassertempel durchstehen?\n\nUrsprünglich entwickelt von: Oslo Albet",
+    "episodes": {
+      "1": {
+        "title": "Der WASSERZOPP im FEUERTOPP - Fireboy & Watergirl Elements #01 - Let's Play",
+        "youtube": "",
+        "duration": "23:19",
+        "release": "2024-01-29T15:00:00"
+      },
+      "2": {
+        "title": "Drück den NÄCHSTER LEVEL BUTTON! - Fireboy & Watergirl Elements #02 - Let's Play",
+        "youtube": "",
+        "duration": "22:51",
+        "release": "2024-01-30T15:00:00"
+      },
+      "3": {
+        "title": "Ich warte nicht auf den BUS - Fireboy & Watergirl Elements #03 - Let's Play",
+        "youtube": "",
+        "duration": "23:24",
+        "release": "2024-01-31T15:00:00"
+      },
+      "4": {
+        "title": "Die SUPPE eyyy! - Fireboy & Watergirl Elements #04 - Let's Play",
+        "youtube": "",
+        "duration": "24:38",
+        "release": "2024-02-01T15:00:00",
+        "tags": ["ende"]
+      },
+      "5": {
+        "title": "Wenn der FETTE GRÜN ist, das ist schön! [ENDE] - Fireboy & Watergirl Elements #05 - Let's Play",
+        "youtube": "",
+        "duration": "24:27",
+        "release": "2024-02-02T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "return-to-monkey-island": {
     "title": "Return to Monkey Island",
     "subtitle": "",
