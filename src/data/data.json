@@ -1,37 +1,74 @@
 {
+  "fireboy-and-watergirl-fairytales": {
+    "title": "Fireboy & Watergirl",
+    "subtitle": "FairyTales",
+    "description": "🔥💧 Fireboy & Watergirl selbst spielen: https://fireboyandwatergirl.site\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7fdksNt3tDHuNef827T01_B\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nIm 6. Teil der Firebox & Watergirl Saga bekommen die beiden erstmals Hilfe! Sind die kleinen Feenwesen aber tatsächlich hilfreich oder wird alles nur viel komplizierter? Bekannt für unser professionelles Gameplay, setzen wir entgegen oder gerade wegen der Eigenwilligkeiten der Feenwesen den Bestzeiten aller Fireboy & Watergirl Level noch die Krone auf...\n\nUrsprünglich entwickelt von: Oslo Albet",
+    "episodes": {
+      "1": {
+        "title": "DRAG die FAIRY in den POTT!",
+        "youtube": "F5dUEo7m9rI",
+        "duration": "24:52",
+        "release": "2024-03-01T15:00:00"
+      },
+      "2": {
+        "title": "Wer GAR NICHTS kann, den MUTET man",
+        "youtube": "fBnjeoVqUsI",
+        "duration": "21:14",
+        "release": "2024-03-02T15:00:00"
+      },
+      "3": {
+        "title": "Ich war mir SICHER du DENKST DRAN!",
+        "youtube": "Ge4R5XxwuOI",
+        "duration": "24:03",
+        "release": "2024-03-03T15:00:00"
+      },
+      "4": {
+        "title": "Die GOLDENE Kartonecke",
+        "youtube": "SzBjGxVuodw",
+        "duration": "23:31",
+        "release": "2024-03-04T15:00:00"
+      },
+      "5": {
+        "title": "Von Feen-Fähren und Drei Lustigen Gesellen",
+        "youtube": "OpEbivt5XnA",
+        "duration": "33:09",
+        "release": "2024-03-05T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "fireboy-and-watergirl-elements": {
     "title": "Fireboy & Watergirl",
     "subtitle": "Elements",
     "description": "🔥💧 Fireboy & Watergirl Elements selbst spielen: https://fireboyandwatergirl.site\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7eq2uB3jP49EfLr9I1C8xc7\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nNach mehr als 5 Jahren sind wir zurück mit dem 5. Teil der Firebox & Watergirl Saga! Diesmal geht es wild durch alle Elemente. Wird Watergirl im Feuertempel einen kühlen Kopf bewahren und Fireboy den Wassertempel durchstehen?\n\nUrsprünglich entwickelt von: Oslo Albet",
     "episodes": {
       "1": {
-        "title": "Der WASSERZOPP im FEUERTOPP - Fireboy & Watergirl Elements #01 - Let's Play",
-        "youtube": "",
+        "title": "Der WASSERZOPP im FEUERTOPP",
+        "youtube": "oQX9qURBEAM",
         "duration": "23:19",
         "release": "2024-01-29T15:00:00"
       },
       "2": {
-        "title": "Drück den NÄCHSTER LEVEL BUTTON! - Fireboy & Watergirl Elements #02 - Let's Play",
-        "youtube": "",
+        "title": "Drück den NÄCHSTER LEVEL BUTTON!",
+        "youtube": "1JmKzZYCmxE",
         "duration": "22:51",
         "release": "2024-01-30T15:00:00"
       },
       "3": {
-        "title": "Ich warte nicht auf den BUS - Fireboy & Watergirl Elements #03 - Let's Play",
-        "youtube": "",
+        "title": "Ich warte nicht auf den BUS",
+        "youtube": "4ZQD4yDQPJU",
         "duration": "23:24",
         "release": "2024-01-31T15:00:00"
       },
       "4": {
-        "title": "Die SUPPE eyyy! - Fireboy & Watergirl Elements #04 - Let's Play",
-        "youtube": "",
+        "title": "Die SUPPE eyyy!",
+        "youtube": "YeNV4nHW9Ws",
         "duration": "24:38",
-        "release": "2024-02-01T15:00:00",
-        "tags": ["ende"]
+        "release": "2024-02-01T15:00:00"
       },
       "5": {
-        "title": "Wenn der FETTE GRÜN ist, das ist schön! [ENDE] - Fireboy & Watergirl Elements #05 - Let's Play",
-        "youtube": "",
+        "title": "Wenn der FETTE GRÜN ist, das ist schön!",
+        "youtube": "92I1VGb4KuE",
         "duration": "24:27",
         "release": "2024-02-02T15:00:00",
         "tags": ["ende"]
@@ -44,175 +81,175 @@
     "description": "💀 Return to Monkey Island selbst spielen: https://returntomonkeyisland.com/\n📜 Playlist: https://youtube.com/playlist?list=PL-Ds8QNqSk7exjMe64P6yVqldkJ6p48yT\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nAls Piraten-Anfänger machen wir uns auf die unglaubliche Suche nach dem sagenhaften Geheimnis von Monkey Island. Geschichten von Piratenschätzen führen uns zum Hafen von Mêlée Island, ohne Geld, aber ausgerüstet mit großen Hoffnungen und unersättlicher Neugier. Sind wir clever genug, die Piraten von Mêlée Island auf unsere Seite zu bringen und uns von den Winden des Schicksal zu Monkey Island tragen zu lassen? Ein Abenteuer, das das Blut in den Adern eines jeden blutrünstigen Piratens gefrieren lässt.\n\nTitel: Return to Monkey Island\nRelease: 19. September 2022\nDeveloper: LucasArts\nPublisher: LucasArts, Lucasfilm, Disney",
     "episodes": {
       "1": {
-        "title": "Zurück im Vergnügungspark (feat. Chuckie) - Return To Monkey Island #01 - Let's Play",
+        "title": "Zurück im Vergnügungspark (feat. Chuckie)",
         "youtube": "KELbDK1KGnI",
         "duration": "20:35",
         "release": "2023-04-17T15:00:00"
       },
       "2": {
-        "title": "Tief im Herzen der Karibik: Geschichtenstunde mit Papa - Return To Monkey Island #02 - Let's Play",
+        "title": "Tief im Herzen der Karibik: Geschichtenstunde mit Papa",
         "youtube": "wDVXZoILUSA",
         "duration": "22:23",
         "release": "2023-04-18T15:00:00"
       },
       "3": {
-        "title": "Gegen SKORBUT tun LEMONEN sehr gut! - Return To Monkey Island #03 - Let's Play",
+        "title": "Gegen SKORBUT tun LEMONEN sehr gut!",
         "youtube": "AIkoMBQN4pg",
         "duration": "21:26",
         "release": "2023-04-19T15:00:00"
       },
       "4": {
-        "title": "Im SPRÜCHEDUELL noch halbwegs hell - Return To Monkey Island #04 - Let's Play",
+        "title": "Im SPRÜCHEDUELL noch halbwegs hell",
         "youtube": "ewu2R2uZGPg",
         "duration": "31:56",
         "release": "2023-04-20T15:00:00"
       },
       "5": {
-        "title": "Wenn Maden durch'n Laden waden (feat. der MOPPSTIELBAUM) - Return To Monkey Island #05 - Let's Play",
+        "title": "Wenn Maden durch'n Laden waden (feat. der MOPPSTIELBAUM)",
         "youtube": "WnypRxijQS0",
         "duration": "25:44",
         "release": "2023-04-21T15:00:00"
       },
       "6": {
-        "title": "Wie Brillen, nur VIEEL unpraktischer - Return To Monkey Island #06 - Let's Play",
+        "title": "Wie Brillen, nur VIEEL unpraktischer",
         "youtube": "7Ejg-4H0v94",
         "duration": "23:16",
         "release": "2023-04-22T15:00:00"
       },
       "7": {
-        "title": "Otis - unsere PRIORITÄT NR. 3! - Return To Monkey Island #07 - Let's Play",
+        "title": "Otis - unsere PRIORITÄT NR. 3!",
         "youtube": "oZ4sKSjv82A",
         "duration": "20:56",
         "release": "2023-04-23T15:00:00"
       },
       "8": {
-        "title": "Ohne erweiterte Servicegarantie - Return To Monkey Island #08 - Let's Play",
+        "title": "Ohne erweiterte Servicegarantie",
         "youtube": "J2eAN6cvtOs",
         "duration": "21:14",
         "release": "2023-04-24T15:00:00"
       },
       "9": {
-        "title": "Meister der Moppkünste (feat. Schrubbi) - Return To Monkey Island #09 - Let's Play",
+        "title": "Meister der Moppkünste (feat. Schrubbi)",
         "youtube": "BzPQtI4Q_Go",
         "duration": "22:49",
         "release": "2023-04-25T15:00:00"
       },
       "10": {
-        "title": "Gemangelt - Return To Monkey Island #10 - Let's Play",
+        "title": "Gemangelt",
         "youtube": "qhAjogy-lyg",
         "duration": "23:52",
         "release": "2023-04-26T15:00:00"
       },
       "11": {
-        "title": "GEHEIMNISSE in Putras Kombüse - Return To Monkey Island #11 - Let's Play",
+        "title": "GEHEIMNISSE in Putras Kombüse",
         "youtube": "THCXBVRuTA0",
         "duration": "24:39",
         "release": "2023-04-27T15:00:00"
       },
       "12": {
-        "title": "Karte anfassen gleich KIELHOLEN lassen - Return To Monkey Island #12 - Let's Play",
+        "title": "Karte anfassen gleich KIELHOLEN lassen",
         "youtube": "Mto2LSO_wa0",
         "duration": "22:47",
         "release": "2023-04-28T15:00:00"
       },
       "13": {
-        "title": "Gekonnt gekontert - Return To Monkey Island #13 - Let's Play",
+        "title": "Gekonnt gekontert",
         "youtube": "LBrn9t4RGPA",
         "duration": "21:30",
         "release": "2023-04-29T15:00:00"
       },
       "14": {
-        "title": "Nur 6 Minuten bis zum Strand - Return To Monkey Island #14 - Let's Play",
+        "title": "Nur 6 Minuten bis zum Strand",
         "youtube": "oBQAq4WQjS0",
         "duration": "26:13",
         "release": "2023-04-30T15:00:00"
       },
       "15": {
-        "title": "Seemannsgarn und Segeltuch: Es ist LeChuckies TAGEBUCH! - Return To Monkey Island #15 - Let's Play",
+        "title": "Seemannsgarn und Segeltuch: Es ist LeChuckies TAGEBUCH!",
         "youtube": "oRA2sK9pb2I",
         "duration": "27:27",
         "release": "2023-05-01T15:00:00"
       },
       "16": {
-        "title": "Elaine to the Rescue! - Return To Monkey Island #16 - Let's Play",
+        "title": "Elaine to the Rescue!",
         "youtube": "fpFmyXbHY08",
         "duration": "22:08",
         "release": "2023-05-02T15:00:00"
       },
       "17": {
-        "title": "RUNTER von meinem MEER! - Return To Monkey Island #17 - Let's Play",
+        "title": "RUNTER von meinem MEER!",
         "youtube": "UM6EGkOE-GY",
         "duration": "25:44",
         "release": "2023-05-03T15:00:00"
       },
       "18": {
-        "title": "Die Früchte des Lebens eines Mannes - Return To Monkey Island #18 - Let's Play",
+        "title": "Die Früchte des Lebens eines Mannes",
         "youtube": "91ng6cRvnZ0",
         "duration": "25:01",
         "release": "2023-05-04T15:00:00"
       },
       "19": {
-        "title": "Fragebogen-Profis - Return To Monkey Island #19 - Let's Play",
+        "title": "Fragebogen-Profis",
         "youtube": "qN-z3ECwiLU",
         "duration": "22:30",
         "release": "2023-05-05T15:00:00"
       },
       "20": {
-        "title": "ARBEITSLOS und ohne festen Wohnsitz - Return To Monkey Island #20 - Let's Play",
+        "title": "ARBEITSLOS und ohne festen Wohnsitz",
         "youtube": "we7E6WHYGT8",
         "duration": "26:34",
         "release": "2023-05-06T15:00:00"
       },
       "21": {
-        "title": "Schmieriger Schimmel im Grabbel-Gewimmel - Return To Monkey Island #21 - Let's Play",
+        "title": "Schmieriger Schimmel im Grabbel-Gewimmel",
         "youtube": "attA6EQUSeQ",
         "duration": "27:57",
         "release": "2023-05-07T15:00:00"
       },
       "22": {
-        "title": "Erst HEATEN, dann CHEATEN - Return To Monkey Island #22 - Let's Play",
+        "title": "Erst HEATEN, dann CHEATEN",
         "youtube": "7gwTNeDcMz0",
         "duration": "21:31",
         "release": "2023-05-08T15:00:00"
       },
       "23": {
-        "title": "ROHER Fisch kommt auf den Tisch - Return To Monkey Island #23 - Let's Play",
+        "title": "ROHER Fisch kommt auf den Tisch",
         "youtube": "SrHnfRRfGe8",
         "duration": "20:56",
         "release": "2023-05-09T15:00:00"
       },
       "24": {
-        "title": "Beiß REIN! Verhindert HAARAUSFALL! Reduziert BAUCHFETT! - Return To Monkey Island #24 - Let's Play",
+        "title": "Beiß REIN! Verhindert HAARAUSFALL! Reduziert BAUCHFETT!",
         "youtube": "KHG0qX2yLek",
         "duration": "21:19",
         "release": "2023-05-10T15:00:00"
       },
       "25": {
-        "title": "Es ist NICHT meine SCHULD! - Return To Monkey Island #25 - Let's Play",
+        "title": "Es ist NICHT meine SCHULD!",
         "youtube": "IPx5-8yT1Xc",
         "duration": "23:22",
         "release": "2023-05-11T15:00:00"
       },
       "26": {
-        "title": "DU bekommst einen. Und DU bekommst einen. Und DU! - Return To Monkey Island #26 - Let's Play",
+        "title": "DU bekommst einen. Und DU bekommst einen. Und DU!",
         "youtube": "YiAGlonaI3s",
         "duration": "25:13",
         "release": "2023-05-12T15:00:00"
       },
       "27": {
-        "title": "Aber am ENDE siegt immer die GEWALT! - Return To Monkey Island #27 - Let's Play",
+        "title": "Aber am ENDE siegt immer die GEWALT!",
         "youtube": "fkZ4YEwtYj4",
         "duration": "20:26",
         "release": "2023-05-13T15:00:00"
       },
       "28": {
-        "title": "Aller guten Dinge sind DREI, Threepweed! - Return To Monkey Island #28 - Let's Play",
+        "title": "Aller guten Dinge sind DREI, Threepweed!",
         "youtube": "22RisYXHfIc",
         "duration": "22:58",
         "release": "2023-05-14T15:00:00"
       },
       "29": {
-        "title": "Die FREUNDE, die wir auf dem Weg gefunden haben. - Return To Monkey Island #29 - Let's Play",
+        "title": "Die FREUNDE, die wir auf dem Weg gefunden haben.",
         "youtube": "9OODCDNuLQA",
         "duration": "41:20",
         "release": "2023-05-15T15:00:00",
@@ -1082,7 +1119,7 @@
         "release": "2019-10-30T16:00:00"
       },
       "10": {
-        "title": "Meister im Tentakel-Bowling [ENDE]",
+        "title": "Meister im Tentakel-Bowling",
         "youtube": "4XgbsbtIglI",
         "duration": "21:34",
         "release": "2019-10-31T16:00:00",
