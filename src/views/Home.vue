@@ -12,7 +12,8 @@
 		<div class="thumb" v-if="!active.play">
 			<img
 				class="c-hand"
-				v-if="episodeReleased(active.series, active.episode)" :src="'/img/thumbs/' + active.series + '_' + String(active.episode).padStart(2, '0') + '.jpg'"
+				v-if="episodeReleased(active.series, active.episode)"
+				:src="'/img/thumbs/' + active.series + '_' + String(active.episode).padStart(2, '0') + '.jpg'"
 				:alt="database[active.series].episodes[active.episode].title"
 				@click="active.play = true"
 			/>
@@ -46,7 +47,9 @@
 			<span v-else>
 				Neuer Titel verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
 			</span>
-			<template v-if="seriesReleased(active.series) && database[active.series].episodes[active.episode].hasOwnProperty('tags')">
+			<template
+				v-if="seriesReleased(active.series) && database[active.series].episodes[active.episode].hasOwnProperty('tags')"
+			>
 				<span
 					class="tag ml-2"
 					v-for="(tag, t) in database[active.series].episodes[active.episode].tags" :key="t"
@@ -66,9 +69,8 @@
 	<h2 class="center-sm">{{ seriesCount }} Titel</h2>
 	<div class="list series">
 		<div
-			v-for="(series, s, i) in database"
+			v-for="(series, s) in database"
 			:key="s"
-			:index="i"
 			class="element"
 			:class="{ active: active.series == s }"
 			:data-duration="seriesReleased(s) ? seriesDuration(s) : '?'"
@@ -89,7 +91,10 @@
 	</div>
 	<!-- list all episodes of selected series -->
 	<h2 class="center-sm" v-if="active.series !== false && seriesReleased(active.series)">
-		<span>{{ releasedEpisodesCount }} Episode{{ releasedEpisodesCount == 1 ? '' : 'n' }} in {{ database[active.series].title }}</span>
+		<span>
+			{{ releasedEpisodesCount }} Episode{{ releasedEpisodesCount == 1 ? '' : 'n' }}
+			in {{ database[active.series].title }}
+		</span>
 		<span class="block-sm text-unimportant ml-1">{{ database[active.series].subtitle }}</span>
 	</h2>
 	<template v-if="database[active.series] && episodesCount > 1 && seriesReleased(active.series)">
@@ -103,7 +108,8 @@
 				:data-duration="episodeReleased(active.series, e) ? episode.duration : '?'"
 			>
 				<img
-					v-if="episodeReleased(active.series, e)" :src="'/img/thumbs/' + active.series + '_' + String(e).padStart(2, '0') + '.jpg'"
+					v-if="episodeReleased(active.series, e)"
+					:src="'/img/thumbs/' + active.series + '_' + String(e).padStart(2, '0') + '.jpg'"
 					:alt="episode.title"
 					@click="active.episode = e; active.play = false"
 				/>
