@@ -1,8 +1,5 @@
 <template>
 <div id="app">
-	<metainfo>
-		<template v-slot:title="{ content }">{{ content }} - {{ subtitle }} - {{ title }}</template>
-	</metainfo>
 	<div id="nav">
 		<router-link to="/">
 			<img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
@@ -44,8 +41,26 @@ useSeoMeta({
 
 <style lang="stylus">
 // import font
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  src: url(./fonts/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 700;
+  src: url(./fonts/FiraSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'Fira Mono';
+  font-weight: 400;
+  src: url(./fonts/FiraMono-Regular.ttf);
+}
+@font-face {
+  font-family: 'Fira Mono';
+  font-weight: 700;
+  src: url(./fonts/FiraMono-Bold.ttf);
+}
 
 // import app styles
 @import "assets/global";
