@@ -111,8 +111,7 @@
 				/>
 			</div>
 		</div>
-		<div v-html="database[active.series].description">
-		</div>
+		<div v-html="seriesDescription" class="mt-3 text-unimportant"></div>
 	</template>
 </div>
 </template>
@@ -175,8 +174,17 @@ const releasedEpisodesCount = computed(() => {
 
 // currently active / selected episode
 const selectedEpisode = computed(() => database[active.series]?.episodes[active.episode]);
-// generate thumbnail path
+// generate thumbnail path of selected episode
 const thumbSrc = computed(() => `/img/thumbs/${active.series}_${String(active.episode).padStart(2, '0')}.jpg`);
+// preprocess description of selected series
+const linkReplacer = (matched) => {
+  const url = matched.startsWith("https") ? matched : `https://${matched}`;
+  return `<a href="${url}" target="_blank">${matched}</a>`
+}
+const seriesDescription = computed(() => {
+	const linkRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g;
+	return database[active.series].description.replaceAll(linkRegex, linkReplacer).replaceAll("\n", '<br>');
+});
 
 // click events
 const selectSeries = (series) => {
