@@ -1,4 +1,198 @@
 {
+  "it-takes-two": {
+    "title": "It Takes Two",
+    "subtitle": "",
+    "description": "✌🏻 It Takes Two selbst spielen: https://store.steampowered.com/app/1426210/It_Takes_Two/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7eRehxx1kpSPVVSirGUlXfb\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nAls Cody und May, einem Paar mit Konfliktpotenzial, sind wir in einer wundersamen Welt gefangen, in der sich hinter jeder Ecke eine Überraschung verbirgt, und müssen dort die Scherben unserer Beziehung wieder zusammensetzen.\n\nTitel: It Takes Two\nRelease: 26. März 2021\nEntwickler: Hazelight\nPublisher: Electronic Arts\nFranchise: EA Originals",
+    "episodes": {
+      "1": {
+        "title": "Chapter 1: Fix Your Relationship! (feat. Dr. HAKIM)",
+        "youtube": "JzrZOo0zCs4",
+        "duration": "32:34",
+        "release": "2024-03-22T15:00:00"
+      },
+      "2": {
+        "title": "Behandle deinen Staubsauger IMMER GUT!",
+        "youtube": "oV7E3UdOR3U",
+        "duration": "29:55",
+        "release": "2024-03-23T15:00:00"
+      },
+      "3": {
+        "title": "Nagel-Hagel",
+        "youtube": "au36uSgS2-o",
+        "duration": "33:50",
+        "release": "2024-03-24T15:00:00"
+      },
+      "4": {
+        "title": "Unterwegs im Auftrag des Eichhorn-Widerstands",
+        "youtube": "voUBe603Fr0",
+        "duration": "23:37",
+        "release": "2024-03-25T15:00:00"
+      },
+      "5": {
+        "title": "KILLT die beste Schild-Wespe!",
+        "youtube": "U1lwFH052Ro",
+        "duration": "24:50",
+        "release": "2024-03-26T15:00:00"
+      },
+      "6": {
+        "title": "Bitte lächeln! (aka Polaroid-Fun)",
+        "youtube": "V0U26r9MskE",
+        "duration": "22:31",
+        "release": "2024-03-27T15:00:00"
+      },
+      "7": {
+        "title": "Street-Fighter auf seiner UNTERHOSE!",
+        "youtube": "yHerzjmK6zE",
+        "duration": "46:05",
+        "release": "2024-03-28T15:00:00"
+      },
+      "8": {
+        "title": "Bis zur UNENDLICHKEIT",
+        "youtube": "72y40cHjqe8",
+        "duration": "21:09",
+        "release": "2024-03-29T15:00:00"
+      },
+      "9": {
+        "title": "Space-Platformer",
+        "youtube": "Tc7c1BbbM74",
+        "duration": "20:48",
+        "release": "2024-03-30T15:00:00"
+      },
+      "10": {
+        "title": "Ich SEH NICHTS MEHR! Ich KANN NICHT MEHR!1!1elfeins!",
+        "youtube": "FWQbfR9sP_o",
+        "duration": "30:43",
+        "release": "2024-03-31T15:00:00"
+      },
+      "11": {
+        "title": "No CHEATING! Sonst gibts Beating.",
+        "youtube": "SO-kFP8Wk2g",
+        "duration": "32:20",
+        "release": "2024-04-01T15:00:00"
+      },
+      "12": {
+        "title": "Ich hab den Dinosaurier da nicht hingelegt!",
+        "youtube": "o7RpARzAdek",
+        "duration": "25:11",
+        "release": "2024-04-02T15:00:00"
+      },
+      "13": {
+        "title": "Ein Schuss zum Schluss für Oktopus",
+        "youtube": "VD4BIUEYSlA",
+        "duration": "23:14",
+        "release": "2024-04-03T15:00:00"
+      },
+      "14": {
+        "title": "Firegirl and Waterboy im DUNGEON!",
+        "youtube": "5OKvIL7G2R8",
+        "duration": "20:43",
+        "release": "2024-04-04T15:00:00"
+      },
+      "15": {
+        "title": "Wir sind ELTERN DES MONATS.",
+        "youtube": "LxoAMtckrxo",
+        "duration": "23:28",
+        "release": "2024-04-05T15:00:00"
+      },
+      "16": {
+        "title": "Zu zweit und volle Zeit-Kontrolle",
+        "youtube": "a3Wsh5LA28Q",
+        "duration": "21:43",
+        "release": "2024-04-06T15:00:00"
+      },
+      "17": {
+        "title": "Fallen und Fliegenklatschen",
+        "youtube": "yyIz03gu7fw",
+        "duration": "21:52",
+        "release": "2024-04-07T15:00:00"
+      },
+      "18": {
+        "title": "Steampunkminotaurusbullenaction",
+        "youtube": "kw9eZmwRG9c",
+        "duration": "19:36",
+        "release": "2024-04-08T15:00:00"
+      },
+      "19": {
+        "title": "Gegensätze ziehen sich an",
+        "youtube": "sGa9TEs-u2k",
+        "duration": "24:06",
+        "release": "2024-04-09T15:00:00"
+      },
+      "20": {
+        "title": "Der Bürgermeister schlägt zurück (+ SÜẞE SCHILDKRÖTENBABIES!)",
+        "youtube": "8NZU0mHbLOs",
+        "duration": "27:45",
+        "release": "2024-04-10T15:00:00"
+      },
+      "21": {
+        "title": "Codys klapprige Kauleiste quasselt",
+        "youtube": "nmKvruZd8SM",
+        "duration": "21:12",
+        "release": "2024-04-11T15:00:00"
+      },
+      "22": {
+        "title": "Monsieur sucht sein BAGUETTE",
+        "youtube": "zRy8BlFZUZ4",
+        "duration": "21:06",
+        "release": "2024-04-12T15:00:00"
+      },
+      "23": {
+        "title": "Geschmeidige ABFAAAAAAAAHRT!",
+        "youtube": "0Au64iRoRmY",
+        "duration": "26:20",
+        "release": "2024-04-13T15:00:00"
+      },
+      "24": {
+        "title": "Werde EINS mit deinem GARTEN",
+        "youtube": "jIjx9gQnGs0",
+        "duration": "19:53",
+        "release": "2024-04-14T15:00:00"
+      },
+      "25": {
+        "title": "Bei dieser Spezies wird der Mann von der Frau... UMGEBRACHT!",
+        "youtube": "aQ88CbAJs2s",
+        "duration": "22:53",
+        "release": "2024-04-15T15:00:00"
+      },
+      "26": {
+        "title": "Diese alten FALTENSÄCKE!",
+        "youtube": "8q6YDRxC-JI",
+        "duration": "20:22",
+        "release": "2024-04-16T15:00:00"
+      },
+      "27": {
+        "title": "Joy",
+        "youtube": "BD2ayiZus30",
+        "duration": "23:45",
+        "release": "2024-04-17T15:00:00"
+      },
+      "28": {
+        "title": "Saiten-Slider und Drumset-Jumper",
+        "youtube": "rn4WGPwiVbI",
+        "duration": "21:01",
+        "release": "2024-04-18T15:00:00"
+      },
+      "29": {
+        "title": "Gefressen von der Königs-Mikrofon-Kobra. 239857 MAL!!!",
+        "youtube": "FJtYKA8xw_A",
+        "duration": "20:42",
+        "release": "2024-04-19T15:00:00"
+      },
+      "30": {
+        "title": "Wolken-Tränen, Schweinepest, gibt's bei der Orchesterquest",
+        "youtube": "E_GAcYfVlpM",
+        "duration": "20:59",
+        "release": "2024-04-20T15:00:00"
+      },
+      "31": {
+        "title": "Du kannst das May, das weiß ich genau!",
+        "youtube": "JAJLKYC8Zjs",
+        "duration": "35:46",
+        "release": "2024-04-21T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "fireboy-and-watergirl-fairytales": {
     "title": "Fireboy & Watergirl",
     "subtitle": "FairyTales",

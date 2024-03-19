@@ -5,27 +5,23 @@
 		class="feature"
 		:style="
 			episodeReleased(active.series, active.episode)
-			? 'background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(/img/thumbs/' + active.series + '_' + String(active.episode).padStart(2, '0') + '.jpg)'
+			? `background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(${thumbSrc})`
 			: 'background: transparent'
 		"
 	>
-		<div class="thumb" v-if="!active.play">
+		<div v-if="!active.play" class="thumb">
 			<img
 				class="c-hand"
 				v-if="episodeReleased(active.series, active.episode)"
-				:src="'/img/thumbs/' + active.series + '_' + String(active.episode).padStart(2, '0') + '.jpg'"
-				:alt="database[active.series].episodes[active.episode].title"
+				:src="thumbSrc"
+				:alt="selectedEpisode.title"
 				@click="active.play = true"
 			/>
-			<img
-				v-else
-				src="@/assets/coming-soon-640x360.png"
-				alt="Coming Soon..."
-			/>
+			<img v-else src="@/assets/coming-soon-640x360.png" alt="Coming Soon..." />
 		</div>
 		<iframe
 			v-else
-			:src="'https://www.youtube-nocookie.com/embed/' + database[active.series].episodes[active.episode].youtube"
+			:src="`https://www.youtube-nocookie.com/embed/${selectedEpisode.youtube}`"
 			frameborder="0"
 			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen
@@ -34,26 +30,21 @@
 			<span v-if="seriesReleased(active.series)">
 				<span v-if="episodeReleased(active.series, active.episode)">
 					<span class="title">
-						{{ database[active.series].episodes[active.episode].title }}
+						{{ selectedEpisode.title }}
 					</span>
 					<span class="duration text-unimportant ml-1">
-						⏲ {{ database[active.series].episodes[active.episode].duration }}
+						⏲ {{ selectedEpisode.duration }}
 					</span>
 				</span>
 				<span v-else>
-					Episode verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
+					Episode verfügbar am {{ humanDate(selectedEpisode.release) }}
 				</span>
 			</span>
 			<span v-else>
-				Neuer Titel verfügbar am {{ humanDate(database[active.series].episodes[active.episode].release) }}
+				Neuer Titel verfügbar am {{ humanDate(selectedEpisode.release) }}
 			</span>
-			<template
-				v-if="seriesReleased(active.series) && database[active.series].episodes[active.episode].hasOwnProperty('tags')"
-			>
-				<span
-					class="tag ml-2"
-					v-for="(tag, t) in database[active.series].episodes[active.episode].tags" :key="t"
-				>
+			<template v-if="seriesReleased(active.series) && selectedEpisode.hasOwnProperty('tags')">
+				<span class="tag ml-2" v-for="(tag, t) in selectedEpisode.tags" :key="t">
 					{{ tag }}
 				</span>
 			</template>
@@ -77,20 +68,20 @@
 		>
 			<img
 				v-if="seriesReleased(s)"
-				:src="'/img/thumbs/' + s + '_01.jpg'"
+				:src="`/img/thumbs/${s}_01.jpg`"
 				:alt="series.episodes[1].title"
-				@click="active.series = s; active.episode = 1; active.play = false"
+				@click="selectSeries(s)"
 			/>
 			<img
 				v-else
 				src="@/assets/unknown-320x180.jpg"
 				alt="Currently not available"
-				@click="active.series = s; active.episode = 1; active.play = false"
+				@click="selectSeries(s)"
 			/>
 		</div>
 	</div>
 	<!-- list all episodes of selected series -->
-	<h2 class="center-sm" v-if="active.series !== false && seriesReleased(active.series)">
+	<h2 v-if="active.series !== false && seriesReleased(active.series)" class="center-sm">
 		<span>
 			{{ releasedEpisodesCount }} Episode{{ releasedEpisodesCount == 1 ? '' : 'n' }}
 			in {{ database[active.series].title }}
@@ -109,18 +100,23 @@
 			>
 				<img
 					v-if="episodeReleased(active.series, e)"
-					:src="'/img/thumbs/' + active.series + '_' + String(e).padStart(2, '0') + '.jpg'"
+					:src="`/img/thumbs/${active.series}_${String(e).padStart(2, '0')}.jpg`"
 					:alt="episode.title"
-					@click="active.episode = e; active.play = false"
+					@click="selectEpisode(e)"
 				/>
 				<img v-else
 					src="@/assets/unknown-320x180.jpg"
 					alt="Currently not available"
-					@click="active.episode = e; active.play = false"
+					@click="selectEpisode(e)"
 				/>
 			</div>
 		</div>
 	</template>
+	<div
+		v-if="active.series !== false && seriesReleased(active.series)"
+		v-html="seriesDescription"
+		class="mt-3 text-unimportant"
+	></div>
 </div>
 </template>
 
@@ -179,4 +175,29 @@ const episodesCount = computed(() => {
 const releasedEpisodesCount = computed(() => {
 	return Object.keys(Object.filter(database[active.series].episodes, e => now > new Date(e.release))).length;
 });
+
+// currently active / selected episode
+const selectedEpisode = computed(() => database[active.series]?.episodes[active.episode]);
+// generate thumbnail path of selected episode
+const thumbSrc = computed(() => `/img/thumbs/${active.series}_${String(active.episode).padStart(2, '0')}.jpg`);
+// preprocess description of selected series
+const linkReplacer = (matched) => {
+  const url = matched.startsWith("https") ? matched : `https://${matched}`;
+  return `<a href="${url}" target="_blank">${matched}</a>`
+}
+const seriesDescription = computed(() => {
+	const linkRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g;
+	return database[active.series].description.replaceAll(linkRegex, linkReplacer).replaceAll("\n", '<br>');
+});
+
+// click events
+const selectSeries = (series) => {
+	active.series = series;
+	active.episode = 1;
+	active.play = false;
+}
+const selectEpisode = (episode) => {
+	active.episode = episode;
+	active.play = false;
+}
 </script>
