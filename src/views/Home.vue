@@ -81,7 +81,7 @@
 		</div>
 	</div>
 	<!-- list all episodes of selected series -->
-	<h2 class="center-sm" v-if="active.series !== false && seriesReleased(active.series)">
+	<h2 v-if="active.series !== false && seriesReleased(active.series)" class="center-sm">
 		<span>
 			{{ releasedEpisodesCount }} Episode{{ releasedEpisodesCount == 1 ? '' : 'n' }}
 			in {{ database[active.series].title }}
@@ -111,8 +111,12 @@
 				/>
 			</div>
 		</div>
-		<div v-html="seriesDescription" class="mt-3 text-unimportant"></div>
 	</template>
+	<div
+		v-if="active.series !== false && seriesReleased(active.series)"
+		v-html="seriesDescription"
+		class="mt-3 text-unimportant"
+	></div>
 </div>
 </template>
 
