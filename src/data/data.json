@@ -1,4 +1,78 @@
 {
+  "machinarium": {
+    "title": "Machinarium",
+    "subtitle": "",
+    "description": "🤖 Machinarium spielen: https://store.steampowered.com/app/1426210/It_Takes_Two/\n📜 Playlist: https://store.steampowered.com/app/40700/Machinarium\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nDer Roboter Josef findet sich in einer retro-futuristischen Maschinenwelt wieder, in der seine Freundin Berta von der Blackcap Bruderschaft entführte wurde! Schafft er es, alle Hindernisse zu überwinden, alle Rätsel zu lösen und Berta zu retten?\n\nTitel: Machinarium\nRelease: 16. Okt 2009\nEntwickler: Amanita Design\nPublisher: Amanita Design",
+    "episodes": {
+      "1": {
+        "title": "Roboter mit Herz",
+        "youtube": "tXM5VdAbTc4",
+        "duration": "21:39",
+        "release": "2024-07-21T15:00:00"
+      },
+      "2": {
+        "title": "Schwarze Hüte ohne Güte",
+        "youtube": "r_TmVMH4Itg",
+        "duration": "21:21",
+        "release": "2024-07-22T15:00:00"
+      },
+      "3": {
+        "title": "Freiheit und Unmöglichkeit",
+        "youtube": "DRXNgdniFKc",
+        "duration": "24:08",
+        "release": "2024-07-23T15:00:00"
+      },
+      "4": {
+        "title": "Für diesen Hund ist Öl gesund",
+        "youtube": "OL0Q0npjxyE",
+        "duration": "22:45",
+        "release": "2024-07-24T15:00:00"
+      },
+      "5": {
+        "title": "Keine Worte, viele Orte",
+        "youtube": "lmvdAQc_uPM",
+        "duration": "22:37",
+        "release": "2024-07-25T15:00:00"
+      },
+      "6": {
+        "title": "Geduld nicht verlieren beim Zeiger-Rotieren",
+        "youtube": "uYBd90jisTU",
+        "duration": "25:28",
+        "release": "2024-07-26T15:00:00"
+      },
+      "7": {
+        "title": "Paralysiert zur Beute geführt",
+        "youtube": "bOTyDkUmfos",
+        "duration": "33:31",
+        "release": "2024-07-27T15:00:00"
+      },
+      "8": {
+        "title": "Wolkige Ventilatoren-Wut",
+        "youtube": "2YudNJuzBkM",
+        "duration": "29:52",
+        "release": "2024-07-28T15:00:00"
+      },
+      "9": {
+        "title": "Retro-Game im Retro-Game",
+        "youtube": "ZwaJjm6j55s",
+        "duration": "35:02",
+        "release": "2024-07-29T15:00:00"
+      },
+      "10": {
+        "title": "Dreilagig. Reißfest. Entschärft Bomben.",
+        "youtube": "4_ApGvRTOkA",
+        "duration": "42:22",
+        "release": "2024-07-30T15:00:00"
+      },
+      "11": {
+        "title": "Hol den VORSCHLAGHAMMER!",
+        "youtube": "giO41CHT3q8",
+        "duration": "20:45",
+        "release": "2024-07-31T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "it-takes-two": {
     "title": "It Takes Two",
     "subtitle": "",
