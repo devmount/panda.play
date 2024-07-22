@@ -128,7 +128,7 @@ import Logo from '@/components/Logo.vue';
 
 // set page meta data
 useSeoMeta({
-   title: 'Übersicht',
+  title: 'Übersicht',
 });
 
 const now = new Date();
