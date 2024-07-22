@@ -1,14 +1,14 @@
 <template>
 <div id="app">
-	<div id="nav">
-		<router-link to="/">
-			<img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
-		</router-link>
-		<router-link to="/">Let's Plays</router-link>
-		<router-link to="/info">Info</router-link>
-		<router-link to="/impressum">Impressum</router-link>
-	</div>
-	<router-view></router-view>
+  <div id="nav">
+    <router-link to="/">
+      <img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
+    </router-link>
+    <router-link to="/">Let's Plays</router-link>
+    <router-link to="/info">Info</router-link>
+    <router-link to="/impressum">Impressum</router-link>
+  </div>
+  <router-view></router-view>
 </div>
 </template>
 
@@ -26,20 +26,20 @@ const base = window.location.origin;
 
 // handle meta and seo
 useHead({
-	titleTemplate: (title) => !title ? brand : `${title} - ${brand}`,
+   titleTemplate: (title) => !title ? brand : `${title} - ${brand}`,
 });
 useSeoMeta({
-	ogSiteName: brand,
-	ogType: 'website',
-	ogUrl: base,
-	ogImage: `${base}/img/preview.png`,
-	ogDescription: description,
-	twitterCard: 'summary',
-	twitterSite: base,
-	twitterTitle: `${brand} - ${subtitle}`,
-	twitterDescription: description,
-	twitterCreator: '@devmount',
-	twitterImage: `${base}/img/preview.png`,
+   ogSiteName: brand,
+   ogType: 'website',
+   ogUrl: base,
+   ogImage: `${base}/img/preview.png`,
+   ogDescription: description,
+   twitterCard: 'summary',
+   twitterSite: base,
+   twitterTitle: `${brand} - ${subtitle}`,
+   twitterDescription: description,
+   twitterCreator: '@devmount',
+   twitterImage: `${base}/img/preview.png`,
 });
 
 // handle general database calculations
