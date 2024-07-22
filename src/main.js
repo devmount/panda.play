@@ -16,9 +16,9 @@ app.provide('version', APP_VERSION);
 
 // extend Object for filtering
 Object.filter = (obj, predicate) =>
-	Object.keys(obj)
-		.filter(key => predicate(obj[key]))
-		.reduce((res, key) => (res[key] = obj[key], res), {});
+ 	Object.keys(obj)
+    .filter(key => predicate(obj[key]))
+    .reduce((res, key) => (res[key] = obj[key], res), {});
 
 // ready? let's go!
 app.mount('#app');
