@@ -59,22 +59,22 @@ provide('totalWatchHours', Math.floor(totalWatchSeconds / 3600));
 @font-face {
   font-family: 'Fira Sans';
   font-weight: 400;
-  src: url(./fonts/FiraSans-Regular.ttf);
+  src: url(@/assets/fonts/FiraSans-Regular.ttf);
 }
 @font-face {
   font-family: 'Fira Sans';
   font-weight: 700;
-  src: url(./fonts/FiraSans-Bold.ttf);
+  src: url(@/assets/fonts/FiraSans-Bold.ttf);
 }
 @font-face {
   font-family: 'Fira Mono';
   font-weight: 400;
-  src: url(./fonts/FiraMono-Regular.ttf);
+  src: url(@/assets/fonts/FiraMono-Regular.ttf);
 }
 @font-face {
   font-family: 'Fira Mono';
   font-weight: 700;
-  src: url(./fonts/FiraMono-Bold.ttf);
+  src: url(@/assets/fonts/FiraMono-Bold.ttf);
 }
 
 // import app styles

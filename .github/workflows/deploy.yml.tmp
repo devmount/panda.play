@@ -13,17 +13,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js 20
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v4
       with:
-        node-version: 20.x
+        node-version: 20
     - name: Build app via NPM
       run: |
         npm install
         npm run build
     - name: Push Build files to production environment
-      uses: burnett01/rsync-deployments@5.2
+      uses: burnett01/rsync-deployments@7.0.1
       with:
         switches: -avzr --delete
         path: dist/
