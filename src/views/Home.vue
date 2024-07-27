@@ -32,8 +32,8 @@
           <span class="title">
             {{ selectedEpisode.title }}
           </span>
-          <span class="duration text-unimportant ml-1">
-            ⏲ {{ selectedEpisode.duration }}
+          <span class="duration text-unimportant ml-2">
+            {{ selectedEpisode.duration }}
           </span>
         </span>
         <span v-else>
@@ -64,7 +64,7 @@
       :key="s"
       class="element"
       :class="{ active: active.series == s }"
-      :data-duration="seriesReleased(s) ? seriesDuration(s) : '?'"
+      :data-duration="seriesReleased(s) ? seriesDuration(s) : null"
     >
       <img
         v-if="seriesReleased(s)"
@@ -96,7 +96,7 @@
         :index="i"
         class="element"
         :class="{ active: active.episode == e }"
-        :data-duration="episodeReleased(active.series, e) ? episode.duration : '?'"
+        :data-duration="episodeReleased(active.series, e) ? episode.duration : null"
       >
         <img
           v-if="episodeReleased(active.series, e)"
@@ -115,7 +115,7 @@
   <div
     v-if="active.series !== false && seriesReleased(active.series)"
     v-html="seriesDescription"
-    class="mt-3 text-unimportant"
+    class="mt-3 text-unimportant leading-6"
   ></div>
 </div>
 </template>
