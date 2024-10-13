@@ -1,4 +1,156 @@
 {
+  "memoria": {
+    "title": "Memoria",
+    "subtitle": "Das Dunkle Auge",
+    "description": "🗡️ Memoria selbst spielen: https://store.steampowered.com/app/243200/The_Dark_Eye_Memoria/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7fYQ_VagRf0638Wvb6TRul0 \n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nIn Memoria steuern wir gleich zwei Protagonisten durch verschiedene Zeitepochen: Sadja, eine Südstaatenprinzessin, die eine Kriegsheldin werden möchte, und Geron, ein Vogelfänger, der seine Freundin von einem Fluch befreien will. Wie werden unsere Entscheidungen am Ende über ihre Schicksale bestimmen?\n\nTitel: Das Dunkle Auge: Memoria\nRelease: 30. August 2013\nEntwickler: Daedalic Entertainment\nPublisher: Daedalic Entertainment",
+    "episodes": {
+      "1": {
+        "title": "Story-ception im Land der Erinnerung",
+        "youtube": "SFXGjVPuQGU",
+        "duration": "29:39",
+        "release": "2024-10-13T15:00:00"
+      },
+      "2": {
+        "title": "Tod im Grab, für einen... Stab!?",
+        "youtube": "whc_LnMYizI",
+        "duration": "29:50",
+        "release": "2024-10-14T15:00:00"
+      },
+      "3": {
+        "title": "Kettenreaktion durch Zugzwang",
+        "youtube": "dQcLeNTyaFU",
+        "duration": "27:57",
+        "release": "2024-10-15T15:00:00"
+      },
+      "4": {
+        "title": "Nuri, die Magier-Flüsterin der Feen-Krähen",
+        "youtube": "eDsqLdAbBy8",
+        "duration": "30:53",
+        "release": "2024-10-16T15:00:00"
+      },
+      "5": {
+        "title": "Im Gefilda von Hilda, die willda was von Geron",
+        "youtube": "KdOlDAHWhvg",
+        "duration": "38:38",
+        "release": "2024-10-17T15:00:00"
+      },
+      "6": {
+        "title": "Da hinterm Licht, ein Schatten der spricht!",
+        "youtube": "5wjdenDoUhk",
+        "duration": "28:16",
+        "release": "2024-10-18T15:00:00"
+      },
+      "7": {
+        "title": "Die magische Muffel",
+        "youtube": "cSZi2KfiKFo",
+        "duration": "28:25",
+        "release": "2024-10-19T15:00:00"
+      },
+      "8": {
+        "title": "Findige Fallen fordern viel Vorarbeit",
+        "youtube": "f_fS0RHc1f8",
+        "duration": "30:36",
+        "release": "2024-10-20T15:00:00"
+      },
+      "9": {
+        "title": "Der Grafiker-Traum: wald_53.png",
+        "youtube": "Mfj_p_5LT38",
+        "duration": "30:40",
+        "release": "2024-10-21T15:00:00"
+      },
+      "10": {
+        "title": "Rache an Rachwan am Raschtulswall",
+        "youtube": "pjRzFJsAXz4",
+        "duration": "39:16",
+        "release": "2024-10-22T15:00:00"
+      },
+      "11": {
+        "title": "Wenn Feuerwinde weh'n: Die Latrine bleibt steh'n! (Bryda inclusive)",
+        "youtube": "jHTolvVJ3mc",
+        "duration": "28:54",
+        "release": "2024-10-23T15:00:00"
+      },
+      "12": {
+        "title": "Köppe ane Wände: Dat sin die Elemende!",
+        "youtube": "E7zjJJDCVbw",
+        "duration": "31:29",
+        "release": "2024-10-24T15:00:00"
+      },
+      "13": {
+        "title": "Spannern für Anfänger (Luftgeist-Edition)",
+        "youtube": "Oc8kP6safkU",
+        "duration": "32:32",
+        "release": "2024-10-25T15:00:00"
+      },
+      "14": {
+        "title": "Buntfaserglas aka Mittelalter-Internet",
+        "youtube": "iGBHrYFUU8A",
+        "duration": "31:57",
+        "release": "2024-10-26T15:00:00"
+      },
+      "15": {
+        "title": "Selbst ein Opfer der Maske",
+        "youtube": "8iuWSbx5ojk",
+        "duration": "32:57",
+        "release": "2024-10-27T15:00:00"
+      },
+      "16": {
+        "title": "MEIN NAME !!1!11!elfeins!!",
+        "youtube": "lckQ0NJdquA",
+        "duration": "29:41",
+        "release": "2024-10-28T15:00:00"
+      },
+      "17": {
+        "title": "Im Garten des VERGESSENS",
+        "youtube": "BtjgeAJO3mM",
+        "duration": "32:14",
+        "release": "2024-10-29T15:00:00"
+      },
+      "18": {
+        "title": "Die Botengänge zieh'n das LP künstlich in die Länge",
+        "youtube": "j5tBuRNGqck",
+        "duration": "32:25",
+        "release": "2024-10-30T15:00:00"
+      },
+      "19": {
+        "title": "Sir! Sie sind... Ihr Gesicht ist... interessant!",
+        "youtube": "qQmXbXXu7Hk",
+        "duration": "27:59",
+        "release": "2024-10-31T15:00:00"
+      },
+      "20": {
+        "title": "Tentakel-Kalle zapft Energiekristalle",
+        "youtube": "9JH4ashAphc",
+        "duration": "33:37",
+        "release": "2024-11-01T15:00:00"
+      },
+      "21": {
+        "title": "Kapp den Wurm vom Fahrstuhlturm",
+        "youtube": "m8xqhqYutb4",
+        "duration": "32:17",
+        "release": "2024-11-02T15:00:00"
+      },
+      "22": {
+        "title": "Tod regnet nun herab auf deine Truppen",
+        "youtube": "C6cKlX7fAec",
+        "duration": "29:29",
+        "release": "2024-11-03T15:00:00"
+      },
+      "23": {
+        "title": "Das Ziel der Reise? Wähle weise...",
+        "youtube": "VvCVc-DkEaE",
+        "duration": "33:52",
+        "release": "2024-11-04T15:00:00"
+      },
+      "24": {
+        "title": "Das Schicksal der Prinzessin (+ alternative Entscheidungen)",
+        "youtube": "HwjjWjydvq4",
+        "duration": "24:32",
+        "release": "2024-11-05T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "machinarium": {
     "title": "Machinarium",
     "subtitle": "",
