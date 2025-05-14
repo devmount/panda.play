@@ -4,7 +4,8 @@
   <p>
     Eine Übersicht aller Let's Plays, die von PandaPlay aufgenommen und veröffentlicht wurden.
     Insgesamt haben wir {{ totalSeriesCount }} Titel in {{ totalEpisodesCount }} Episoden gespielt,
-    mit einer Gesamtspielzeit von {{ totalWatchHours }} Stunden.
+    mit einer Gesamtspielzeit von {{ totalWatchHours }} Stunden. Check die <router-link to="/stats">Stats</router-link>
+		Seite und gönn dir noch mehr Zahlen.
   </p>
 
   <h1>Worum geht's hier?</h1>
