@@ -15,6 +15,11 @@ export default createRouter({
 			component: () => import('@/views/Info.vue')
 		},
 		{
+			path: '/stats',
+			name: 'stats',
+			component: () => import('@/views/Stats.vue')
+		},
+		{
 			path: '/impressum',
 			name: 'impressum',
 			component: () => import('@/views/Impressum.vue')
