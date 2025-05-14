@@ -33,7 +33,7 @@
 
 <script setup>
 import { inject } from 'vue';
-import { useSeoMeta } from 'unhead';
+import { useSeoMeta } from '@unhead/vue';
 
 useSeoMeta({ title: 'Information' });
 

@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import { useSeoMeta } from 'unhead';
+import { useSeoMeta } from '@unhead/vue';
 
 useSeoMeta({
   title: 'Impressum',

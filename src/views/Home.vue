@@ -122,7 +122,7 @@
 
 <script setup>
 import { reactive, computed, inject } from 'vue';
-import { useSeoMeta } from 'unhead';
+import { useSeoMeta } from '@unhead/vue';
 import { timeFormatToSeconds, secondsToTimeFormat, humanDate } from '@/utils';
 import Logo from '@/components/Logo.vue';
 
