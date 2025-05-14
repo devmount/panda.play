@@ -1,4 +1,186 @@
 {
+  "satinavs-ketten": {
+    "title": "Satinavs Ketten",
+    "subtitle": "Das Dunkle Auge",
+    "description": "🐦‍⬛ Satinavs Ketten selbst spielen: https://store.steampowered.com/app/203830/The_Dark_Eye_Chains_of_Satinav/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7c-PC_pIadq5Pysohr8LrYR\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nIn Andergast, dessen Bewohner als abergläubisch gelten, erwartet König Efferdan einen Staatsbesuch von hochrangigen Würdenträgern. Seit Jahrhunderten ist das Königreich mit dem benachbarten Nostria verfeindet, doch nun werden erste Schritte in Richtung eines dauerhaften Friedens unternommen. Und wir stolpern in Gestalt von Geron unserem Schicksal entgegen.\n\nTitel: Das dunkle Auge - Satinavs Ketten\nRelease: 22. Juni 2012\nEntwickler: Daedalic Entertainment\nPublisher: Daedalic Entertainment",
+    "episodes": {
+      "1": {
+        "title": "Der Vogelfänger",
+        "youtube": "xpDssW8E-hA",
+        "duration": "22:34",
+        "release": "2025-05-16T15:00:00"
+      },
+      "2": {
+        "title": "Das Lied von Torstor Omm",
+        "youtube": "dDZzdrLH4D0",
+        "duration": "22:41",
+        "release": "2025-05-17T15:00:00"
+      },
+      "3": {
+        "title": "Ein paar Lose von der Dose in die Hose",
+        "youtube": "BN7LDeHC67g",
+        "duration": "20:11",
+        "release": "2025-05-18T15:00:00"
+      },
+      "4": {
+        "title": "Der Kastanienkönig",
+        "youtube": "fJS-xCEMPTI",
+        "duration": "21:34",
+        "release": "2025-05-19T15:00:00"
+      },
+      "5": {
+        "title": "In Andergast macht Wanda Rast",
+        "youtube": "jZi_RGgAWiU",
+        "duration": "47:08",
+        "release": "2025-05-20T15:00:00"
+      },
+      "6": {
+        "title": "Zornbold und Gram",
+        "youtube": "Bc8U5jF2heU",
+        "duration": "24:58",
+        "release": "2025-05-21T15:00:00"
+      },
+      "7": {
+        "title": "Ist der Bart zerzaust und grau? Nimm jetzt JENBACHER BARTBLAU!",
+        "youtube": "xRJy-x_RRW0",
+        "duration": "20:38",
+        "release": "2025-05-22T15:00:00"
+      },
+      "8": {
+        "title": "Taktgefühl im Land der SCHWARZPELZE",
+        "youtube": "rVWot7IUkd0",
+        "duration": "26:44",
+        "release": "2025-05-23T15:00:00"
+      },
+      "9": {
+        "title": "Das niedere Blumenfolk verbleibt im Schatten",
+        "youtube": "XCnbSljf7-U",
+        "duration": "21:12",
+        "release": "2025-05-24T15:00:00"
+      },
+      "10": {
+        "title": "Berühre bitte NICHT diese Feenkristalle. Unter KEINEN UMSTÄNDEN!",
+        "youtube": "Zb3Glyh1F6M",
+        "duration": "22:45",
+        "release": "2025-05-25T15:00:00"
+      },
+      "11": {
+        "title": "Der Steuermann des Zeitenschiffs",
+        "youtube": "tfZZQdheSKQ",
+        "duration": "27:59",
+        "release": "2025-05-26T15:00:00"
+      },
+      "12": {
+        "title": "Da frohlock' ich im Bade-Bottich",
+        "youtube": "4bDfq3pxUqI",
+        "duration": "24:09",
+        "release": "2025-05-27T15:00:00"
+      },
+      "13": {
+        "title": "Zwei Taler für den Fährmann",
+        "youtube": "AUVkD-9a1X0",
+        "duration": "22:10",
+        "release": "2025-05-28T15:00:00"
+      },
+      "14": {
+        "title": "HARM - Ein Mann mit Charme (und makellosem... Darm?)",
+        "youtube": "jowImA6mBpQ",
+        "duration": "25:22",
+        "release": "2025-05-29T15:00:00"
+      },
+      "15": {
+        "title": "Wen juckt's",
+        "youtube": "S9IFoqt3Yis",
+        "duration": "24:06",
+        "release": "2025-05-30T15:00:00"
+      },
+      "16": {
+        "title": "Von fetten Questketten",
+        "youtube": "ce3uTmgA-Ys",
+        "duration": "24:44",
+        "release": "2025-05-31T15:00:00"
+      },
+      "17": {
+        "title": "Akribische Angel-Aktion (Feen-Edition)",
+        "youtube": "5ksMST8jrsQ",
+        "duration": "22:57",
+        "release": "2025-06-01T15:00:00"
+      },
+      "18": {
+        "title": "Das könnte ins Auge gehen",
+        "youtube": "D_iTx11VYPs",
+        "duration": "22:23",
+        "release": "2025-06-02T15:00:00"
+      },
+      "19": {
+        "title": "Von der Königin gestellt: Rätsel in der Feen-Welt",
+        "youtube": "A1p4-VeGsos",
+        "duration": "24:58",
+        "release": "2025-06-03T15:00:00"
+      },
+      "20": {
+        "title": "Farben, Formen, Fallobst",
+        "youtube": "QKSOB2Dfta0",
+        "duration": "26:34",
+        "release": "2025-06-04T15:00:00"
+      },
+      "21": {
+        "title": "Unmöglichkeit ist relativ",
+        "youtube": "dyGBsLuH6bk",
+        "duration": "24:28",
+        "release": "2025-06-05T15:00:00"
+      },
+      "22": {
+        "title": "Paradoxe Puzzle passen perfekt",
+        "youtube": "dBdPB8IIyH8",
+        "duration": "23:27",
+        "release": "2025-06-06T15:00:00"
+      },
+      "23": {
+        "title": "DU bringst das ENDE!",
+        "youtube": "3jEy2zdFTkQ",
+        "duration": "20:45",
+        "release": "2025-06-07T15:00:00"
+      },
+      "24": {
+        "title": "Von Träumen geplagt, Zornie versagt",
+        "youtube": "sPjmVsuXcBY",
+        "duration": "26:06",
+        "release": "2025-06-08T15:00:00"
+      },
+      "25": {
+        "title": "Krähen-Verzauberer hassen diesen Trick!",
+        "youtube": "pQCeZRFS0Es",
+        "duration": "31:10",
+        "release": "2025-06-09T15:00:00"
+      },
+      "26": {
+        "title": "Ihretwegen lernen wir",
+        "youtube": "JGNv8yhpE4s",
+        "duration": "22:26",
+        "release": "2025-06-10T15:00:00"
+      },
+      "27": {
+        "title": "Rein: Ja, Raus: Nein!",
+        "youtube": "Q6FVoh_za4o",
+        "duration": "21:05",
+        "release": "2025-06-11T15:00:00"
+      },
+      "28": {
+        "title": "Generationen von Magiern erdachten diesen unüberwindbaren Käfig!",
+        "youtube": "wTnCVn855HQ",
+        "duration": "22:19",
+        "release": "2025-06-12T15:00:00"
+      },
+      "29": {
+        "title": "Und das Land fiel bald wieder in einen friedlichen Schlaf",
+        "youtube": "UBUH7zg3ZAc",
+        "duration": "39:45",
+        "release": "2025-06-13T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "memoria": {
     "title": "Memoria",
     "subtitle": "Das Dunkle Auge",
