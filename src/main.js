@@ -8,8 +8,9 @@ import router from '@/router.js';
 app.use(router);
 
 // init meta data
-import { createHead } from 'unhead';
-createHead();
+import { createHead } from '@unhead/vue/client';
+const head = createHead();
+app.use(head)
 
 // set global properties
 app.provide('version', APP_VERSION);

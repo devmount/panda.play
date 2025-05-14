@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { useHead, useSeoMeta } from 'unhead';
+import { useHead, useSeoMeta } from '@unhead/vue';
 import { provide } from 'vue';
 import { timeFormatToSeconds } from '@/utils';
 import database from '@/data/data.json';
