@@ -178,7 +178,7 @@ const linkReplacer = (matched) => {
 }
 
 const seriesDescription = computed(() => {
-  const linkRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g;
+  const linkRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/g;
   return database[active.series].description.replaceAll(linkRegex, linkReplacer).replaceAll("\n", '<br>');
 });
 
