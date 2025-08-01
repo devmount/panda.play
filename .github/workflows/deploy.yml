@@ -8,6 +8,7 @@ on:
   push:
     tags:
       - '*'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -23,7 +24,7 @@ jobs:
         npm install
         npm run build
     - name: Push Build files to production environment
-      uses: burnett01/rsync-deployments@7.0.1
+      uses: burnett01/rsync-deployments@7.0.2
       with:
         switches: -avzr --delete
         path: dist/
