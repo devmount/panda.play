@@ -32,7 +32,7 @@
 		</div>
 		<div class="card">
 			<h2>{{ avgSeriesLength }}h</h2>
-			<p>Ø Titellänge</p>
+			<p>Ø Titelspielzeit</p>
 		</div>
 		<div class="card">
 			<h2>{{ maxSeriesLength }}h</h2>
@@ -44,7 +44,7 @@
 		</div>
 		<div class="card">
 			<h2>{{ avgEpisodeLength }}</h2>
-			<p>Ø Episodenlänge</p>
+			<p>Ø Episodenspielzeit</p>
 		</div>
 		<div class="card">
 			<h2>{{ maxEpisodeLength }}</h2>
