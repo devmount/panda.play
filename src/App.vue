@@ -1,18 +1,3 @@
-<template>
-<div id="app">
-  <div id="nav">
-    <router-link to="/">
-      <img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
-    </router-link>
-    <router-link to="/">Let's Plays</router-link>
-    <router-link to="/info">Info</router-link>
-    <router-link to="/stats">Stats</router-link>
-    <router-link to="/impressum">Impressum</router-link>
-  </div>
-  <router-view></router-view>
-</div>
-</template>
-
 <script setup>
 import { useHead, useSeoMeta } from '@unhead/vue';
 import { provide } from 'vue';
@@ -88,6 +73,21 @@ provide('avgEpisodeCount', (totalEpisodesCount / totalSeriesCount).toFixed(1));
 provide('averageDaysBetweenSeries', averageDaysBetweenSeries.toFixed(1));
 
 </script>
+
+<template>
+<div id="app">
+  <div id="nav">
+    <router-link to="/">
+      <img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
+    </router-link>
+    <router-link to="/">Let's Plays</router-link>
+    <router-link to="/info">Info</router-link>
+    <router-link to="/stats">Stats</router-link>
+    <router-link to="/impressum">Impressum</router-link>
+  </div>
+  <router-view></router-view>
+</div>
+</template>
 
 <style lang="stylus">
 // import font

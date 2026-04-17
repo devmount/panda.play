@@ -1,3 +1,15 @@
+<script setup>
+import { inject } from 'vue';
+import { useSeoMeta } from '@unhead/vue';
+
+useSeoMeta({ title: 'Information' });
+
+const version = inject('version');
+const totalSeriesCount = inject('totalSeriesCount');
+const totalEpisodesCount = inject('totalEpisodesCount');
+const totalWatchHours = inject('totalWatchHours');
+</script>
+
 <template>
 <div class="container container-sm info">
   <h1>Was ist das hier?</h1>
@@ -31,15 +43,3 @@
   </p>
 </div>
 </template>
-
-<script setup>
-import { inject } from 'vue';
-import { useSeoMeta } from '@unhead/vue';
-
-useSeoMeta({ title: 'Information' });
-
-const version = inject('version');
-const totalSeriesCount = inject('totalSeriesCount');
-const totalEpisodesCount = inject('totalEpisodesCount');
-const totalWatchHours = inject('totalWatchHours');
-</script>
