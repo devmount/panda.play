@@ -1,3 +1,11 @@
+<script setup>
+import { useSeoMeta } from '@unhead/vue';
+
+useSeoMeta({
+  title: 'Impressum',
+});
+</script>
+
 <template>
 <div class="container container-sm impressum">
   <h1>Impressum</h1>
@@ -55,11 +63,3 @@
   </p>
 </div>
 </template>
-
-<script setup>
-import { useSeoMeta } from '@unhead/vue';
-
-useSeoMeta({
-  title: 'Impressum',
-});
-</script>

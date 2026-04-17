@@ -1,3 +1,23 @@
+<script setup>
+import { inject } from 'vue';
+import { useSeoMeta } from '@unhead/vue';
+
+useSeoMeta({ title: 'Information' });
+
+const totalSeriesCount = inject('totalSeriesCount');
+const totalEpisodesCount = inject('totalEpisodesCount');
+const totalWatchHours = inject('totalWatchHours');
+const startYear = inject('startYear');
+const seriesPerYear = inject('seriesPerYear');
+const avgSeriesLength = inject('avgSeriesLength');
+const maxSeriesLength = inject('maxSeriesLength');
+const episodesPerYear = inject('episodesPerYear');
+const avgEpisodeLength = inject('avgEpisodeLength');
+const maxEpisodeLength = inject('maxEpisodeLength');
+const avgEpisodeCount = inject('avgEpisodeCount');
+const averageDaysBetweenSeries = inject('averageDaysBetweenSeries');
+</script>
+
 <template>
 <div class="container container-sm info">
   <h1>Statistik</h1>
@@ -53,26 +73,6 @@
 	</div>
 </div>
 </template>
-
-<script setup>
-import { inject } from 'vue';
-import { useSeoMeta } from '@unhead/vue';
-
-useSeoMeta({ title: 'Information' });
-
-const totalSeriesCount = inject('totalSeriesCount');
-const totalEpisodesCount = inject('totalEpisodesCount');
-const totalWatchHours = inject('totalWatchHours');
-const startYear = inject('startYear');
-const seriesPerYear = inject('seriesPerYear');
-const avgSeriesLength = inject('avgSeriesLength');
-const maxSeriesLength = inject('maxSeriesLength');
-const episodesPerYear = inject('episodesPerYear');
-const avgEpisodeLength = inject('avgEpisodeLength');
-const maxEpisodeLength = inject('maxEpisodeLength');
-const avgEpisodeCount = inject('avgEpisodeCount');
-const averageDaysBetweenSeries = inject('averageDaysBetweenSeries');
-</script>
 
 <style scoped>
 .grid {

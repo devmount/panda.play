@@ -1,18 +1,3 @@
-<template>
-<div id="app">
-  <div id="nav">
-    <router-link to="/">
-      <img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
-    </router-link>
-    <router-link to="/">Let's Plays</router-link>
-    <router-link to="/info">Info</router-link>
-    <router-link to="/stats">Stats</router-link>
-    <router-link to="/impressum">Impressum</router-link>
-  </div>
-  <router-view></router-view>
-</div>
-</template>
-
 <script setup>
 import { useHead, useSeoMeta } from '@unhead/vue';
 import { provide } from 'vue';
@@ -89,8 +74,24 @@ provide('averageDaysBetweenSeries', averageDaysBetweenSeries.toFixed(1));
 
 </script>
 
-<style lang="stylus">
-// import font
+<template>
+<div id="app">
+  <div id="nav">
+    <router-link to="/">
+      <img class="logo" alt="PandaPlay logo" src="@/assets/logo.png" />
+    </router-link>
+    <router-link to="/">Let's Plays</router-link>
+    <router-link to="/info">Info</router-link>
+    <router-link to="/stats">Stats</router-link>
+    <router-link to="/impressum">Impressum</router-link>
+  </div>
+  <router-view></router-view>
+</div>
+</template>
+
+<style>
+@import "assets/main.css";
+
 @font-face {
   font-family: 'Fira Sans';
   font-weight: 400;
@@ -111,7 +112,4 @@ provide('averageDaysBetweenSeries', averageDaysBetweenSeries.toFixed(1));
   font-weight: 700;
   src: url(@/assets/fonts/FiraMono-Bold.ttf);
 }
-
-// import app styles
-@import "assets/global";
 </style>

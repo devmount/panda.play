@@ -1,3 +1,77 @@
+<script setup>
+import { reactive, computed, inject } from 'vue';
+import { useSeoMeta } from '@unhead/vue';
+import { timeFormatToSeconds, secondsToTimeFormat, humanDate } from '@/utils';
+import Logo from '@/components/Logo.vue';
+
+// set page meta data
+useSeoMeta({
+  title: 'Übersicht',
+});
+
+const now = new Date();
+const active = reactive({
+  series: false,
+  episode: false,
+  play: false
+});
+
+const database = inject('db');
+
+// return wether a series first episode is released or not
+const seriesReleased = (skey) => episodeReleased(skey, 1);
+
+// return wether an episode of a given series is released or not
+const episodeReleased = (skey, ekey) => now > new Date(database[skey].episodes[ekey].release);
+
+// return total duration of released episodes in the given series and format as H:MM:SS
+const seriesDuration = (skey) => {
+  const seconds = Object.values(database[skey].episodes).reduce((t, c) => t + timeFormatToSeconds(c.duration), 0);
+  return secondsToTimeFormat(seconds);
+};
+
+// calculate total number of series
+const totalSeriesCount = inject('totalSeriesCount');
+
+// calculate number of episodes in the active series
+const episodesCount = computed(() => {
+  return Object.keys(database[active.series].episodes).length;
+});
+
+// calculate number of released episodes in the active series
+const releasedEpisodesCount = computed(() => {
+  return Object.keys(Object.filter(database[active.series].episodes, e => now > new Date(e.release))).length;
+});
+
+// currently active / selected episode
+const selectedEpisode = computed(() => database[active.series]?.episodes[active.episode]);
+
+// generate thumbnail path of selected episode
+const thumbSrc = computed(() => `/img/thumbs/${active.series}_${String(active.episode).padStart(2, '0')}.jpg`);
+
+// preprocess description of selected series
+const linkReplacer = (matched) => {
+  const url = matched.startsWith("https") ? matched : `https://${matched}`;
+  return `<a href="${url}" target="_blank">${matched}</a>`
+}
+
+const seriesDescription = computed(() => {
+  const linkRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/g;
+  return database[active.series].description.replaceAll(linkRegex, linkReplacer).replaceAll("\n", '<br>');
+});
+
+// click events
+const selectSeries = (series) => {
+  active.series = series;
+  active.episode = 1;
+  active.play = false;
+}
+const selectEpisode = (episode) => {
+  active.episode = episode;
+  active.play = false;
+}
+</script>
+
 <template>
 <div class="container home">
   <div
@@ -119,77 +193,3 @@
   ></div>
 </div>
 </template>
-
-<script setup>
-import { reactive, computed, inject } from 'vue';
-import { useSeoMeta } from '@unhead/vue';
-import { timeFormatToSeconds, secondsToTimeFormat, humanDate } from '@/utils';
-import Logo from '@/components/Logo.vue';
-
-// set page meta data
-useSeoMeta({
-  title: 'Übersicht',
-});
-
-const now = new Date();
-const active = reactive({
-  series: false,
-  episode: false,
-  play: false
-});
-
-const database = inject('db');
-
-// return wether a series first episode is released or not
-const seriesReleased = (skey) => episodeReleased(skey, 1);
-
-// return wether an episode of a given series is released or not
-const episodeReleased = (skey, ekey) => now > new Date(database[skey].episodes[ekey].release);
-
-// return total duration of released episodes in the given series and format as H:MM:SS
-const seriesDuration = (skey) => {
-  const seconds = Object.values(database[skey].episodes).reduce((t, c) => t + timeFormatToSeconds(c.duration), 0);
-  return secondsToTimeFormat(seconds);
-};
-
-// calculate total number of series
-const totalSeriesCount = inject('totalSeriesCount');
-
-// calculate number of episodes in the active series
-const episodesCount = computed(() => {
-  return Object.keys(database[active.series].episodes).length;
-});
-
-// calculate number of released episodes in the active series
-const releasedEpisodesCount = computed(() => {
-  return Object.keys(Object.filter(database[active.series].episodes, e => now > new Date(e.release))).length;
-});
-
-// currently active / selected episode
-const selectedEpisode = computed(() => database[active.series]?.episodes[active.episode]);
-
-// generate thumbnail path of selected episode
-const thumbSrc = computed(() => `/img/thumbs/${active.series}_${String(active.episode).padStart(2, '0')}.jpg`);
-
-// preprocess description of selected series
-const linkReplacer = (matched) => {
-  const url = matched.startsWith("https") ? matched : `https://${matched}`;
-  return `<a href="${url}" target="_blank">${matched}</a>`
-}
-
-const seriesDescription = computed(() => {
-  const linkRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/g;
-  return database[active.series].description.replaceAll(linkRegex, linkReplacer).replaceAll("\n", '<br>');
-});
-
-// click events
-const selectSeries = (series) => {
-  active.series = series;
-  active.episode = 1;
-  active.play = false;
-}
-const selectEpisode = (episode) => {
-  active.episode = episode;
-  active.play = false;
-}
-</script>
