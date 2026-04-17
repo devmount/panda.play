@@ -89,8 +89,9 @@ provide('averageDaysBetweenSeries', averageDaysBetweenSeries.toFixed(1));
 </div>
 </template>
 
-<style lang="stylus">
-// import font
+<style>
+@import "assets/main.css";
+
 @font-face {
   font-family: 'Fira Sans';
   font-weight: 400;
@@ -111,7 +112,4 @@ provide('averageDaysBetweenSeries', averageDaysBetweenSeries.toFixed(1));
   font-weight: 700;
   src: url(@/assets/fonts/FiraMono-Bold.ttf);
 }
-
-// import app styles
-@import "assets/global";
 </style>
