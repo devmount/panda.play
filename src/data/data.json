@@ -1,4 +1,204 @@
 {
+  "split-fiction": {
+    "title": "Split Fiction",
+    "subtitle": "",
+    "description": "⚡️ Split Fiction selbst spielen: https://store.steampowered.com/app/2001120/Split_Fiction/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7eAE9pdh2aIYsI7W-EnMAsN\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nAuf dem Weg zur Erstveröffentlichung begegnen sich zwei grundverschiedene Autorinnen, nicht ahnend, dass sie ihre Geschichten schon bald hautnah selbst miterleben werden. Eine Adrenalin-geladene Reise, die den beiden mehr über sich selbst offenbart, als ihnen lieb ist...\n\nTitel: Split Fiction\nRelease: 6. März 2025\nDeveloper: Hazelight Studios\nPublisher: Electronic Arts",
+    "episodes": {
+      "1": {
+        "title": "Die MASCHINE!",
+        "youtube": "kpqqJtEmFbw",
+        "duration": "35:51",
+        "release": "2026-04-24T15:00:00"
+      },
+      "2": {
+        "title": "Cyber Ninja Highway Action",
+        "youtube": "G5ToECWxwCg",
+        "duration": "26:07",
+        "release": "2026-04-25T15:00:00"
+      },
+      "3": {
+        "title": "Das wird 'ne HAMMER Zeit!",
+        "youtube": "VBHQZ8q2gio",
+        "duration": "35:43",
+        "release": "2026-04-26T15:00:00"
+      },
+      "4": {
+        "title": "Der FarmVille-Simulator (oder wie Kinder zu Vegetariern werden)",
+        "youtube": "pIDy13AS2iQ",
+        "duration": "27:22",
+        "release": "2026-04-27T15:00:00"
+      },
+      "5": {
+        "title": "Das Monokel des TODES",
+        "youtube": "zLX2X1R4UX4",
+        "duration": "31:26",
+        "release": "2026-04-28T15:00:00"
+      },
+      "6": {
+        "title": "Ein RIESEN-Unterschied!",
+        "youtube": "T3gF6IlpOXU",
+        "duration": "27:51",
+        "release": "2026-04-29T15:00:00"
+      },
+      "7": {
+        "title": "Immer zuerst die AGB LESEN!!",
+        "youtube": "ewMW9d-69w4",
+        "duration": "32:35",
+        "release": "2026-04-30T15:00:00"
+      },
+      "8": {
+        "title": "Willkommen in den Unterlanden",
+        "youtube": "F_C7vTIQw_I",
+        "duration": "31:33",
+        "release": "2026-05-01T15:00:00"
+      },
+      "9": {
+        "title": "Küken klatschen",
+        "youtube": "_U91_HaPlNY",
+        "duration": "32:43",
+        "release": "2026-05-02T15:00:00"
+      },
+      "10": {
+        "title": "Die familienfrendliche Game-Show",
+        "youtube": "iEU5C0zHXX4",
+        "duration": "28:08",
+        "release": "2026-05-03T15:00:00"
+      },
+      "11": {
+        "title": "Kranke Moves (ft. Funky Kong)",
+        "youtube": "5pEgDlWGHwM",
+        "duration": "28:14",
+        "release": "2026-05-04T15:00:00"
+      },
+      "12": {
+        "title": "Sichtlich suboptimale Supernova-Situation",
+        "youtube": "_k36vR_b3uQ",
+        "duration": "35:28",
+        "release": "2026-05-05T15:00:00"
+      },
+      "13": {
+        "title": "Streichel mich oder STIRB!",
+        "youtube": "ZeEiOhJGsfU",
+        "duration": "37:11",
+        "release": "2026-05-06T15:00:00"
+      },
+      "14": {
+        "title": "Ich bin eine LADY!",
+        "youtube": "sJUGpLOuPyA",
+        "duration": "54:11",
+        "release": "2026-05-07T15:00:00"
+      },
+      "15": {
+        "title": "Trompetenkopf und Schnecken-Express",
+        "youtube": "4LrRzcST3mg",
+        "duration": "21:46",
+        "release": "2026-05-08T15:00:00"
+      },
+      "16": {
+        "title": "Der AUFSEHER",
+        "youtube": "vpCoFEd6Zrc",
+        "duration": "30:22",
+        "release": "2026-05-09T15:00:00"
+      },
+      "17": {
+        "title": "Ihr Versuch etwas für Kinder zu schreiben",
+        "youtube": "3YL6of6Kidw",
+        "duration": "28:41",
+        "release": "2026-05-10T15:00:00"
+      },
+      "18": {
+        "title": "Papa",
+        "youtube": "F1xT-1hPv_4",
+        "duration": "29:07",
+        "release": "2026-05-11T15:00:00"
+      },
+      "19": {
+        "title": "Eine Kanufahrt ist lustig, eine Kanufahrt ist schön",
+        "youtube": "8TTEnSsXFMM",
+        "duration": "34:29",
+        "release": "2026-05-12T15:00:00"
+      },
+      "20": {
+        "title": "Diese Episode ist garantiert FRUSTFREI",
+        "youtube": "a9jEoHFO220",
+        "duration": "30:12",
+        "release": "2026-05-13T15:00:00"
+      },
+      "21": {
+        "title": "Sir, Ihre Beine...",
+        "youtube": "-pc9RNq0qLQ",
+        "duration": "30:53",
+        "release": "2026-05-14T15:00:00"
+      },
+      "22": {
+        "title": "Zeit für eine neue Zahnbürste!",
+        "youtube": "AbTIl68d_8E",
+        "duration": "31:54",
+        "release": "2026-05-15T15:00:00"
+      },
+      "23": {
+        "title": "Eine Geschichte, sie zu verewigen",
+        "youtube": "0_MRacHcUnY",
+        "duration": "44:23",
+        "release": "2026-05-16T15:00:00"
+      },
+      "24": {
+        "title": "Mio's Unterbewusstsein",
+        "youtube": "48xUSwQAcTQ",
+        "duration": "36:00",
+        "release": "2026-05-17T15:00:00"
+      },
+      "25": {
+        "title": "Einatmen, Ausrasten",
+        "youtube": "PkJFxxmqDgg",
+        "duration": "30:44",
+        "release": "2026-05-18T15:00:00"
+      },
+      "26": {
+        "title": "Milady, dürfte ich auf Ihrer Stange mitfahren?",
+        "youtube": "MaI8d3XYMHY",
+        "duration": "31:38",
+        "release": "2026-05-19T15:00:00"
+      },
+      "27": {
+        "title": "Eine Freundin",
+        "youtube": "p_x-AfVDC_4",
+        "duration": "34:25",
+        "release": "2026-05-20T15:00:00"
+      },
+      "28": {
+        "title": "Zoe's Unterbewusstsein",
+        "youtube": "yjySK2lfzjE",
+        "duration": "33:24",
+        "release": "2026-05-21T15:00:00"
+      },
+      "29": {
+        "title": "Also normalerweise mag ich ja alle Tiere...",
+        "youtube": "RWrNLwgz6_Y",
+        "duration": "33:15",
+        "release": "2026-05-22T15:00:00"
+      },
+      "30": {
+        "title": "Schuld. Und Zwei, die dich IMMER geliebt haben!",
+        "youtube": "22Mx1U2zBzo",
+        "duration": "36:45",
+        "release": "2026-05-23T15:00:00"
+      },
+      "31": {
+        "title": "Zeit, nach Hause zu gehen",
+        "youtube": "4xmi5sx2vYA",
+        "duration": "33:07",
+        "release": "2026-05-24T15:00:00"
+      },
+      "32": {
+        "title": "IHR habt ALLES RUINIERT! [ENDE]",
+        "youtube": "Hf1l-lpvMZ8",
+        "duration": "48:32",
+        "release": "2026-05-25T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "lego-voyagers": {
     "title": "LEGO® Voyagers",
     "subtitle": "",
