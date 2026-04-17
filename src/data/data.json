@@ -1,4 +1,66 @@
 {
+  "lego-voyagers": {
+    "title": "LEGO® Voyagers",
+    "subtitle": "",
+    "description": "🚀 LEGO® Voyagers selbst spielen: https://store.steampowered.com/app/1538550/LEGO_Voyagers/\n📜 Playlist: https://www.youtube.com/playlist?list=PL-Ds8QNqSk7cJsw4T-FUZIs_oD0K_oe59\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nAls zwei Freunde eine gemeinsame Mission starten, ein verlassenes Raumschiff zu retten, begeben sie sich auf eine Reise, die ihre kühnsten Träume übertrifft.\n\nTitel: LEGO® Voyagers\nRelease: 15. September 2025\nDeveloper: Light Brick Studio\nPublisher: Annapurna Inte",
+    "episodes": {
+      "1": {
+        "title": "Ein neuer Anfang",
+        "youtube": "VWnRpRJL6VM",
+        "duration": "23:04",
+        "release": "2026-04-13T15:00:00"
+      },
+      "2": {
+        "title": "Beim ERSTEN Versuch!!",
+        "youtube": "nG2iN6kxW_k",
+        "duration": "28:32",
+        "release": "2026-04-14T15:00:00"
+      },
+      "3": {
+        "title": "Sir LANZElot auf hoher See (ft. das Einhorn)",
+        "youtube": "2G_3J9EhxMs",
+        "duration": "34:00",
+        "release": "2026-04-15T15:00:00"
+      },
+      "4": {
+        "title": "Sie werden so schnell groß!",
+        "youtube": "Svx4ByrFq0Y",
+        "duration": "28:11",
+        "release": "2026-04-16T15:00:00"
+      },
+      "5": {
+        "title": "Vom Noppenrand zum Förderband",
+        "youtube": "tz3669jlJeM",
+        "duration": "33:45",
+        "release": "2026-04-17T15:00:00"
+      },
+      "6": {
+        "title": "Meister der Magnet-Maschine",
+        "youtube": "cmsuhOOMtL0",
+        "duration": "33:22",
+        "release": "2026-04-18T15:00:00"
+      },
+      "7": {
+        "title": "Choo Choooooo!",
+        "youtube": "25BoJzFm6hY",
+        "duration": "31:10",
+        "release": "2026-04-19T15:00:00"
+      },
+      "8": {
+        "title": "Pfusch am Bau: Teile mau, Farbenstau",
+        "youtube": "h8RYm_NGO0o",
+        "duration": "35:50",
+        "release": "2026-04-20T15:00:00"
+      },
+      "9": {
+        "title": "Die erste KORALLE im Weltraum! [ENDE]",
+        "youtube": "PUxf5SS9vCg",
+        "duration": "41:43",
+        "release": "2026-04-21T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "satinavs-ketten": {
     "title": "Satinavs Ketten",
     "subtitle": "Das Dunkle Auge",
@@ -1239,7 +1301,7 @@
       }
     }
   },
-  "builders-journey": {
+  "lego-builders-journey": {
     "title": "LEGO® Builder's Journey",
     "subtitle": "",
     "description": "🧱 LEGO® Builder's Journey selbst spielen: https://store.steampowered.com/app/1544360/LEGO_Builders_Journey/\n📜 Playlist: https://youtube.com/playlist?list=PL-Ds8QNqSk7ciR8cv6vL8LoYMMSMHC3Op\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nLEGO® Builder's Journey ist ein Geometrie-Puzzlespiel mit toller Atmosphäre, in dem wir manchmal Regeln befolgen … und manchmal Regeln brechen müssen.\n\nTitel: LEGO® Builder's Journey\nRelease: 22. Juni 2021\nDeveloper: Light Brick Studio\nLEGO® Games",
