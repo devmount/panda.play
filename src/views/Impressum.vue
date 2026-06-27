@@ -13,7 +13,7 @@ useSeoMeta({
   <h2>PandaPlay</h2>
   <p>Berlin, Deutschland</p>
   <h2>Vertreten durch</h2>
-  <p>Andreas Müller<br />Bianka Zühlke</p>
+  <p>Andreas Müller<br />Bianka Müller</p>
   <h2>Kontakt</h2>
   <p>mail@panda-play.de</p>
   <h2>Haftungsausschluss</h2>
