@@ -28,7 +28,7 @@ const averageDaysBetweenSeries = inject('averageDaysBetweenSeries');
 		</div>
 		<div class="card">
 			<h2>{{ totalSeriesCount }}</h2>
-			<p>Titel abgeschlossen</p>
+			<p>LPs abgeschlossen</p>
 		</div>
 		<div class="card">
 			<h2>{{ totalEpisodesCount }}</h2>
@@ -40,23 +40,23 @@ const averageDaysBetweenSeries = inject('averageDaysBetweenSeries');
 		</div>
 		<div class="card">
 			<h2>{{ averageDaysBetweenSeries }}</h2>
-			<p>Ø Tage zwischen Titeln</p>
+			<p>Ø Tage zwischen LPs</p>
 		</div>
 		<div class="card">
 			<h2>{{ avgEpisodeCount }}</h2>
-			<p>Ø Episoden pro Titel</p>
+			<p>Ø Episoden pro Spiel</p>
 		</div>
 		<div class="card">
 			<h2>{{ seriesPerYear }}</h2>
-			<p>Ø Titel pro Jahr</p>
+			<p>Ø LPs pro Jahr</p>
 		</div>
 		<div class="card">
 			<h2>{{ avgSeriesLength }}h</h2>
-			<p>Ø Titelspielzeit</p>
+			<p>Ø LP Laufzeit</p>
 		</div>
 		<div class="card">
 			<h2>{{ maxSeriesLength }}h</h2>
-			<p>Längster Titel</p>
+			<p>Längstes LP</p>
 		</div>
 		<div class="card">
 			<h2>{{ episodesPerYear }}</h2>
