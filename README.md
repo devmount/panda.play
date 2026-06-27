@@ -10,17 +10,17 @@
 ```bash
 git clone https://github.com/devmount/panda.play
 cd panda.play
-npm install
+pnpm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ### Compiles and minifies for production
 
 ```bash
-npm run build
+pnpm build
 ```
