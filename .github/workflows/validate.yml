@@ -16,4 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: npx --yes oxlint@1.71.0 --deny-warnings # change to the latest release
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint JS
+        run: pnpm lint --deny-warnings
