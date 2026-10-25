@@ -1,4 +1,90 @@
 {
+  "myst": {
+    "title": "Myst",
+    "subtitle": "Remastered",
+    "description": "🏝️ Myst selbst spielen: https://store.steampowered.com/app/1255560/Myst/\n📜 Playlist: https://www.youtube.com/playlist?list=PLXHv5gx_Dsao\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nMyst. Auf den ersten Blick eine nette, einsame Insel für den Kurzurlaub. Doch näher betrachtet enthüllen sich schon bald ganze Welten von Geheimnissen und Intrigen. Außerdem ist die Insel möglicherweise nicht ganz so unbewohnt, wie sie zunächst scheint...\n\nTitel: Myst\nRelease: 26. August 2021\nDeveloper: Cyan Worlds, Inc.\nPublisher: Cyan Worlds, Inc.",
+    "episodes": {
+      "1": {
+        "title": "Die Insel der Geheimnisse",
+        "youtube": "nYb1yYofTV8",
+        "duration": "30:45",
+        "release": "2026-10-25T15:00:00"
+      },
+      "2": {
+        "title": "Gas-Herd-Room mit Auto-Zoom",
+        "youtube": "IeU_cPX-NMM",
+        "duration": "34:15",
+        "release": "2026-10-26T15:00:00"
+      },
+      "3": {
+        "title": "Die Tanne zur schönen Aussicht",
+        "youtube": "o6SDVfBLX5s",
+        "duration": "33:22",
+        "release": "2026-10-27T15:00:00"
+      },
+      "4": {
+        "title": "Schnell mal eben Schiff anheben",
+        "youtube": "jTdLK2ZpIa4",
+        "duration": "29:25",
+        "release": "2026-10-28T15:00:00"
+      },
+      "5": {
+        "title": "Sir, sie haben MUNDGERUCH!",
+        "youtube": "OoYwxaEvZEE",
+        "duration": "36:49",
+        "release": "2026-10-29T15:00:00"
+      },
+      "6": {
+        "title": "Märchenstunde mit IKEA Bauanleitung",
+        "youtube": "tMGJhFtW-Vo",
+        "duration": "41:24",
+        "release": "2026-10-30T15:00:00"
+      },
+      "7": {
+        "title": "Foto-REFLEX-Kamera",
+        "youtube": "MRfSw9SagwQ",
+        "duration": "44:34",
+        "release": "2026-10-31T15:00:00"
+      },
+      "8": {
+        "title": "Wie UNACHTSAM von uns!",
+        "youtube": "ursH1M_R658",
+        "duration": "39:17",
+        "release": "2026-11-01T15:00:00"
+      },
+      "9": {
+        "title": "ROT gegen BLAU",
+        "youtube": "B9hiJ3Ud7Sg",
+        "duration": "33:22",
+        "release": "2026-11-02T15:00:00"
+      },
+      "10": {
+        "title": "Intuitive Game-Mechanik für überforderte Spieler",
+        "youtube": "ud3IzZMSqt8",
+        "duration": "29:14",
+        "release": "2026-11-03T15:00:00"
+      },
+      "11": {
+        "title": "Der Simulations-SIMULATOR zum simplen SIMULIEREN von Simulationen",
+        "youtube": "IVbmXPzAGM0",
+        "duration": "36:15",
+        "release": "2026-11-04T15:00:00"
+      },
+      "12": {
+        "title": "Erstes ENDE ft. das schwimmende Polygon",
+        "youtube": "PXROMiyc3ic",
+        "duration": "41:04",
+        "release": "2026-11-05T15:00:00"
+      },
+      "13": {
+        "title": "Der Wanderweg im Wasser + ALLE Bad Endings",
+        "youtube": "E-AdpQVkqHE",
+        "duration": "31:24",
+        "release": "2026-11-06T15:00:00",
+        "tags": ["ende"]
+      }
+    }
+  },
   "split-fiction": {
     "title": "Split Fiction",
     "subtitle": "",
