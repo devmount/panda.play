@@ -1,4 +1,65 @@
 {
+  "planet-of-lana": {
+    "title": "Planet of Lana",
+    "subtitle": "An off-earth Odyssey",
+    "description": "🪐 Planet of Lana selbst spielen: https://store.steampowered.com/app/1608230/Planet_of_Lana/\n📜 Playlist: https://www.youtube.com/playlist?list=PLPueohuWKkGE\n🐼 Alle Let's Plays von PandaPlay: https://panda-play.de\n\nIn einer Welt, zerrissen zwischen der Anmut der Natur und der Invasion kalter Maschinen, müssen ein Mädchen und ihr Begleiter überleben, um zu finden, was für immer verloren scheint.\n\nTitle: Planet of Lana\nRelease: 23. Mai 2023\nDeveloper: Wishfully\nPublisher: Thunderful Publishing",
+    "episodes": {
+      "1": {
+        "title": "Invasion",
+        "youtube": "dsCrMSGw_P4",
+        "duration": "31:14",
+        "release": "2026-11-08T15:00:00"
+      },
+      "2": {
+        "title": "Mui",
+        "youtube": "iDRvxqvUqEw",
+        "duration": "31:23",
+        "release": "2026-11-09T15:00:00"
+      },
+      "3": {
+        "title": "Höhlengeschichten",
+        "youtube": "B5H8FiyPOfA",
+        "duration": "30:09",
+        "release": "2026-11-10T15:00:00"
+      },
+      "4": {
+        "title": "Dschungelpumpe",
+        "youtube": "MkV3YWaqzAU",
+        "duration": "34:57",
+        "release": "2026-11-11T15:00:00"
+      },
+      "5": {
+        "title": "KI-Kapitän",
+        "youtube": "nucR21JILrI",
+        "duration": "30:37",
+        "release": "2026-11-12T15:00:00"
+      },
+      "6": {
+        "title": "Skelett-Inseln",
+        "youtube": "IPtEpZU_GyU",
+        "duration": "31:07",
+        "release": "2026-11-13T15:00:00"
+      },
+      "7": {
+        "title": "Monsterbrücke",
+        "youtube": "UVmz7KOIaYY",
+        "duration": "30:53",
+        "release": "2026-11-14T15:00:00"
+      },
+      "8": {
+        "title": "Hilfe",
+        "youtube": "koPqWGUo7Ak",
+        "duration": "34:26",
+        "release": "2026-11-15T15:00:00"
+      },
+      "9": {
+        "title": "Reboot",
+        "youtube": "8b1Pqe_AcUc",
+        "duration": "42:05",
+        "release": "2026-11-16T15:00:00"
+      }
+    }
+  },
   "myst": {
     "title": "Myst",
     "subtitle": "Remastered",
